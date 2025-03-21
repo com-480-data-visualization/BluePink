@@ -1,21 +1,23 @@
 # Project of Data Visualization (COM-480)
 
-| Student's name | SCIPER |
-| -------------- | ------ |
-| | |
-| | |
-| | |
+| Student's name                | SCIPER |
+| ----------------------------- | ------ |
+| Elsa Heitz                    | 316735 |
+| Mahdi Fourati                 | 313078 |
+| Benoit Mathey-Doret dit Doret | 324620 |
 
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 
 ## Milestone 1 (21st March, 5pm)
+
+**Answers can be found in Milestone1.pdf**
 
 **10% of the final grade**
 
 This is a preliminary milestone to let you set up goals for your final project and assess the feasibility of your ideas.
 Please, fill the following sections about your project.
 
-*(max. 2000 characters per section)*
+_(max. 2000 characters per section)_
 
 ### Dataset
 
@@ -26,16 +28,17 @@ Please, fill the following sections about your project.
 ### Problematic
 
 > Frame the general topic of your visualization and the main axis that you want to develop.
+>
 > - What am I trying to show with my visualization?
 > - Think of an overview for the project, your motivation, and the target audience.
 
 ### Exploratory Data Analysis
 
 > Pre-processing of the data set you chose
+>
 > - Show some basic statistics and get insights about the data
 
 ### Related work
-
 
 > - What others have already done with the data?
 > - Why is your approach original?
@@ -46,14 +49,11 @@ Please, fill the following sections about your project.
 
 **10% of the final grade**
 
-
 ## Milestone 3 (30th May, 5pm)
 
 **80% of the final grade**
-
 
 ## Late policy
 
 - < 24h: 80% of the grade for the milestone
 - < 48h: 70% of the grade for the milestone
-
