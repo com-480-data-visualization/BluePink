@@ -29,103 +29,71 @@ function districtStyle(feature) {
   };
 }
 
-fetch(nycDistricts)
-  .then((response) => response.json())
-  .then((data) => {
-    L.geoJSON(data, {
-      style: districtStyle,
-      onEachFeature: function (feature, layer) {
-        layer.bindPopup(
-          `<b>${
-            feature.properties.name ||
-            feature.properties.BoroCD ||
-            "Unknown District"
-          }</b>`
-        );
-      },
-    }).addTo(map);
-  });
-
-// display Crime ---------------------------------------------------------------
+// display Crime *************************************************************
 let allCrimes = [];
 
-fetch("data/website_data_folder/GPS.csv")
-  .then((response) => response.text())
-  .then((text) => {
-    const lines = text.trim().split("\n");
+// load the CSV file ---------------------------------------------------------------
+function parseCSV(text) {
+  const rows = text.trim().split("\n");
+  const headers = rows[0].split(",");
 
-    // Split using tab character
-    const headers = lines[0].split("\t");
-
-    const allCrimes = lines.slice(1).map((line) => {
-      const values = line.split("\t");
-
-      const row = {};
-      headers.forEach((header, i) => {
-        row[header] = values[i];
-      });
-
-      return {
-        district: parseInt(row.District_Code),
-        lat: parseFloat(row.Latitude),
-        lng: parseFloat(row.Longitude),
-        count: parseInt(row.count),
-      };
+  return rows.slice(1).map((row) => {
+    const values = row.split(",");
+    const entry = {};
+    headers.forEach((header, i) => {
+      entry[header.trim()] = values[i].trim();
     });
-
-    console.log(allCrimes); // Your structured dataset
-    // Do whatever you want with allCrimes: map, chart, etc.
-  })
-  .catch((error) => {
-    console.error("Error loading GPS.csv:", error);
-  });
-
-function showCrimesInDistrict(districtLayer) {
-  // Clear previous markers
-  crimeMarkers.forEach((marker) => map.removeLayer(marker));
-  crimeMarkers = [];
-
-  const districtPolygon = districtLayer.toGeoJSON();
-  const districtCode = districtLayer.feature.properties.BoroCD;
-
-  // Show only points from the matching district and inside polygon
-  allCrimes.forEach((crime) => {
-    // Optional: check if the point belongs to the clicked district
-    if (parseInt(crime.district) !== districtCode) return;
-
-    const point = turf.point([crime.lng, crime.lat]);
-
-    if (turf.booleanPointInPolygon(point, districtPolygon)) {
-      const marker = L.circleMarker([crime.lat, crime.lng], {
-        radius: Math.sqrt(crime.count) + 2, // marker size based on count
-        color: "red",
-        fillColor: "orange",
-        fillOpacity: 0.6,
-      })
-        .bindPopup(`Crimes: ${crime.count}`)
-        .addTo(map);
-
-      crimeMarkers.push(marker);
-    }
+    return entry;
   });
 }
 
-let crimeMarkers = [];
+fetch("/../data/website_data/GPS.csv")
+  .then((response) => {
+    if (!response.ok) throw new Error("Network response was not ok");
+    return response.text();
+  })
+  .then((csvText) => {
+    allCrimes = parseCSV(csvText);
 
-fetch(nycDistricts)
+    // THEN load districts
+    return fetch(nycDistricts);
+  })
   .then((response) => response.json())
   .then((data) => {
+    // Now allCrimes is guaranteed to be ready
     L.geoJSON(data, {
       style: districtStyle,
       onEachFeature: function (feature, layer) {
-        layer.bindPopup(
-          `<b>${feature.properties.BoroCD || "Unknown District"}</b>`
-        );
+        const districtCode = parseInt(feature.properties.BoroCD);
+        layer.bindPopup(`<b>${feature.properties.name || districtCode}</b>`);
 
         layer.on("click", function () {
           map.fitBounds(layer.getBounds());
-          showCrimesInDistrict(layer);
+
+          if (window.crimeLayer) {
+            map.removeLayer(window.crimeLayer);
+          }
+
+          const districtCrimes = allCrimes.filter(
+            (c) => parseInt(c.District_Code) === districtCode
+          );
+
+          console.log("Matching crimes:", districtCrimes);
+
+          const markers = districtCrimes.map((c) => {
+            return L.circleMarker(
+              [parseFloat(c.Latitude), parseFloat(c.Longitude)],
+              {
+                radius: Math.log(c.count),
+                color: "red",
+                fillOpacity: 0.6,
+              }
+            ).bindPopup(`Crimes: ${c.count}`);
+          });
+
+          window.crimeLayer = L.layerGroup(markers).addTo(map);
         });
       },
     }).addTo(map);
-  });
+  })
+  .catch((error) => console.error("Error loading data:", error));
