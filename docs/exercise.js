@@ -1,11 +1,11 @@
 // load the map ---------------------------------------------------------------
-var map = L.map("map").setView([40.7128, -74.006], 12);
+var map = L.map("map").setView([40.7128, -74.006], 11);
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: "© OpenStreetMap contributors",
 }).addTo(map);
 
-L.marker([40.7128, -74.006]).addTo(map).bindPopup("New York City").openPopup();
+//L.marker([40.7128, -74.006]).addTo(map).bindPopup("New York City").openPopup();
 
 // add greyscale layer
 L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
@@ -84,7 +84,7 @@ fetch("/../data/website_data/GPS.csv")
             return L.circleMarker(
               [parseFloat(c.Latitude), parseFloat(c.Longitude)],
               {
-                radius: Math.log(c.count),
+                radius: c.count / 100,
                 color: "red",
                 fillOpacity: 0.6,
               }
