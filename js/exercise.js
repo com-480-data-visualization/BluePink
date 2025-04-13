@@ -46,8 +46,10 @@ function parseCSV(text) {
     return entry;
   });
 }
+const dataPath_GPS = "data/website_data/GPS.csv";
+console.log("Trying to fetch:", dataPath);
 
-fetch("data/website_data/GPS.csv")
+fetch(dataPath_GPS)
   .then((response) => {
     if (!response.ok) throw new Error("Network response was not ok");
     return response.text();
