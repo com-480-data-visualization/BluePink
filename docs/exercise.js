@@ -47,7 +47,9 @@ function parseCSV(text) {
   });
 }
 
-fetch("/../data/website_data/GPS.csv")
+const fileId = "1ABC2DEFgHIJKlmnOPQRstuVWxyz";
+const url_GPS_csv = `https://drive.google.com/uc?export=download&id=${fileId}`;
+fetch(url_GPS_csv)
   .then((response) => {
     if (!response.ok) throw new Error("Network response was not ok");
     return response.text();
