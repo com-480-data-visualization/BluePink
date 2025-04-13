@@ -47,7 +47,7 @@ function parseCSV(text) {
   });
 }
 const dataPath_GPS = "data/website_data/GPS.csv";
-console.log("Trying to fetch:", dataPath);
+console.log("Trying to fetch:", dataPath_GPS);
 
 fetch(dataPath_GPS)
   .then((response) => {
