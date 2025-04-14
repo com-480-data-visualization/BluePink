@@ -51,6 +51,7 @@ fetch(nycDistricts)
             .then((districtCrimes) => {
               const locationCounts = {};
 
+              // Group and count crimes by location
               districtCrimes.forEach((c) => {
                 const key = `${c.Latitude},${c.Longitude}`;
                 if (!locationCounts[key]) {
@@ -63,14 +64,16 @@ fetch(nycDistricts)
                 locationCounts[key].count += 1;
               });
 
+              // Create markers with radius based on count
               const markers = Object.values(locationCounts).map((c) => {
                 return L.circleMarker([c.lat, c.lon], {
-                  radius: Math.min(c.count, 15),
+                  radius: c.count / 100, // radius based on count
                   color: "red",
                   fillOpacity: 0.6,
-                }).bindPopup(`Crimes at location: ${c.count}`);
+                }).bindPopup(`Crimes at this location: ${c.count}`);
               });
 
+              // Add the layer to the map
               window.crimeLayer = L.layerGroup(markers).addTo(map);
             })
             .catch((err) => {
