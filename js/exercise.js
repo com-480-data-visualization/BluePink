@@ -1,20 +1,18 @@
-// load the map ---------------------------------------------------------------
+// Load the map ---------------------------------------------------------------
 var map = L.map("map").setView([40.7128, -74.006], 11);
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: "© OpenStreetMap contributors",
 }).addTo(map);
 
-//L.marker([40.7128, -74.006]).addTo(map).bindPopup("New York City").openPopup();
-
-// add greyscale layer
+// Add greyscale layer
 L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
   attribution:
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
   subdomains: "abcd",
 }).addTo(map);
 
-// display districts ---------------------------------------------------------------
+// Display districts ---------------------------------------------------------------
 var nycDistricts =
   "https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/NYC_Community_Districts/FeatureServer/0/query?where=1=1&outFields=*&outSR=4326&f=pgeojson";
 
@@ -23,46 +21,17 @@ function districtStyle(feature) {
   return {
     fillColor: "transparent",
     color: "black",
-
     weight: 2,
     opacity: 1,
   };
 }
 
-// display Crime *************************************************************
-let allCrimes = [];
+// Crime on map ---------------------------------------------------------------
 
-// load the CSV file ---------------------------------------------------------------
-function parseCSV(text) {
-  const rows = text.trim().split("\n");
-  const headers = rows[0].split(",");
-
-  return rows.slice(1).map((row) => {
-    const values = row.split(",");
-    const entry = {};
-    headers.forEach((header, i) => {
-      entry[header.trim()] = values[i].trim();
-    });
-    return entry;
-  });
-}
-const dataPath_GPS = "data/website_data/GPS.csv";
-
-fetch(dataPath_GPS)
-  .then((response) => {
-    if (!response.ok) throw new Error("Network response was not ok");
-    return response.text();
-  })
-  .then((csvText) => {
-    allCrimes = parseCSV(csvText);
-
-    // THEN load districts
-    return fetch(nycDistricts);
-  })
+fetch(nycDistricts)
   .then((response) => response.json())
-  .then((data) => {
-    // Now allCrimes is guaranteed to be ready
-    L.geoJSON(data, {
+  .then((districtData) => {
+    L.geoJSON(districtData, {
       style: districtStyle,
       onEachFeature: function (feature, layer) {
         const districtCode = parseInt(feature.properties.BoroCD);
@@ -75,26 +44,44 @@ fetch(dataPath_GPS)
             map.removeLayer(window.crimeLayer);
           }
 
-          const districtCrimes = allCrimes.filter(
-            (c) => parseInt(c.District_Code) === districtCode
-          );
+          const crimeFile = `data/crimes_by_district/${districtCode}.json`;
 
-          console.log("Matching crimes:", districtCrimes);
+          fetch(crimeFile)
+            .then((res) => res.json())
+            .then((districtCrimes) => {
+              const locationCounts = {};
 
-          const markers = districtCrimes.map((c) => {
-            return L.circleMarker(
-              [parseFloat(c.Latitude), parseFloat(c.Longitude)],
-              {
-                radius: c.count / 100,
-                color: "red",
-                fillOpacity: 0.6,
-              }
-            ).bindPopup(`Crimes: ${c.count}`);
-          });
+              districtCrimes.forEach((c) => {
+                const key = `${c.Latitude},${c.Longitude}`;
+                if (!locationCounts[key]) {
+                  locationCounts[key] = {
+                    lat: parseFloat(c.Latitude),
+                    lon: parseFloat(c.Longitude),
+                    count: 0,
+                  };
+                }
+                locationCounts[key].count += 1;
+              });
 
-          window.crimeLayer = L.layerGroup(markers).addTo(map);
+              const markers = Object.values(locationCounts).map((c) => {
+                return L.circleMarker([c.lat, c.lon], {
+                  radius: Math.min(c.count, 15),
+                  color: "red",
+                  fillOpacity: 0.6,
+                }).bindPopup(`Crimes at location: ${c.count}`);
+              });
+
+              window.crimeLayer = L.layerGroup(markers).addTo(map);
+            })
+            .catch((err) => {
+              console.error(
+                `❌ Could not load crime data for district ${districtCode}:`,
+                err
+              );
+              alert(`No crime data available for district ${districtCode}.`);
+            });
         });
       },
     }).addTo(map);
   })
-  .catch((error) => console.error("Error loading data:", error));
+  .catch((error) => console.error("Error loading district data:", error));
