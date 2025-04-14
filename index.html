@@ -7,8 +7,6 @@
     href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
   />
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
-  // for unzipping
 
   <head>
     <meta charset="utf-8" />
@@ -33,6 +31,17 @@
     <div id="map-overlay">
       <h1>Welcome to the Map</h1>
       <p>This is a short description or instruction.</p>
+      <div id="crime-filter-container">
+        <div class="container" id="crime-type-dropdown">
+          <div class="select-btn">
+            <span class="btn-text">Select Crime Types</span>
+            <span class="arrow-dwn">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+          </div>
+          <ul class="list-items" id="crime-type-options"></ul>
+        </div>
+      </div>
     </div>
 
     <div id="map"></div>
