@@ -1,3 +1,5 @@
+// Load special icon
+import { specialCrimeIcons, iconLegendHTML } from "./menu_icones.js";
 // Load the map ---------------------------------------------------------------
 var map = L.map("map").setView([40.7128, -74.006], 11);
 
@@ -119,63 +121,6 @@ fetch(nycDistricts)
     }).addTo(map);
   })
   .catch((error) => console.error("Error loading district data:", error));
-
-const specialCrimeIcons = {
-  murder: {
-    match: (type) => type.includes("murder"),
-    iconUrl: "images/skull.png",
-    baseWidth: 16,
-    baseHeight: 10,
-    maxCount: 5,
-    legend_scale: 2,
-  },
-  rape: {
-    match: (type) => type.includes("rape"),
-    iconUrl: "images/black_triangle.png",
-    baseWidth: 10,
-    baseHeight: 10,
-    maxCount: 5,
-    legend_scale: 1,
-  },
-  fire: {
-    match: (type) => type.includes("intentional property fire"),
-    iconUrl: "images/fire.png",
-    baseWidth: 12,
-    baseHeight: 10,
-    maxCount: 7,
-    legend_scale: 3,
-  },
-  kidnapping: {
-    match: (type) => type.includes("kidnapping"),
-    iconUrl: "images/black_cross.png",
-    baseWidth: 10,
-    baseHeight: 10,
-    maxCount: 5,
-    legend_scale: 1.5,
-  },
-};
-
-const iconLegendHTML = `
-  <b>Legend:</b>
-  <div style="margin-top: 0.5rem;">
-    ${Object.entries(specialCrimeIcons)
-      .map(([key, config]) => {
-        const width = config.baseWidth * config.legend_scale;
-        const height = config.baseHeight * config.legend_scale;
-        const label = key.charAt(0).toUpperCase() + key.slice(1);
-
-        return `
-          <div style="display: flex; align-items: center; height: 18px; margin-bottom: 1px;">
-            <div style="width: 30px; height: 100%; display: flex; align-items: center; justify-content: center;">
-              <img src="${config.iconUrl}" width="${width}" height="${height}" />
-            </div>
-            <span style="margin-left: 8px;">${label}</span>
-          </div>
-        `;
-      })
-      .join("")}
-  </div>
-`;
 
 function handleSelectAllClick(allLi) {
   const allItems = document.querySelectorAll(".list-items .item");
@@ -335,34 +280,6 @@ function handleIndividualClick(clickedLi) {
   }
 
   // Always ensure “All” is unselected if another item is toggled
-  if (allLi.classList.contains("checked")) {
-    allLi.classList.remove("checked");
-  }
-
-  updateSelectedCrimeTypes();
-}
-function handleIndividualClick(clickedLi) {
-  const allLi = document.querySelector(
-    '.list-items .item[data-value="__all__"]'
-  );
-  const isAllSelected = allLi.classList.contains("checked");
-
-  // Case 1: “All” is selected → switch to single selection
-  if (isAllSelected) {
-    // Uncheck all
-    document.querySelectorAll(".list-items .item").forEach((item) => {
-      item.classList.remove("checked");
-    });
-
-    // Check only the clicked one
-    clickedLi.classList.add("checked");
-  }
-  // Case 2: “All” is not selected → toggle normally
-  else {
-    clickedLi.classList.toggle("checked");
-  }
-
-  // Always uncheck “All” if any individual is clicked
   if (allLi.classList.contains("checked")) {
     allLi.classList.remove("checked");
   }
