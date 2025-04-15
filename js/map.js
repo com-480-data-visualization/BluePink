@@ -141,8 +141,8 @@ const specialCrimeIcons = {
     match: (type) => type.includes("intentional property fire"),
     iconUrl: "images/fire.png",
     baseWidth: 12,
-    baseHeight: 8,
-    maxCount: 5,
+    baseHeight: 10,
+    maxCount: 7,
     legend_scale: 3,
   },
   kidnapping: {
