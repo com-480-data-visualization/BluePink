@@ -85,13 +85,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.760016,
-    "Longitude":-73.854675,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.754981,
     "Longitude":-73.844435,
     "year_begin":2008,
@@ -533,13 +526,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.754981,
     "Longitude":-73.844435,
     "year_begin":2008,
@@ -558,6 +544,13 @@
     "Longitude":-73.844435,
     "year_begin":2008,
     "crime_type":"Minor Theft"
+  },
+  {
+    "District_Code":"481",
+    "Latitude":40.754981,
+    "Longitude":-73.844435,
+    "year_begin":2008,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"481",
@@ -894,6 +887,13 @@
     "Longitude":-73.844435,
     "year_begin":2008,
     "crime_type":"Major Theft"
+  },
+  {
+    "District_Code":"481",
+    "Latitude":40.75906915,
+    "Longitude":-73.84513509,
+    "year_begin":2008,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"481",
@@ -1611,13 +1611,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.760016,
     "Longitude":-73.854675,
     "year_begin":2009,
@@ -1968,6 +1961,13 @@
   },
   {
     "District_Code":"481",
+    "Latitude":40.754981,
+    "Longitude":-73.844435,
+    "year_begin":2008,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"481",
     "Latitude":40.75774252,
     "Longitude":-73.84444874,
     "year_begin":2009,
@@ -2041,7 +2041,7 @@
     "Latitude":40.75533648,
     "Longitude":-73.84324519,
     "year_begin":2009,
-    "crime_type":"Theft with Force"
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"481",
@@ -2507,13 +2507,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.754981,
     "Longitude":-73.844435,
     "year_begin":2009,
@@ -2553,13 +2546,6 @@
     "Longitude":-73.84363309,
     "year_begin":2009,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.76190253,
-    "Longitude":-73.8436918,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -3473,13 +3459,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.7605853,
     "Longitude":-73.84591127,
     "year_begin":2010,
@@ -3942,20 +3921,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.75533648,
     "Longitude":-73.84324519,
     "year_begin":2010,
@@ -3984,24 +3949,10 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.752103,
     "Longitude":-73.836993,
     "year_begin":2010,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -4030,13 +3981,6 @@
     "Longitude":-73.844435,
     "year_begin":2010,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -4306,13 +4250,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.757344,
-    "Longitude":-73.844247,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.754981,
     "Longitude":-73.844435,
     "year_begin":2010,
@@ -4457,13 +4394,6 @@
     "Longitude":-73.844435,
     "year_begin":2011,
     "crime_type":"Public Disturbance"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -4978,24 +4908,10 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
+    "Latitude":40.76219509,
+    "Longitude":-73.84286085,
     "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.75601,
-    "Longitude":-73.84114,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.752103,
-    "Longitude":-73.836993,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"481",
@@ -5206,13 +5122,6 @@
     "Longitude":-73.844435,
     "year_begin":2011,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.758073,
-    "Longitude":-73.84462,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -5538,13 +5447,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.752103,
     "Longitude":-73.836993,
     "year_begin":2012,
@@ -5601,6 +5503,13 @@
   },
   {
     "District_Code":"481",
+    "Latitude":40.764069,
+    "Longitude":-73.842215,
+    "year_begin":2012,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"481",
     "Latitude":40.754981,
     "Longitude":-73.844435,
     "year_begin":2012,
@@ -5619,13 +5528,6 @@
     "Longitude":-73.844435,
     "year_begin":2012,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.758073,
-    "Longitude":-73.84462,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -5846,24 +5748,10 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.752103,
-    "Longitude":-73.836993,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.754981,
     "Longitude":-73.844435,
     "year_begin":2012,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -7017,13 +6905,6 @@
     "District_Code":"481",
     "Latitude":40.754981,
     "Longitude":-73.844435,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
     "year_begin":2012,
     "crime_type":"Physical Assault"
   },
@@ -7347,13 +7228,6 @@
     "Latitude":40.752103,
     "Longitude":-73.836993,
     "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.752103,
-    "Longitude":-73.836993,
-    "year_begin":2013,
     "crime_type":"Major Theft"
   },
   {
@@ -7578,13 +7452,6 @@
     "Latitude":40.75533648,
     "Longitude":-73.84324519,
     "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2013,
     "crime_type":"Drug Offenses"
   },
   {
@@ -7743,13 +7610,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.75601,
     "Longitude":-73.84114,
     "year_begin":2013,
@@ -7775,20 +7635,6 @@
     "Longitude":-73.836993,
     "year_begin":2013,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.736797,
-    "Longitude":-73.837697,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -7984,6 +7830,13 @@
     "Latitude":40.760016,
     "Longitude":-73.854675,
     "year_begin":2014,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"481",
+    "Latitude":40.760016,
+    "Longitude":-73.854675,
+    "year_begin":2014,
     "crime_type":"Stolen Property Possession"
   },
   {
@@ -8006,13 +7859,6 @@
     "Longitude":-73.83283234,
     "year_begin":2014,
     "crime_type":"Traffic Violations"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -8076,6 +7922,13 @@
     "Longitude":-73.844435,
     "year_begin":2014,
     "crime_type":"Minor Theft"
+  },
+  {
+    "District_Code":"481",
+    "Latitude":40.75533648,
+    "Longitude":-73.84324519,
+    "year_begin":2014,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"481",
@@ -8846,13 +8699,6 @@
     "Longitude":-73.84324519,
     "year_begin":2014,
     "crime_type":"Fraud and Forgery"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -9878,13 +9724,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.760016,
-    "Longitude":-73.854675,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.753365,
     "Longitude":-73.849851,
     "year_begin":2015,
@@ -10050,13 +9889,6 @@
     "Longitude":-73.844435,
     "year_begin":2015,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -10525,13 +10357,6 @@
     "Latitude":40.760016,
     "Longitude":-73.854675,
     "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.760016,
-    "Longitude":-73.854675,
-    "year_begin":2016,
     "crime_type":"Minor Theft"
   },
   {
@@ -10736,13 +10561,6 @@
     "Longitude":-73.844435,
     "year_begin":2016,
     "crime_type":"Drug Offenses"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -11082,13 +10900,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.761656,
-    "Longitude":-73.844153,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.72794298,
     "Longitude":-73.83288621,
     "year_begin":2016,
@@ -11156,13 +10967,6 @@
     "Longitude":-73.844435,
     "year_begin":2016,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.752103,
-    "Longitude":-73.836993,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -11401,13 +11205,6 @@
     "Longitude":-73.84324519,
     "year_begin":2016,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -11772,6 +11569,13 @@
     "Longitude":-73.845203,
     "year_begin":2016,
     "crime_type":"Minor Theft"
+  },
+  {
+    "District_Code":"481",
+    "Latitude":40.756551,
+    "Longitude":-73.843839,
+    "year_begin":2016,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"481",
@@ -12779,13 +12583,6 @@
     "Latitude":40.760016,
     "Longitude":-73.854675,
     "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.760016,
-    "Longitude":-73.854675,
-    "year_begin":2017,
     "crime_type":"Vandalism"
   },
   {
@@ -12839,13 +12636,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.75694599,
-    "Longitude":-73.84404272,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.753365,
     "Longitude":-73.849851,
     "year_begin":2017,
@@ -12888,31 +12678,10 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.754981,
     "Longitude":-73.844435,
     "year_begin":2017,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.74546,
-    "Longitude":-73.847081,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.738493,
-    "Longitude":-73.845203,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -13252,24 +13021,10 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.764069,
     "Longitude":-73.842215,
     "year_begin":2017,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.738493,
-    "Longitude":-73.845203,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -13284,13 +13039,6 @@
     "Longitude":-73.854675,
     "year_begin":2017,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -13934,13 +13682,6 @@
     "Latitude":40.760016,
     "Longitude":-73.854675,
     "year_begin":2018,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.760016,
-    "Longitude":-73.854675,
-    "year_begin":2018,
     "crime_type":"Minor Theft"
   },
   {
@@ -14505,13 +14246,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.75533648,
     "Longitude":-73.84324519,
     "year_begin":2018,
@@ -14614,13 +14348,6 @@
     "Longitude":-73.843282,
     "year_begin":2018,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -15310,13 +15037,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.76190253,
     "Longitude":-73.8436918,
     "year_begin":2021,
@@ -15443,13 +15163,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.761656,
-    "Longitude":-73.844153,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.760016,
     "Longitude":-73.854675,
     "year_begin":2019,
@@ -15565,21 +15278,7 @@
     "Latitude":40.7605853,
     "Longitude":-73.84591127,
     "year_begin":2019,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.7605853,
-    "Longitude":-73.84591127,
-    "year_begin":2019,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -15657,6 +15356,13 @@
     "Longitude":-73.844435,
     "year_begin":2019,
     "crime_type":"Minor Theft"
+  },
+  {
+    "District_Code":"481",
+    "Latitude":40.75906915,
+    "Longitude":-73.84513509,
+    "year_begin":2019,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"481",
@@ -15818,13 +15524,6 @@
     "Longitude":-73.849851,
     "year_begin":2019,
     "crime_type":"Breaking & Entering"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -16336,13 +16035,6 @@
     "Longitude":-73.844435,
     "year_begin":2019,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -17025,13 +16717,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.71640495,
-    "Longitude":-73.8279406,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.75533648,
     "Longitude":-73.84324519,
     "year_begin":2020,
@@ -17186,20 +16871,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.75972837,
-    "Longitude":-73.84549092,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.75533648,
     "Longitude":-73.84324519,
     "year_begin":2020,
@@ -17221,13 +16892,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.75972837,
     "Longitude":-73.84549092,
     "year_begin":2020,
@@ -17239,13 +16903,6 @@
     "Longitude":-73.843282,
     "year_begin":2020,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -17669,13 +17326,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.75013794,
-    "Longitude":-73.84942911,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.75601,
     "Longitude":-73.84114,
     "year_begin":2020,
@@ -17722,13 +17372,6 @@
     "Longitude":-73.84324519,
     "year_begin":2020,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.753365,
-    "Longitude":-73.849851,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -18127,21 +17770,7 @@
     "Latitude":40.754981,
     "Longitude":-73.844435,
     "year_begin":2021,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2021,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -18173,13 +17802,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.75694599,
-    "Longitude":-73.84404272,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.754778,
     "Longitude":-73.842957,
     "year_begin":2021,
@@ -18191,13 +17813,6 @@
     "Longitude":-73.854675,
     "year_begin":2021,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.73970808,
-    "Longitude":-73.84543991,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -18264,13 +17879,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.7605853,
     "Longitude":-73.84591127,
     "year_begin":2021,
@@ -18303,13 +17911,6 @@
     "Longitude":-73.844435,
     "year_begin":2021,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -18450,6 +18051,13 @@
     "Longitude":-73.84543991,
     "year_begin":2021,
     "crime_type":"Traffic Violations"
+  },
+  {
+    "District_Code":"481",
+    "Latitude":40.764069,
+    "Longitude":-73.842215,
+    "year_begin":2021,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"481",
@@ -18754,13 +18362,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.71564713,
-    "Longitude":-73.82594411,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.72784135,
     "Longitude":-73.83283234,
     "year_begin":2021,
@@ -18772,13 +18373,6 @@
     "Longitude":-73.83283234,
     "year_begin":2021,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.71665168,
-    "Longitude":-73.82591985,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -19895,20 +19489,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.760016,
-    "Longitude":-73.854675,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.73970808,
     "Longitude":-73.84543991,
     "year_begin":2022,
@@ -19920,13 +19500,6 @@
     "Longitude":-73.844435,
     "year_begin":2022,
     "crime_type":"Public Disturbance"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.73970808,
-    "Longitude":-73.84543991,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -19976,13 +19549,6 @@
     "Longitude":-73.836167,
     "year_begin":2022,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -20133,13 +19699,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.7159822,
     "Longitude":-73.82607671,
     "year_begin":2022,
@@ -20154,24 +19713,10 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.72794298,
-    "Longitude":-73.83288621,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.71665168,
     "Longitude":-73.82591985,
     "year_begin":2022,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.72784135,
-    "Longitude":-73.83283234,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -20700,13 +20245,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.74546,
-    "Longitude":-73.847081,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.754981,
     "Longitude":-73.844435,
     "year_begin":2022,
@@ -20798,31 +20336,10 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.741992,
     "Longitude":-73.846074,
     "year_begin":2022,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.760016,
-    "Longitude":-73.854675,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -20847,13 +20364,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.760016,
-    "Longitude":-73.854675,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.754981,
     "Longitude":-73.844435,
     "year_begin":2022,
@@ -20865,13 +20375,6 @@
     "Longitude":-73.844435,
     "year_begin":2022,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -20938,13 +20441,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.761656,
-    "Longitude":-73.844153,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.754778,
     "Longitude":-73.842957,
     "year_begin":2021,
@@ -20973,31 +20469,10 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.753365,
-    "Longitude":-73.849851,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.754981,
     "Longitude":-73.844435,
     "year_begin":2022,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.753365,
-    "Longitude":-73.849851,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -21956,6 +21431,13 @@
     "Latitude":40.760016,
     "Longitude":-73.854675,
     "year_begin":2023,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"481",
+    "Latitude":40.760016,
+    "Longitude":-73.854675,
+    "year_begin":2023,
     "crime_type":"Major Theft"
   },
   {
@@ -21998,21 +21480,7 @@
     "Latitude":40.760016,
     "Longitude":-73.854675,
     "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.760016,
-    "Longitude":-73.854675,
-    "year_begin":2023,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.760016,
-    "Longitude":-73.854675,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -22352,13 +21820,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.738493,
-    "Longitude":-73.845203,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.754981,
     "Longitude":-73.844435,
     "year_begin":2023,
@@ -22433,20 +21894,6 @@
     "Longitude":-73.84286085,
     "year_begin":2023,
     "crime_type":"Traffic Violations"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -22597,13 +22044,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.74546,
-    "Longitude":-73.847081,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.760016,
     "Longitude":-73.854675,
     "year_begin":2023,
@@ -22713,13 +22153,6 @@
     "Longitude":-73.844435,
     "year_begin":2023,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.7473697612,
-    "Longitude":-73.8483057488,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -22835,13 +22268,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.7553364884,
-    "Longitude":-73.8432451996,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.754981,
     "Longitude":-73.844435,
     "year_begin":2023,
@@ -22884,13 +22310,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.760016,
-    "Longitude":-73.854675,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.754778,
     "Longitude":-73.842957,
     "year_begin":2023,
@@ -22902,13 +22321,6 @@
     "Longitude":-73.844435,
     "year_begin":2023,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.738493,
-    "Longitude":-73.845203,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -23157,13 +22569,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.72784135,
-    "Longitude":-73.83283234,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.7553364884,
     "Longitude":-73.8432451996,
     "year_begin":2023,
@@ -23346,13 +22751,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.760692,
-    "Longitude":-73.845752,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.7278413516,
     "Longitude":-73.8328323458,
     "year_begin":2023,
@@ -23364,13 +22762,6 @@
     "Longitude":-73.8436918,
     "year_begin":2023,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.739787,
-    "Longitude":-73.84242,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -23531,13 +22922,6 @@
     "Latitude":40.754981,
     "Longitude":-73.844435,
     "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2023,
     "crime_type":"Physical Assault"
   },
   {
@@ -23637,13 +23021,6 @@
     "Longitude":-73.8454399156,
     "year_begin":2023,
     "crime_type":"Traffic Violations"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -23868,13 +23245,6 @@
     "Longitude":-73.8276079605,
     "year_begin":2023,
     "crime_type":"Traffic Violations"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.71619408,
-    "Longitude":-73.82643328,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -24298,13 +23668,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.754981,
     "Longitude":-73.844435,
     "year_begin":2006,
@@ -24421,20 +23784,6 @@
     "Longitude":-73.844435,
     "year_begin":2006,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -24917,13 +24266,6 @@
     "Latitude":40.754981,
     "Longitude":-73.844435,
     "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2006,
     "crime_type":"Physical Assault"
   },
   {
@@ -25079,20 +24421,6 @@
     "Longitude":-73.844435,
     "year_begin":2006,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -25380,13 +24708,6 @@
     "Longitude":-73.844435,
     "year_begin":2007,
     "crime_type":"Breaking & Entering"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.75533648,
-    "Longitude":-73.84324519,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",
@@ -26076,13 +25397,6 @@
   },
   {
     "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"481",
     "Latitude":40.7605853,
     "Longitude":-73.84591127,
     "year_begin":2007,
@@ -26108,13 +25422,6 @@
     "Longitude":-73.844435,
     "year_begin":2007,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"481",
-    "Latitude":40.754981,
-    "Longitude":-73.844435,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"481",

@@ -196,9 +196,10 @@
   }
   
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: rgb(0, 44, 122);
     margin-bottom: 0.75rem;
+    text-align: center; 
   }
   
   footer {

@@ -1453,13 +1453,6 @@
     "Latitude":40.646478,
     "Longitude":-73.784022,
     "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"483",
-    "Latitude":40.646478,
-    "Longitude":-73.784022,
-    "year_begin":2008,
     "crime_type":"Physical Assault"
   },
   {
@@ -2780,6 +2773,13 @@
   },
   {
     "District_Code":"483",
+    "Latitude":40.66524734,
+    "Longitude":-73.80203307,
+    "year_begin":2010,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"483",
     "Latitude":40.646478,
     "Longitude":-73.784022,
     "year_begin":2010,
@@ -3218,13 +3218,6 @@
     "Longitude":-73.76076,
     "year_begin":2017,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"483",
-    "Latitude":40.652467,
-    "Longitude":-73.76076,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"483",

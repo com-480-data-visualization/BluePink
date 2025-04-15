@@ -148,13 +148,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.67297219,
-    "Longitude":-73.96744693,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.668101,
     "Longitude":-73.965923,
     "year_begin":2008,
@@ -1061,42 +1054,7 @@
     "Latitude":40.661419,
     "Longitude":-73.979502,
     "year_begin":2009,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66401287,
-    "Longitude":-73.97734207,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66159509,
-    "Longitude":-73.97935053,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66460564,
-    "Longitude":-73.97684444,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.661419,
-    "Longitude":-73.979502,
-    "year_begin":2009,
     "crime_type":"Breaking & Entering"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.673052,
-    "Longitude":-73.968051,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -1121,13 +1079,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.675072,
-    "Longitude":-73.969289,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.661898,
     "Longitude":-73.979103,
     "year_begin":2009,
@@ -1135,31 +1086,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.673052,
-    "Longitude":-73.968051,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.661898,
     "Longitude":-73.979103,
     "year_begin":2009,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -1205,31 +1135,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.65734784,
-    "Longitude":-73.97404293,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.669728,
     "Longitude":-73.972569,
     "year_begin":2009,
     "crime_type":"Drug Offenses"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -1310,13 +1219,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66050949,
-    "Longitude":-73.96281426,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.670939,
     "Longitude":-73.971571,
     "year_begin":2009,
@@ -1366,13 +1268,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.67002832,
     "Longitude":-73.97231849,
     "year_begin":2009,
@@ -1405,13 +1300,6 @@
     "Longitude":-73.964967,
     "year_begin":2009,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66240687,
-    "Longitude":-73.96515247,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -2612,13 +2500,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66822261,
     "Longitude":-73.97382602,
     "year_begin":2010,
@@ -2871,13 +2752,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.658123,
     "Longitude":-73.973073,
     "year_begin":2010,
@@ -2934,24 +2808,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.669728,
     "Longitude":-73.972569,
     "year_begin":2010,
     "crime_type":"Public Disturbance"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -3067,24 +2927,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66115333,
-    "Longitude":-73.98017246,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.661898,
     "Longitude":-73.979103,
     "year_begin":2010,
     "crime_type":"Breaking & Entering"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.65734784,
-    "Longitude":-73.97404293,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -3130,13 +2976,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.65564322,
     "Longitude":-73.97355345,
     "year_begin":2010,
@@ -3179,13 +3018,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66942733,
-    "Longitude":-73.97281981,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.668524,
     "Longitude":-73.973574,
     "year_begin":2010,
@@ -3197,13 +3029,6 @@
     "Longitude":-73.973574,
     "year_begin":2010,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.675514,
-    "Longitude":-73.970378,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -3239,13 +3064,6 @@
     "Longitude":-73.97281981,
     "year_begin":2009,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.6712495,
-    "Longitude":-73.97132664,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -3330,13 +3148,6 @@
     "Longitude":-73.965923,
     "year_begin":2010,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66050949,
-    "Longitude":-73.96281426,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -3456,13 +3267,6 @@
     "Longitude":-73.965923,
     "year_begin":2010,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -3655,13 +3459,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.668101,
     "Longitude":-73.965923,
     "year_begin":2010,
@@ -3676,24 +3473,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.668101,
     "Longitude":-73.965923,
     "year_begin":2010,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -5188,13 +4971,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.67433,
     "Longitude":-73.96881,
     "year_begin":2011,
@@ -5524,13 +5300,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66702337,
-    "Longitude":-73.9748322,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.668101,
     "Longitude":-73.965923,
     "year_begin":2011,
@@ -5853,13 +5622,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.670329,
-    "Longitude":-73.972067,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.67186421,
     "Longitude":-73.97085413,
     "year_begin":2011,
@@ -6105,13 +5867,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.67002832,
-    "Longitude":-73.97231849,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.668101,
     "Longitude":-73.965923,
     "year_begin":2011,
@@ -6161,31 +5916,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.657958,
     "Longitude":-73.963183,
     "year_begin":2011,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -6217,24 +5951,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.67536076,
-    "Longitude":-73.96969175,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66919649,
     "Longitude":-73.96211008,
     "year_begin":2011,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -6245,24 +5965,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.665378,
     "Longitude":-73.961367,
     "year_begin":2011,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -6290,21 +5996,7 @@
     "Latitude":40.668101,
     "Longitude":-73.965923,
     "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2011,
     "crime_type":"Breaking & Entering"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.67297219,
-    "Longitude":-73.96744693,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -6312,13 +6004,6 @@
     "Longitude":-73.961367,
     "year_begin":2011,
     "crime_type":"Breaking & Entering"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -6343,13 +6028,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.674102,
-    "Longitude":-73.971478,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.665378,
     "Longitude":-73.961367,
     "year_begin":2011,
@@ -6385,13 +6063,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.665378,
     "Longitude":-73.961367,
     "year_begin":2011,
@@ -6420,13 +6091,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66669583,
-    "Longitude":-73.96161767,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66050949,
     "Longitude":-73.96281426,
     "year_begin":2011,
@@ -6445,13 +6109,6 @@
     "Longitude":-73.961367,
     "year_begin":2011,
     "crime_type":"Drug Offenses"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -6903,13 +6560,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.672373,
     "Longitude":-73.964967,
     "year_begin":2011,
@@ -7102,13 +6752,6 @@
     "Latitude":40.66115333,
     "Longitude":-73.98017246,
     "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66115333,
-    "Longitude":-73.98017246,
-    "year_begin":2012,
     "crime_type":"Major Theft"
   },
   {
@@ -7124,13 +6767,6 @@
     "Longitude":-73.97684444,
     "year_begin":2012,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66822261,
-    "Longitude":-73.97382602,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -7152,13 +6788,6 @@
     "Longitude":-73.972067,
     "year_begin":2012,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66460564,
-    "Longitude":-73.97684444,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -7211,13 +6840,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.667322,
-    "Longitude":-73.974582,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.668101,
     "Longitude":-73.965923,
     "year_begin":2012,
@@ -7229,13 +6851,6 @@
     "Longitude":-73.965923,
     "year_begin":2012,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66240687,
-    "Longitude":-73.96515247,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -7337,13 +6952,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.664309,
-    "Longitude":-73.977094,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66050949,
     "Longitude":-73.96281426,
     "year_begin":2012,
@@ -7390,13 +6998,6 @@
     "Longitude":-73.969072,
     "year_begin":2012,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -7466,13 +7067,6 @@
     "Latitude":40.668101,
     "Longitude":-73.965923,
     "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2012,
     "crime_type":"Minor Theft"
   },
   {
@@ -7509,13 +7103,6 @@
     "Longitude":-73.97684444,
     "year_begin":2012,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -7722,13 +7309,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.666721,
     "Longitude":-73.975085,
     "year_begin":2012,
@@ -7761,20 +7341,6 @@
     "Longitude":-73.977593,
     "year_begin":2012,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66460564,
-    "Longitude":-73.97684444,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.664309,
-    "Longitude":-73.977094,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -7886,21 +7452,7 @@
     "Latitude":40.668101,
     "Longitude":-73.965923,
     "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2012,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66011459,
-    "Longitude":-73.96390658,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -7964,13 +7516,6 @@
     "Longitude":-73.979502,
     "year_begin":2012,
     "crime_type":"Public Disturbance"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.667322,
-    "Longitude":-73.974582,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -8044,13 +7589,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.6688236,
-    "Longitude":-73.97332112,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66050949,
     "Longitude":-73.96281426,
     "year_begin":2012,
@@ -8114,13 +7652,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.6622016,
-    "Longitude":-73.97885653,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.675514,
     "Longitude":-73.970378,
     "year_begin":2012,
@@ -8135,24 +7666,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.6688236,
-    "Longitude":-73.97332112,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.661898,
     "Longitude":-73.979103,
     "year_begin":2012,
     "crime_type":"Fraud and Forgery"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.667322,
-    "Longitude":-73.974582,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -8219,13 +7736,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.67450209,
-    "Longitude":-73.97142979,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.672373,
     "Longitude":-73.964967,
     "year_begin":2012,
@@ -8265,13 +7775,6 @@
     "Longitude":-73.965923,
     "year_begin":2012,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -8352,13 +7855,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66340088,
-    "Longitude":-73.9778433,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.661898,
     "Longitude":-73.979103,
     "year_begin":2012,
@@ -8377,13 +7873,6 @@
     "Longitude":-73.961902,
     "year_begin":2012,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66240687,
-    "Longitude":-73.96515247,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -8422,24 +7911,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66669583,
-    "Longitude":-73.96161767,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.665378,
     "Longitude":-73.961367,
     "year_begin":2012,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.665378,
-    "Longitude":-73.961367,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -8538,13 +8013,6 @@
     "Longitude":-73.96211008,
     "year_begin":2012,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66762162,
-    "Longitude":-73.97433092,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -8667,13 +8135,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.675514,
-    "Longitude":-73.970378,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.67471281,
     "Longitude":-73.96899987,
     "year_begin":2012,
@@ -8831,13 +8292,6 @@
     "Latitude":40.672373,
     "Longitude":-73.964967,
     "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2012,
     "crime_type":"Public Disturbance"
   },
   {
@@ -8894,13 +8348,6 @@
     "Latitude":40.672373,
     "Longitude":-73.964967,
     "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2012,
     "crime_type":"Physical Assault"
   },
   {
@@ -9021,13 +8468,6 @@
     "Longitude":-73.964967,
     "year_begin":2012,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -9073,13 +8513,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.661419,
-    "Longitude":-73.979502,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66460564,
     "Longitude":-73.97684444,
     "year_begin":2013,
@@ -9091,13 +8524,6 @@
     "Longitude":-73.98017246,
     "year_begin":2013,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66460564,
-    "Longitude":-73.97684444,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -9119,13 +8545,6 @@
     "Longitude":-73.978602,
     "year_begin":2013,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66460564,
-    "Longitude":-73.97684444,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -9248,20 +8667,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.6625,
-    "Longitude":-73.978602,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66460564,
-    "Longitude":-73.97684444,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66159509,
     "Longitude":-73.97935053,
     "year_begin":2013,
@@ -9311,13 +8716,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66641962,
-    "Longitude":-73.97533707,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.674889,
     "Longitude":-73.971307,
     "year_begin":2013,
@@ -9339,24 +8737,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.667322,
-    "Longitude":-73.974582,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.670329,
     "Longitude":-73.972067,
     "year_begin":2013,
     "crime_type":"Public Disturbance"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.667322,
-    "Longitude":-73.974582,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -9423,13 +8807,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.663894,
-    "Longitude":-73.974182,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66822261,
     "Longitude":-73.97382602,
     "year_begin":2013,
@@ -9441,13 +8818,6 @@
     "Longitude":-73.972569,
     "year_begin":2013,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.6688236,
-    "Longitude":-73.97332112,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -9479,13 +8849,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66942733,
-    "Longitude":-73.97281981,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.67002832,
     "Longitude":-73.97231849,
     "year_begin":2013,
@@ -9497,13 +8860,6 @@
     "Longitude":-73.97659,
     "year_begin":2013,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.674889,
-    "Longitude":-73.971307,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -9556,13 +8912,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.65734784,
-    "Longitude":-73.97404293,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.669728,
     "Longitude":-73.972569,
     "year_begin":2013,
@@ -9581,13 +8930,6 @@
     "Longitude":-73.97231849,
     "year_begin":2013,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.670939,
-    "Longitude":-73.971571,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -9623,13 +8965,6 @@
     "Longitude":-73.969072,
     "year_begin":2013,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -9965,13 +9300,6 @@
     "Latitude":40.668101,
     "Longitude":-73.965923,
     "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2013,
     "crime_type":"Vandalism"
   },
   {
@@ -10169,13 +9497,6 @@
     "Longitude":-73.969072,
     "year_begin":2013,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -10413,13 +9734,6 @@
     "Latitude":40.665378,
     "Longitude":-73.961367,
     "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.665378,
-    "Longitude":-73.961367,
-    "year_begin":2013,
     "crime_type":"Vandalism"
   },
   {
@@ -10428,13 +9742,6 @@
     "Longitude":-73.96281426,
     "year_begin":2013,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.665378,
-    "Longitude":-73.961367,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -10497,13 +9804,6 @@
     "Latitude":40.672373,
     "Longitude":-73.964967,
     "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2013,
     "crime_type":"Breaking & Entering"
   },
   {
@@ -10547,13 +9847,6 @@
     "Longitude":-73.964967,
     "year_begin":2013,
     "crime_type":"Traffic Violations"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -10697,13 +9990,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.67433,
-    "Longitude":-73.96881,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.67297219,
     "Longitude":-73.96744693,
     "year_begin":2013,
@@ -10736,13 +10022,6 @@
     "Longitude":-73.97684444,
     "year_begin":2014,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66340088,
-    "Longitude":-73.9778433,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -10876,13 +10155,6 @@
     "Longitude":-73.974582,
     "year_begin":2014,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66702337,
-    "Longitude":-73.9748322,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -11127,13 +10399,6 @@
     "Latitude":40.668101,
     "Longitude":-73.965923,
     "year_begin":2014,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2014,
     "crime_type":"Vandalism"
   },
   {
@@ -11170,13 +10435,6 @@
     "Longitude":-73.965923,
     "year_begin":2014,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -11250,13 +10508,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.668101,
     "Longitude":-73.965923,
     "year_begin":2014,
@@ -11324,13 +10575,6 @@
     "Longitude":-73.965923,
     "year_begin":2014,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -11575,13 +10819,6 @@
     "Latitude":40.66240687,
     "Longitude":-73.96515247,
     "year_begin":2014,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66240687,
-    "Longitude":-73.96515247,
-    "year_begin":2014,
     "crime_type":"Minor Theft"
   },
   {
@@ -11625,13 +10862,6 @@
     "Longitude":-73.965923,
     "year_begin":2014,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.670329,
-    "Longitude":-73.972067,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -11733,13 +10963,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.675514,
     "Longitude":-73.970378,
     "year_begin":2014,
@@ -11880,13 +11103,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.672593,
     "Longitude":-73.969092,
     "year_begin":2014,
@@ -11961,13 +11177,6 @@
     "Longitude":-73.96281426,
     "year_begin":2014,
     "crime_type":"Fraud and Forgery"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66011459,
-    "Longitude":-73.96390658,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -12104,13 +11313,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66050949,
-    "Longitude":-73.96281426,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.665378,
     "Longitude":-73.961367,
     "year_begin":2014,
@@ -12157,20 +11359,6 @@
     "Longitude":-73.961367,
     "year_begin":2009,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.665378,
-    "Longitude":-73.961367,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.665378,
-    "Longitude":-73.961367,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -12384,13 +11572,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.67433,
-    "Longitude":-73.96881,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.672373,
     "Longitude":-73.964967,
     "year_begin":2014,
@@ -12521,13 +11702,6 @@
     "Longitude":-73.974582,
     "year_begin":2015,
     "crime_type":"Breaking & Entering"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66115333,
-    "Longitude":-73.98017246,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -12853,13 +12027,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66240687,
-    "Longitude":-73.96515247,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.673052,
     "Longitude":-73.968051,
     "year_begin":2015,
@@ -12867,24 +12034,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.67186421,
-    "Longitude":-73.97085413,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.672373,
     "Longitude":-73.964967,
     "year_begin":2015,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.65202489,
-    "Longitude":-73.97064296,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -13129,13 +12282,6 @@
     "Latitude":40.657958,
     "Longitude":-73.963183,
     "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.657958,
-    "Longitude":-73.963183,
-    "year_begin":2015,
     "crime_type":"Major Theft"
   },
   {
@@ -13171,21 +12317,7 @@
     "Latitude":40.66460564,
     "Longitude":-73.97684444,
     "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66460564,
-    "Longitude":-73.97684444,
-    "year_begin":2015,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66919649,
-    "Longitude":-73.96211008,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -13686,6 +12818,13 @@
   },
   {
     "District_Code":"355",
+    "Latitude":40.665378,
+    "Longitude":-73.961367,
+    "year_begin":2015,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"355",
     "Latitude":40.668101,
     "Longitude":-73.965923,
     "year_begin":2015,
@@ -13749,20 +12888,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.67002832,
-    "Longitude":-73.97231849,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.65768797,
-    "Longitude":-73.97305166,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.67536076,
     "Longitude":-73.96969175,
     "year_begin":2015,
@@ -13791,13 +12916,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66131702,
-    "Longitude":-73.96458355,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66669583,
     "Longitude":-73.96161767,
     "year_begin":2015,
@@ -13809,13 +12927,6 @@
     "Longitude":-73.961367,
     "year_begin":2014,
     "crime_type":"Fraud and Forgery"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -13868,31 +12979,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66240687,
     "Longitude":-73.96515247,
     "year_begin":2015,
     "crime_type":"Drug Offenses"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66050949,
-    "Longitude":-73.96281426,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -14232,13 +13322,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66240687,
-    "Longitude":-73.96515247,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.668172,
     "Longitude":-73.961902,
     "year_begin":2015,
@@ -14603,20 +13686,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66115333,
-    "Longitude":-73.98017246,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.661419,
-    "Longitude":-73.979502,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.661898,
     "Longitude":-73.979103,
     "year_begin":2016,
@@ -14911,13 +13980,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.672155,
     "Longitude":-73.970679,
     "year_begin":2016,
@@ -15044,13 +14106,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.65768797,
-    "Longitude":-73.97305166,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.667922,
     "Longitude":-73.974078,
     "year_begin":2016,
@@ -15128,13 +14183,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66942733,
-    "Longitude":-73.97281981,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.675514,
     "Longitude":-73.970378,
     "year_begin":2016,
@@ -15160,13 +14208,6 @@
     "Longitude":-73.97181717,
     "year_begin":2016,
     "crime_type":"Public Disturbance"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.65768797,
-    "Longitude":-73.97305166,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -15317,13 +14358,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.65768797,
-    "Longitude":-73.97305166,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66822261,
     "Longitude":-73.97382602,
     "year_begin":2016,
@@ -15373,13 +14407,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.65202489,
-    "Longitude":-73.97064296,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.672841,
     "Longitude":-73.969072,
     "year_begin":2016,
@@ -15415,6 +14442,13 @@
   },
   {
     "District_Code":"355",
+    "Latitude":40.672841,
+    "Longitude":-73.969072,
+    "year_begin":2016,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"355",
     "Latitude":40.65202489,
     "Longitude":-73.97064296,
     "year_begin":2016,
@@ -15433,13 +14467,6 @@
     "Longitude":-73.969072,
     "year_begin":2016,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.67262979,
-    "Longitude":-73.97000302,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -15520,13 +14547,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.65768797,
-    "Longitude":-73.97305166,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.67279426,
     "Longitude":-73.96920264,
     "year_begin":2016,
@@ -15594,13 +14614,6 @@
     "Longitude":-73.96281426,
     "year_begin":2016,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66240687,
-    "Longitude":-73.96515247,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -15968,20 +14981,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.668172,
-    "Longitude":-73.961902,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66768127,
-    "Longitude":-73.96180815,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.665378,
     "Longitude":-73.961367,
     "year_begin":2016,
@@ -16094,13 +15093,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66768127,
-    "Longitude":-73.96180815,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.668172,
     "Longitude":-73.961902,
     "year_begin":2016,
@@ -16161,13 +15153,6 @@
     "Longitude":-73.961902,
     "year_begin":2016,
     "crime_type":"Public Disturbance"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668172,
-    "Longitude":-73.961902,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -16203,13 +15188,6 @@
     "Longitude":-73.961902,
     "year_begin":2016,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668172,
-    "Longitude":-73.961902,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -16318,13 +15296,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.67471281,
-    "Longitude":-73.96899987,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.67433,
     "Longitude":-73.96881,
     "year_begin":2016,
@@ -16441,13 +15412,6 @@
     "Longitude":-73.968051,
     "year_begin":2016,
     "crime_type":"Public Disturbance"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -16626,13 +15590,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.661898,
-    "Longitude":-73.979103,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.663707,
     "Longitude":-73.977593,
     "year_begin":2017,
@@ -16794,13 +15751,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.665514,
     "Longitude":-73.976083,
     "year_begin":2017,
@@ -16819,13 +15769,6 @@
     "Longitude":-73.969289,
     "year_begin":2017,
     "crime_type":"Breaking & Entering"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.666721,
-    "Longitude":-73.975085,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -17032,13 +15975,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.65202489,
-    "Longitude":-73.97064296,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.668524,
     "Longitude":-73.973574,
     "year_begin":2017,
@@ -17088,13 +16024,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.665378,
     "Longitude":-73.961367,
     "year_begin":2017,
@@ -17116,24 +16045,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.661862,
-    "Longitude":-73.964865,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.668101,
     "Longitude":-73.965923,
     "year_begin":2017,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -17228,13 +16143,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66011459,
     "Longitude":-73.96390658,
     "year_begin":2017,
@@ -17319,13 +16227,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66768127,
-    "Longitude":-73.96180815,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.665378,
     "Longitude":-73.961367,
     "year_begin":2017,
@@ -17361,6 +16262,13 @@
   },
   {
     "District_Code":"355",
+    "Latitude":40.663707,
+    "Longitude":-73.977593,
+    "year_begin":2017,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"355",
     "Latitude":40.664309,
     "Longitude":-73.977094,
     "year_begin":2017,
@@ -17379,13 +16287,6 @@
     "Longitude":-73.972067,
     "year_begin":2017,
     "crime_type":"Breaking & Entering"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.67262979,
-    "Longitude":-73.97000302,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -17683,13 +16584,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66401287,
-    "Longitude":-73.97734207,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66702337,
     "Longitude":-73.9748322,
     "year_begin":2017,
@@ -17753,13 +16647,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.668172,
     "Longitude":-73.961902,
     "year_begin":2017,
@@ -17774,13 +16661,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66919649,
     "Longitude":-73.96211008,
     "year_begin":2017,
@@ -17792,13 +16672,6 @@
     "Longitude":-73.965923,
     "year_begin":2017,
     "crime_type":"Weapon Possession"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -18600,13 +17473,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66159509,
-    "Longitude":-73.97935053,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66279987,
     "Longitude":-73.97834812,
     "year_begin":2018,
@@ -18639,6 +17505,13 @@
     "Longitude":-73.97684444,
     "year_begin":2017,
     "crime_type":"Minor Theft"
+  },
+  {
+    "District_Code":"355",
+    "Latitude":40.663707,
+    "Longitude":-73.977593,
+    "year_begin":2018,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"355",
@@ -18736,13 +17609,6 @@
     "Latitude":40.65768797,
     "Longitude":-73.97305166,
     "year_begin":2018,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.65768797,
-    "Longitude":-73.97305166,
-    "year_begin":2018,
     "crime_type":"Minor Theft"
   },
   {
@@ -18824,13 +17690,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.65768797,
-    "Longitude":-73.97305166,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66641962,
     "Longitude":-73.97533707,
     "year_begin":2018,
@@ -18849,13 +17708,6 @@
     "Longitude":-73.97105094,
     "year_begin":2018,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.667322,
-    "Longitude":-73.974582,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -18912,13 +17764,6 @@
     "Longitude":-73.975584,
     "year_begin":2018,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.65141318,
-    "Longitude":-73.97213522,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -19101,13 +17946,6 @@
     "Longitude":-73.97064296,
     "year_begin":2018,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.65768797,
-    "Longitude":-73.97305166,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -19475,13 +18313,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.657958,
-    "Longitude":-73.963183,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66011459,
     "Longitude":-73.96390658,
     "year_begin":2018,
@@ -19601,13 +18432,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.657958,
-    "Longitude":-73.963183,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.672841,
     "Longitude":-73.969072,
     "year_begin":2018,
@@ -19647,13 +18471,6 @@
     "Longitude":-73.969072,
     "year_begin":2018,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66011459,
-    "Longitude":-73.96390658,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -19807,13 +18624,6 @@
     "Latitude":40.665378,
     "Longitude":-73.961367,
     "year_begin":2018,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.665378,
-    "Longitude":-73.961367,
-    "year_begin":2018,
     "crime_type":"Major Theft"
   },
   {
@@ -19822,13 +18632,6 @@
     "Longitude":-73.96180815,
     "year_begin":2018,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668172,
-    "Longitude":-73.961902,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -20700,13 +19503,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.67262979,
-    "Longitude":-73.97000302,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.664309,
     "Longitude":-73.977094,
     "year_begin":2019,
@@ -20889,13 +19685,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66115333,
-    "Longitude":-73.98017246,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66491,
     "Longitude":-73.97659,
     "year_begin":2019,
@@ -20976,13 +19765,6 @@
     "Latitude":40.667322,
     "Longitude":-73.974582,
     "year_begin":2019,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.667322,
-    "Longitude":-73.974582,
-    "year_begin":2019,
     "crime_type":"Vandalism"
   },
   {
@@ -21012,13 +19794,6 @@
     "Longitude":-73.972569,
     "year_begin":2019,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66460564,
-    "Longitude":-73.97684444,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -21319,13 +20094,6 @@
     "Latitude":40.672841,
     "Longitude":-73.969072,
     "year_begin":2019,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2019,
     "crime_type":"Weapon Possession"
   },
   {
@@ -21334,13 +20102,6 @@
     "Longitude":-73.969072,
     "year_begin":2019,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -21522,13 +20283,6 @@
     "Latitude":40.668101,
     "Longitude":-73.965923,
     "year_begin":2019,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2019,
     "crime_type":"Major Theft"
   },
   {
@@ -21547,24 +20301,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66240687,
-    "Longitude":-73.96515247,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.67279426,
     "Longitude":-73.96920264,
     "year_begin":2019,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.657958,
-    "Longitude":-73.963183,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -22457,13 +21197,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66641962,
-    "Longitude":-73.97533707,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66702337,
     "Longitude":-73.9748322,
     "year_begin":2020,
@@ -22531,13 +21264,6 @@
     "Longitude":-73.97659,
     "year_begin":2020,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.674102,
-    "Longitude":-73.971478,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -22622,13 +21348,6 @@
     "Longitude":-73.968051,
     "year_begin":2020,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -22891,13 +21610,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.665378,
-    "Longitude":-73.961367,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.672841,
     "Longitude":-73.969072,
     "year_begin":2020,
@@ -23045,13 +21757,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.666721,
-    "Longitude":-73.975085,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.668101,
     "Longitude":-73.965923,
     "year_begin":2020,
@@ -23094,24 +21799,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.6712495,
-    "Longitude":-73.97132664,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66822261,
     "Longitude":-73.97382602,
     "year_begin":2020,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -23241,13 +21932,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.665378,
-    "Longitude":-73.961367,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.672373,
     "Longitude":-73.964967,
     "year_begin":2020,
@@ -23307,13 +21991,6 @@
     "Latitude":40.672373,
     "Longitude":-73.964967,
     "year_begin":2020,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2020,
     "crime_type":"Vandalism"
   },
   {
@@ -23329,13 +22006,6 @@
     "Longitude":-73.96211008,
     "year_begin":2020,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -23713,13 +22383,6 @@
     "Latitude":40.668101,
     "Longitude":-73.965923,
     "year_begin":2020,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2020,
     "crime_type":"Vandalism"
   },
   {
@@ -23763,27 +22426,6 @@
     "Longitude":-73.96920264,
     "year_begin":2020,
     "crime_type":"Traffic Violations"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.674889,
-    "Longitude":-73.971307,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -24466,13 +23108,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.661898,
-    "Longitude":-73.979103,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66159509,
     "Longitude":-73.97935053,
     "year_begin":2021,
@@ -24505,13 +23140,6 @@
     "Longitude":-73.98017246,
     "year_begin":2021,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.664309,
-    "Longitude":-73.977094,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -24662,13 +23290,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.668524,
-    "Longitude":-73.973574,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.672375,
     "Longitude":-73.964974,
     "year_begin":2021,
@@ -24711,13 +23332,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.65202489,
-    "Longitude":-73.97064296,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.65668,
     "Longitude":-73.970211,
     "year_begin":2021,
@@ -24729,13 +23343,6 @@
     "Longitude":-73.963186,
     "year_begin":2021,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.65202489,
-    "Longitude":-73.97064296,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -25093,13 +23700,6 @@
     "Longitude":-73.97382602,
     "year_begin":2021,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.65202489,
-    "Longitude":-73.97064296,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -25901,13 +24501,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.6564,
-    "Longitude":-73.97306,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.672841,
     "Longitude":-73.969072,
     "year_begin":2022,
@@ -26034,13 +24627,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66942733,
-    "Longitude":-73.97281981,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.672375,
     "Longitude":-73.964974,
     "year_begin":2022,
@@ -26118,13 +24704,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.6706293,
-    "Longitude":-73.97181717,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.665514,
     "Longitude":-73.976083,
     "year_begin":2022,
@@ -26150,13 +24729,6 @@
     "Longitude":-73.973574,
     "year_begin":2022,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66702337,
-    "Longitude":-73.9748322,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -26213,20 +24785,6 @@
     "Longitude":-73.963186,
     "year_begin":2022,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66919649,
-    "Longitude":-73.96211008,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672375,
-    "Longitude":-73.964974,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -26311,13 +24869,6 @@
     "Longitude":-73.961367,
     "year_begin":2022,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66240687,
-    "Longitude":-73.96515247,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -26618,13 +25169,6 @@
     "Latitude":40.66240687,
     "Longitude":-73.96515247,
     "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66240687,
-    "Longitude":-73.96515247,
-    "year_begin":2022,
     "crime_type":"Physical Assault"
   },
   {
@@ -26748,13 +25292,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.6622016,
-    "Longitude":-73.97885653,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.65734784,
     "Longitude":-73.97404293,
     "year_begin":2022,
@@ -26804,13 +25341,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.667322,
-    "Longitude":-73.974582,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.67002832,
     "Longitude":-73.97231849,
     "year_begin":2022,
@@ -26825,24 +25355,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.673052,
-    "Longitude":-73.968051,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.67279426,
     "Longitude":-73.96920264,
     "year_begin":2022,
     "crime_type":"Traffic Violations"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.6727942669,
-    "Longitude":-73.9692026476,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -26857,13 +25373,6 @@
     "Longitude":-73.98017246,
     "year_begin":2022,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66159509,
-    "Longitude":-73.97935053,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -26913,13 +25422,6 @@
     "Longitude":-73.977593,
     "year_begin":2022,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.657943,
-    "Longitude":-73.963186,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -27074,13 +25576,6 @@
     "Longitude":-73.973071,
     "year_begin":2022,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.674102,
-    "Longitude":-73.971478,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -27721,13 +26216,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.6512703743,
-    "Longitude":-73.9718001247,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.6726463651,
     "Longitude":-73.9704067769,
     "year_begin":2023,
@@ -27819,20 +26307,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.663894,
-    "Longitude":-73.974182,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.6747128105,
-    "Longitude":-73.9689998769,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.668222614,
     "Longitude":-73.9738260274,
     "year_begin":2023,
@@ -27914,13 +26388,6 @@
     "Longitude":-73.974078,
     "year_begin":2022,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.6748560049,
-    "Longitude":-73.970780726,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -28099,13 +26566,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.6670233708,
-    "Longitude":-73.9748322007,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.670329,
     "Longitude":-73.972067,
     "year_begin":2023,
@@ -28239,13 +26699,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.675514,
-    "Longitude":-73.970378,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.67262979,
     "Longitude":-73.97000302,
     "year_begin":2023,
@@ -28372,13 +26825,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.6601145982,
     "Longitude":-73.9639065821,
     "year_begin":2023,
@@ -28491,13 +26937,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66011459,
-    "Longitude":-73.96390658,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.672373,
     "Longitude":-73.964967,
     "year_begin":2023,
@@ -28551,13 +26990,6 @@
     "Longitude":-73.969072,
     "year_begin":2023,
     "crime_type":"Traffic Violations"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.675514,
-    "Longitude":-73.970378,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -28799,13 +27231,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.6624068733,
-    "Longitude":-73.9651524711,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.6676812757,
     "Longitude":-73.9618081541,
     "year_begin":2023,
@@ -28845,13 +27270,6 @@
     "Longitude":-73.961367,
     "year_begin":2023,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.6556432284,
-    "Longitude":-73.9735534506,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -28995,13 +27413,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.657958,
-    "Longitude":-73.963183,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.668172,
     "Longitude":-73.961902,
     "year_begin":2023,
@@ -29048,13 +27459,6 @@
     "Longitude":-73.969072,
     "year_begin":2023,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.65768797,
-    "Longitude":-73.97305166,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -29202,13 +27606,6 @@
     "Longitude":-73.965923,
     "year_begin":2023,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -29373,13 +27770,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.6624068733,
-    "Longitude":-73.9651524711,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66669583,
     "Longitude":-73.96161767,
     "year_begin":2023,
@@ -29433,13 +27823,6 @@
     "Longitude":-73.965923,
     "year_begin":2006,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -29503,13 +27886,6 @@
     "Longitude":-73.979103,
     "year_begin":2006,
     "crime_type":"Public Disturbance"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66115333,
-    "Longitude":-73.98017246,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -29601,13 +27977,6 @@
     "Longitude":-73.974582,
     "year_begin":2006,
     "crime_type":"Public Disturbance"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.670939,
-    "Longitude":-73.971571,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -29814,13 +28183,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66240687,
-    "Longitude":-73.96515247,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.672373,
     "Longitude":-73.964967,
     "year_begin":2006,
@@ -29961,13 +28323,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.675514,
-    "Longitude":-73.970378,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66115333,
     "Longitude":-73.98017246,
     "year_begin":2006,
@@ -29979,13 +28334,6 @@
     "Longitude":-73.964967,
     "year_begin":2006,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66240687,
-    "Longitude":-73.96515247,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -30021,13 +28369,6 @@
     "Longitude":-73.97633238,
     "year_begin":2006,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.665378,
-    "Longitude":-73.961367,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -30073,20 +28414,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66460564,
-    "Longitude":-73.97684444,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66340088,
-    "Longitude":-73.9778433,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66669583,
     "Longitude":-73.96161767,
     "year_begin":2006,
@@ -30105,13 +28432,6 @@
     "Longitude":-73.961367,
     "year_begin":2006,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66460564,
-    "Longitude":-73.97684444,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -30223,56 +28543,7 @@
     "Latitude":40.667322,
     "Longitude":-73.974582,
     "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66822261,
-    "Longitude":-73.97382602,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66822261,
-    "Longitude":-73.97382602,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.67297219,
-    "Longitude":-73.96744693,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.673052,
-    "Longitude":-73.968051,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.6712495,
-    "Longitude":-73.97132664,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.667322,
-    "Longitude":-73.974582,
-    "year_begin":2006,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.6688236,
-    "Longitude":-73.97332112,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -30280,13 +28551,6 @@
     "Longitude":-73.968051,
     "year_begin":2006,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.675072,
-    "Longitude":-73.969289,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -30297,20 +28561,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.67186421,
-    "Longitude":-73.97085413,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.67297219,
-    "Longitude":-73.96744693,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66702337,
     "Longitude":-73.9748322,
     "year_begin":2006,
@@ -30318,38 +28568,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.67471281,
-    "Longitude":-73.96899987,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.67186421,
-    "Longitude":-73.97085413,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66702337,
-    "Longitude":-73.9748322,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.673052,
     "Longitude":-73.968051,
     "year_begin":2006,
     "crime_type":"Breaking & Entering"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66702337,
-    "Longitude":-73.9748322,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -30374,38 +28596,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66240687,
-    "Longitude":-73.96515247,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66240687,
-    "Longitude":-73.96515247,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66050949,
     "Longitude":-73.96281426,
     "year_begin":2006,
     "crime_type":"Drug Offenses"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66919649,
-    "Longitude":-73.96211008,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -30430,20 +28624,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66050949,
     "Longitude":-73.96281426,
     "year_begin":2006,
@@ -30461,21 +28641,7 @@
     "Latitude":40.672373,
     "Longitude":-73.964967,
     "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2006,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -30507,27 +28673,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.665378,
-    "Longitude":-73.961367,
-    "year_begin":2006,
-    "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.665378,
-    "Longitude":-73.961367,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.665378,
     "Longitude":-73.961367,
     "year_begin":2006,
@@ -30542,10 +28687,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66240687,
-    "Longitude":-73.96515247,
+    "Latitude":40.665378,
+    "Longitude":-73.961367,
     "year_begin":2006,
-    "crime_type":"Theft with Force"
+    "crime_type":"Vandalism"
   },
   {
     "District_Code":"355",
@@ -30560,20 +28705,6 @@
     "Longitude":-73.964967,
     "year_begin":2006,
     "crime_type":"Fraud and Forgery"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66240687,
-    "Longitude":-73.96515247,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66240687,
-    "Longitude":-73.96515247,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -31057,13 +29188,6 @@
     "Longitude":-73.962627,
     "year_begin":2006,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.665378,
-    "Longitude":-73.961367,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -31753,13 +29877,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66822261,
-    "Longitude":-73.97382602,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66115333,
     "Longitude":-73.98017246,
     "year_begin":2007,
@@ -31806,13 +29923,6 @@
     "Longitude":-73.97659,
     "year_begin":2007,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66702337,
-    "Longitude":-73.9748322,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -31869,13 +29979,6 @@
     "Longitude":-73.974582,
     "year_begin":2007,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66641962,
-    "Longitude":-73.97533707,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -31956,13 +30059,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.667322,
-    "Longitude":-73.974582,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.666721,
     "Longitude":-73.975085,
     "year_begin":2007,
@@ -31981,13 +30077,6 @@
     "Longitude":-73.975584,
     "year_begin":2007,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66115333,
-    "Longitude":-73.98017246,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -32068,24 +30157,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66115333,
-    "Longitude":-73.98017246,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.667322,
     "Longitude":-73.974582,
     "year_begin":2007,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66460564,
-    "Longitude":-73.97684444,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -32187,13 +30262,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66340088,
-    "Longitude":-73.9778433,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66521488,
     "Longitude":-73.97633238,
     "year_begin":2007,
@@ -32292,13 +30360,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.67450209,
-    "Longitude":-73.97142979,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.6712495,
     "Longitude":-73.97132664,
     "year_begin":2007,
@@ -32355,13 +30416,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66942733,
-    "Longitude":-73.97281981,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.669126,
     "Longitude":-73.973071,
     "year_begin":2007,
@@ -32394,13 +30448,6 @@
     "Longitude":-73.971307,
     "year_begin":2007,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.6688236,
-    "Longitude":-73.97332112,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -32488,13 +30535,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.672155,
-    "Longitude":-73.970679,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.670329,
     "Longitude":-73.972067,
     "year_begin":2007,
@@ -32541,13 +30581,6 @@
     "Longitude":-73.97085413,
     "year_begin":2007,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -32726,13 +30759,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66240687,
-    "Longitude":-73.96515247,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.668101,
     "Longitude":-73.965923,
     "year_begin":2007,
@@ -32744,13 +30770,6 @@
     "Longitude":-73.965923,
     "year_begin":2007,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66050949,
-    "Longitude":-73.96281426,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -32926,13 +30945,6 @@
     "Longitude":-73.96515247,
     "year_begin":2007,
     "crime_type":"Public Disturbance"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -33426,13 +31438,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.67433,
-    "Longitude":-73.96881,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.675514,
     "Longitude":-73.970378,
     "year_begin":2007,
@@ -33538,24 +31543,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.67536076,
-    "Longitude":-73.96969175,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.675072,
     "Longitude":-73.969289,
     "year_begin":2007,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.675072,
-    "Longitude":-73.969289,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -33828,13 +31819,6 @@
     "Latitude":40.67297219,
     "Longitude":-73.96744693,
     "year_begin":2007,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.67297219,
-    "Longitude":-73.96744693,
-    "year_begin":2007,
     "crime_type":"Vandalism"
   },
   {
@@ -33899,20 +31883,6 @@
     "Longitude":-73.964967,
     "year_begin":2007,
     "crime_type":"Breaking & Entering"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -33990,13 +31960,6 @@
     "Longitude":-73.97355345,
     "year_begin":2008,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66279987,
-    "Longitude":-73.97834812,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -34399,13 +32362,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.668172,
-    "Longitude":-73.961902,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.665378,
     "Longitude":-73.961367,
     "year_begin":2008,
@@ -34480,20 +32436,6 @@
     "Longitude":-73.961367,
     "year_begin":2008,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.665378,
-    "Longitude":-73.961367,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -34581,13 +32523,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66460564,
-    "Longitude":-73.97684444,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.666117,
     "Longitude":-73.975584,
     "year_begin":2008,
@@ -34658,13 +32593,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.672841,
-    "Longitude":-73.969072,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66159509,
     "Longitude":-73.97935053,
     "year_begin":2008,
@@ -34683,20 +32611,6 @@
     "Longitude":-73.973574,
     "year_begin":2008,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.67002832,
-    "Longitude":-73.97231849,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.674102,
-    "Longitude":-73.971478,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -34721,20 +32635,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.67297219,
-    "Longitude":-73.96744693,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.67297219,
-    "Longitude":-73.96744693,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66159509,
     "Longitude":-73.97935053,
     "year_begin":2008,
@@ -34742,24 +32642,10 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.675514,
-    "Longitude":-73.970378,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.65391115,
     "Longitude":-73.97304958,
     "year_begin":2008,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.67433,
-    "Longitude":-73.96881,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -34774,20 +32660,6 @@
     "Longitude":-73.964967,
     "year_begin":2008,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.665378,
-    "Longitude":-73.961367,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -34819,13 +32691,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.668101,
-    "Longitude":-73.965923,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.66491,
     "Longitude":-73.97659,
     "year_begin":2008,
@@ -34833,20 +32698,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66240687,
-    "Longitude":-73.96515247,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.672373,
-    "Longitude":-73.964967,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.665378,
     "Longitude":-73.961367,
     "year_begin":2008,
@@ -34858,13 +32709,6 @@
     "Longitude":-73.961367,
     "year_begin":2008,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66050949,
-    "Longitude":-73.96281426,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -34924,20 +32768,6 @@
   },
   {
     "District_Code":"355",
-    "Latitude":40.66240687,
-    "Longitude":-73.96515247,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66919649,
-    "Longitude":-73.96211008,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"355",
     "Latitude":40.65734784,
     "Longitude":-73.97404293,
     "year_begin":2008,
@@ -34949,13 +32779,6 @@
     "Longitude":-73.964967,
     "year_begin":2008,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66240687,
-    "Longitude":-73.96515247,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",
@@ -35705,13 +33528,6 @@
     "Longitude":-73.97734207,
     "year_begin":2008,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"355",
-    "Latitude":40.66641962,
-    "Longitude":-73.97533707,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"355",

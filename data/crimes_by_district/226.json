@@ -22,13 +22,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.909915,
-    "Longitude":-73.896601,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.89580556,
     "Longitude":-73.89670714,
     "year_begin":2008,
@@ -194,13 +187,6 @@
     "Longitude":-73.89708985,
     "year_begin":2008,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.896842,
-    "Longitude":-73.896851,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -547,13 +533,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.91081,
-    "Longitude":-73.89662,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.909915,
     "Longitude":-73.896601,
     "year_begin":2008,
@@ -561,17 +540,17 @@
   },
   {
     "District_Code":"226",
+    "Latitude":40.902003,
+    "Longitude":-73.896656,
+    "year_begin":2008,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"226",
     "Latitude":40.903733,
     "Longitude":-73.89638,
     "year_begin":2007,
     "crime_type":"Fraud and Forgery"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.8985945,
-    "Longitude":-73.89708985,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -911,13 +890,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.8985945,
-    "Longitude":-73.89708985,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.896842,
     "Longitude":-73.896851,
     "year_begin":2008,
@@ -1034,13 +1006,6 @@
     "Longitude":-73.89641145,
     "year_begin":2008,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.909915,
-    "Longitude":-73.896601,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -1450,13 +1415,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.908567,
-    "Longitude":-73.896571,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.91081,
     "Longitude":-73.89662,
     "year_begin":2009,
@@ -1734,13 +1692,6 @@
     "Longitude":-73.8982722,
     "year_begin":2009,
     "crime_type":"Drug Offenses"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -2343,13 +2294,6 @@
     "Longitude":-73.89641145,
     "year_begin":2009,
     "crime_type":"Fraud and Forgery"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.889867,
-    "Longitude":-73.898076,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -2675,13 +2619,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.906923,
     "Longitude":-73.896519,
     "year_begin":2009,
@@ -2798,13 +2735,6 @@
     "Longitude":-73.897043,
     "year_begin":2009,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.908567,
-    "Longitude":-73.896571,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -3046,13 +2976,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.909915,
-    "Longitude":-73.896601,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.906923,
     "Longitude":-73.896519,
     "year_begin":2009,
@@ -3064,13 +2987,6 @@
     "Longitude":-73.89641024,
     "year_begin":2009,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.908567,
-    "Longitude":-73.896571,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -3120,13 +3036,6 @@
     "Longitude":-73.8982722,
     "year_begin":2009,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.908567,
-    "Longitude":-73.896571,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -3651,13 +3560,6 @@
     "Latitude":40.88945849,
     "Longitude":-73.8982722,
     "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2010,
     "crime_type":"Major Theft"
   },
   {
@@ -3834,13 +3736,6 @@
     "Longitude":-73.8982722,
     "year_begin":2010,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.905716,
-    "Longitude":-73.896464,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -4061,17 +3956,17 @@
   },
   {
     "District_Code":"226",
+    "Latitude":40.908567,
+    "Longitude":-73.896571,
+    "year_begin":2010,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"226",
     "Latitude":40.91020131,
     "Longitude":-73.89660517,
     "year_begin":2010,
     "crime_type":"Drug Offenses"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.898236,
-    "Longitude":-73.897043,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -4159,13 +4054,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.90296068,
     "Longitude":-73.89641024,
     "year_begin":2010,
@@ -4191,13 +4079,6 @@
     "Longitude":-73.8982722,
     "year_begin":2010,
     "crime_type":"Drug Offenses"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -4233,13 +4114,6 @@
     "Longitude":-73.8982722,
     "year_begin":2010,
     "crime_type":"Drug Offenses"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -4289,20 +4163,6 @@
     "Longitude":-73.896851,
     "year_begin":2010,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.91081,
-    "Longitude":-73.89662,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -4401,13 +4261,6 @@
     "Longitude":-73.89662,
     "year_begin":2010,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -4583,13 +4436,6 @@
     "Longitude":-73.896519,
     "year_begin":2010,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.905716,
-    "Longitude":-73.896464,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -5573,13 +5419,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.898236,
-    "Longitude":-73.897043,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.88945849,
     "Longitude":-73.8982722,
     "year_begin":2011,
@@ -5615,24 +5454,10 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.89787805,
     "Longitude":-73.8969933,
     "year_begin":2011,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.909915,
-    "Longitude":-73.896601,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -5650,13 +5475,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.91020131,
-    "Longitude":-73.89660517,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.89787805,
     "Longitude":-73.8969933,
     "year_begin":2011,
@@ -5671,24 +5489,10 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.90633945,
-    "Longitude":-73.8964918,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.908567,
     "Longitude":-73.896571,
     "year_begin":2011,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -5731,13 +5535,6 @@
     "Longitude":-73.89662,
     "year_begin":2011,
     "crime_type":"Breaking & Entering"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -5801,13 +5598,6 @@
     "Longitude":-73.879676,
     "year_begin":2011,
     "crime_type":"Drug Offenses"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -6280,13 +6070,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.902003,
-    "Longitude":-73.896656,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.90103982,
     "Longitude":-73.89687988,
     "year_begin":2012,
@@ -6584,13 +6367,6 @@
     "Latitude":40.88945849,
     "Longitude":-73.8982722,
     "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2012,
     "crime_type":"Major Theft"
   },
   {
@@ -6613,13 +6389,6 @@
     "Longitude":-73.897043,
     "year_begin":2012,
     "crime_type":"Public Disturbance"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.89787805,
-    "Longitude":-73.8969933,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -6704,13 +6473,6 @@
     "Longitude":-73.896851,
     "year_begin":2012,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.889867,
-    "Longitude":-73.898076,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -6815,13 +6577,6 @@
     "Latitude":40.88945849,
     "Longitude":-73.8982722,
     "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2012,
     "crime_type":"Traffic Violations"
   },
   {
@@ -6872,13 +6627,6 @@
     "Longitude":-73.8982722,
     "year_begin":2012,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.887986,
-    "Longitude":-73.899,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -6991,13 +6739,6 @@
     "Longitude":-73.8982722,
     "year_begin":2012,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.889867,
-    "Longitude":-73.898076,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -7138,13 +6879,6 @@
     "Longitude":-73.89660517,
     "year_begin":2012,
     "crime_type":"Weapon Possession"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.91081,
-    "Longitude":-73.89662,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -7305,13 +7039,6 @@
     "Latitude":40.905716,
     "Longitude":-73.896464,
     "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.905716,
-    "Longitude":-73.896464,
-    "year_begin":2012,
     "crime_type":"Major Theft"
   },
   {
@@ -7365,13 +7092,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.90962766,
-    "Longitude":-73.89659521,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.91081,
     "Longitude":-73.89662,
     "year_begin":2012,
@@ -7397,13 +7117,6 @@
     "Longitude":-73.89638,
     "year_begin":2012,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.91081,
-    "Longitude":-73.89662,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -7582,13 +7295,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.909915,
-    "Longitude":-73.896601,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.905716,
     "Longitude":-73.896464,
     "year_begin":2012,
@@ -8163,13 +7869,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.902003,
-    "Longitude":-73.896656,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.91081,
     "Longitude":-73.89662,
     "year_begin":2013,
@@ -8268,13 +7967,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.908567,
-    "Longitude":-73.896571,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.899825,
     "Longitude":-73.89711,
     "year_begin":2013,
@@ -8314,13 +8006,6 @@
     "Longitude":-73.898076,
     "year_begin":2013,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.908567,
-    "Longitude":-73.896571,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -8562,13 +8247,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.89580556,
-    "Longitude":-73.89670714,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.889867,
     "Longitude":-73.898076,
     "year_begin":2013,
@@ -8629,13 +8307,6 @@
     "Longitude":-73.896464,
     "year_begin":2013,
     "crime_type":"Fraud and Forgery"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.909915,
-    "Longitude":-73.896601,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -8793,13 +8464,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.90450319,
     "Longitude":-73.89641145,
     "year_begin":2013,
@@ -8825,13 +8489,6 @@
     "Longitude":-73.896656,
     "year_begin":2013,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -8940,13 +8597,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.908567,
-    "Longitude":-73.896571,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.88945849,
     "Longitude":-73.8982722,
     "year_begin":2013,
@@ -9010,24 +8660,10 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.90027968,
     "Longitude":-73.89703298,
     "year_begin":2013,
     "crime_type":"Drug Offenses"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -9150,13 +8786,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.906923,
-    "Longitude":-73.896519,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.903733,
     "Longitude":-73.89638,
     "year_begin":2013,
@@ -9217,13 +8846,6 @@
     "Longitude":-73.896464,
     "year_begin":2013,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.902003,
-    "Longitude":-73.896656,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -9322,13 +8944,6 @@
     "Longitude":-73.88052283,
     "year_begin":2013,
     "crime_type":"Weapon Possession"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.891185,
-    "Longitude":-73.879676,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -9514,13 +9129,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.90103982,
-    "Longitude":-73.89687988,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.889867,
     "Longitude":-73.898076,
     "year_begin":2014,
@@ -9672,13 +9280,6 @@
     "Longitude":-73.89708985,
     "year_begin":2014,
     "crime_type":"Fraud and Forgery"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.89580556,
-    "Longitude":-73.89670714,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -9857,13 +9458,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.88945849,
     "Longitude":-73.8982722,
     "year_begin":2014,
@@ -9948,13 +9542,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.88945849,
     "Longitude":-73.8982722,
     "year_begin":2014,
@@ -10015,13 +9602,6 @@
     "Longitude":-73.89641145,
     "year_begin":2014,
     "crime_type":"Weapon Possession"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -11015,6 +10595,13 @@
     "Latitude":40.891185,
     "Longitude":-73.879676,
     "year_begin":2014,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"226",
+    "Latitude":40.891185,
+    "Longitude":-73.879676,
+    "year_begin":2014,
     "crime_type":"Minor Theft"
   },
   {
@@ -11187,13 +10774,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.902003,
-    "Longitude":-73.896656,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.893068,
     "Longitude":-73.896621,
     "year_begin":2015,
@@ -11268,13 +10848,6 @@
     "Longitude":-73.8982722,
     "year_begin":2015,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.90103982,
-    "Longitude":-73.89687988,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -11484,13 +11057,6 @@
     "Latitude":40.88945849,
     "Longitude":-73.8982722,
     "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2015,
     "crime_type":"Weapon Possession"
   },
   {
@@ -11754,20 +11320,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.90633945,
-    "Longitude":-73.8964918,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.89050926,
-    "Longitude":-73.89776786,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.8985945,
     "Longitude":-73.89708985,
     "year_begin":2015,
@@ -11849,13 +11401,6 @@
     "Longitude":-73.879676,
     "year_begin":2015,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.89664354,
-    "Longitude":-73.88052283,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -12020,13 +11565,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.902003,
-    "Longitude":-73.896656,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.91020131,
     "Longitude":-73.89660517,
     "year_begin":2015,
@@ -12380,13 +11918,6 @@
     "Latitude":40.88945849,
     "Longitude":-73.8982722,
     "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2015,
     "crime_type":"Drug Offenses"
   },
   {
@@ -12426,13 +11957,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.902003,
     "Longitude":-73.896656,
     "year_begin":2015,
@@ -12444,20 +11968,6 @@
     "Longitude":-73.89776786,
     "year_begin":2015,
     "crime_type":"Drug Offenses"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.89664354,
-    "Longitude":-73.88052283,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.89664354,
-    "Longitude":-73.88052283,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -12556,13 +12066,6 @@
     "Longitude":-73.898076,
     "year_begin":2015,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.90296068,
-    "Longitude":-73.89641024,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -12755,13 +12258,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.889867,
-    "Longitude":-73.898076,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.896842,
     "Longitude":-73.896851,
     "year_begin":2015,
@@ -12853,13 +12349,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.91081,
-    "Longitude":-73.89662,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.89664354,
     "Longitude":-73.88052283,
     "year_begin":2015,
@@ -12947,13 +12436,6 @@
     "Latitude":40.887986,
     "Longitude":-73.899,
     "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.887986,
-    "Longitude":-73.899,
-    "year_begin":2016,
     "crime_type":"Vandalism"
   },
   {
@@ -12969,13 +12451,6 @@
     "Longitude":-73.8982722,
     "year_begin":2016,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.91081,
-    "Longitude":-73.89662,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -13039,6 +12514,13 @@
     "Longitude":-73.8982722,
     "year_begin":2016,
     "crime_type":"Physical Assault"
+  },
+  {
+    "District_Code":"226",
+    "Latitude":40.902003,
+    "Longitude":-73.896656,
+    "year_begin":2016,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"226",
@@ -13280,13 +12762,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.896842,
-    "Longitude":-73.896851,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.88945849,
     "Longitude":-73.8982722,
     "year_begin":2016,
@@ -14113,13 +13588,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.91081,
-    "Longitude":-73.89662,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.88945849,
     "Longitude":-73.8982722,
     "year_begin":2016,
@@ -14257,13 +13725,6 @@
     "Longitude":-73.89662,
     "year_begin":2016,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.903733,
-    "Longitude":-73.89638,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -14418,6 +13879,13 @@
     "Longitude":-73.896621,
     "year_begin":2016,
     "crime_type":"Major Theft"
+  },
+  {
+    "District_Code":"226",
+    "Latitude":40.889867,
+    "Longitude":-73.898076,
+    "year_begin":2016,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"226",
@@ -14474,20 +13942,6 @@
     "Longitude":-73.88807532,
     "year_begin":2016,
     "crime_type":"Traffic Violations"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.88987384,
-    "Longitude":-73.88741768,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.89664354,
-    "Longitude":-73.88052283,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -14606,13 +14060,6 @@
     "Latitude":40.891185,
     "Longitude":-73.879676,
     "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.891185,
-    "Longitude":-73.879676,
-    "year_begin":2016,
     "crime_type":"Drug Offenses"
   },
   {
@@ -15030,13 +14477,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.903733,
-    "Longitude":-73.89638,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.906923,
     "Longitude":-73.896519,
     "year_begin":2017,
@@ -15303,13 +14743,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.90450319,
     "Longitude":-73.89641145,
     "year_begin":2017,
@@ -15342,13 +14775,6 @@
     "Longitude":-73.88001135,
     "year_begin":2017,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.89544907,
-    "Longitude":-73.88001135,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -15534,13 +14960,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.909915,
-    "Longitude":-73.896601,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.906923,
     "Longitude":-73.896519,
     "year_begin":2017,
@@ -15608,13 +15027,6 @@
     "Longitude":-73.896621,
     "year_begin":2017,
     "crime_type":"Public Disturbance"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -15919,13 +15331,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.891185,
-    "Longitude":-73.879676,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.893068,
     "Longitude":-73.896621,
     "year_begin":2016,
@@ -16584,13 +15989,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.887986,
-    "Longitude":-73.899,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.905716,
     "Longitude":-73.896464,
     "year_begin":2018,
@@ -16616,20 +16014,6 @@
     "Longitude":-73.896656,
     "year_begin":2018,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.909915,
-    "Longitude":-73.896601,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.902003,
-    "Longitude":-73.896656,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -17130,13 +16514,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.896842,
     "Longitude":-73.896851,
     "year_begin":2018,
@@ -17186,13 +16563,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.88945849,
     "Longitude":-73.8982722,
     "year_begin":2018,
@@ -17211,13 +16581,6 @@
     "Longitude":-73.89641145,
     "year_begin":2018,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.902003,
-    "Longitude":-73.896656,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -17312,24 +16675,10 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.89580556,
-    "Longitude":-73.89670714,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.902003,
     "Longitude":-73.896656,
     "year_begin":2018,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.90296068,
-    "Longitude":-73.89641024,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -18145,20 +17494,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.887986,
-    "Longitude":-73.899,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.887986,
     "Longitude":-73.899,
     "year_begin":2019,
@@ -18191,13 +17526,6 @@
     "Longitude":-73.8982722,
     "year_begin":2019,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -18411,13 +17739,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.902003,
-    "Longitude":-73.896656,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.893068,
     "Longitude":-73.896621,
     "year_begin":2019,
@@ -18471,13 +17792,6 @@
     "Longitude":-73.898076,
     "year_begin":2019,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.889867,
-    "Longitude":-73.898076,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -18670,13 +17984,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.902003,
-    "Longitude":-73.896656,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.889867,
     "Longitude":-73.898076,
     "year_begin":2019,
@@ -18779,13 +18086,6 @@
     "Longitude":-73.896656,
     "year_begin":2019,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.908567,
-    "Longitude":-73.896571,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -19038,13 +18338,6 @@
     "Longitude":-73.896851,
     "year_begin":2019,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.908567,
-    "Longitude":-73.896571,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -19584,13 +18877,6 @@
     "Longitude":-73.88001135,
     "year_begin":2019,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.89544907,
-    "Longitude":-73.88001135,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -21505,13 +20791,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.902003,
-    "Longitude":-73.896656,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.889867,
     "Longitude":-73.898076,
     "year_begin":2021,
@@ -21565,13 +20844,6 @@
     "Longitude":-73.8982722,
     "year_begin":2021,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -21792,13 +21064,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.889867,
     "Longitude":-73.898076,
     "year_begin":2021,
@@ -21824,13 +21089,6 @@
     "Longitude":-73.896571,
     "year_begin":2021,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.90312307,
-    "Longitude":-73.88807532,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -21918,6 +21176,13 @@
   },
   {
     "District_Code":"226",
+    "Latitude":40.903733,
+    "Longitude":-73.89638,
+    "year_begin":2021,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"226",
     "Latitude":40.893068,
     "Longitude":-73.896621,
     "year_begin":2021,
@@ -21929,13 +21194,6 @@
     "Longitude":-73.899,
     "year_begin":2021,
     "crime_type":"Public Disturbance"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -22016,13 +21274,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.89787805,
     "Longitude":-73.8969933,
     "year_begin":2021,
@@ -22083,13 +21334,6 @@
     "Longitude":-73.88741768,
     "year_begin":2021,
     "crime_type":"Traffic Violations"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.89664354,
-    "Longitude":-73.88052283,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -22181,13 +21425,6 @@
     "Longitude":-73.896656,
     "year_begin":2021,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -22300,13 +21537,6 @@
     "Longitude":-73.896851,
     "year_begin":2021,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -22485,13 +21715,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.908567,
-    "Longitude":-73.896571,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.899438,
     "Longitude":-73.897152,
     "year_begin":2021,
@@ -22643,13 +21866,6 @@
     "Longitude":-73.882173,
     "year_begin":2022,
     "crime_type":"Murder"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.909915,
-    "Longitude":-73.896601,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -23108,13 +22324,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.902003,
-    "Longitude":-73.896656,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.896842,
     "Longitude":-73.896851,
     "year_begin":2022,
@@ -23143,13 +22352,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.90962766,
-    "Longitude":-73.89659521,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.902003,
     "Longitude":-73.896656,
     "year_begin":2022,
@@ -23168,13 +22370,6 @@
     "Longitude":-73.896656,
     "year_begin":2022,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.902003,
-    "Longitude":-73.896656,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -23314,13 +22509,6 @@
     "Latitude":40.89544907,
     "Longitude":-73.88001135,
     "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.89544907,
-    "Longitude":-73.88001135,
-    "year_begin":2022,
     "crime_type":"Vandalism"
   },
   {
@@ -23406,6 +22594,13 @@
     "Longitude":-73.896601,
     "year_begin":2022,
     "crime_type":"Physical Assault"
+  },
+  {
+    "District_Code":"226",
+    "Latitude":40.902003,
+    "Longitude":-73.896656,
+    "year_begin":2022,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"226",
@@ -23685,13 +22880,6 @@
     "Latitude":40.893068,
     "Longitude":-73.896621,
     "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2022,
     "crime_type":"Major Theft"
   },
   {
@@ -23773,24 +22961,10 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.887986,
     "Longitude":-73.899,
     "year_begin":2022,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.902003,
-    "Longitude":-73.896656,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -24039,13 +23213,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.903733,
     "Longitude":-73.89638,
     "year_begin":2022,
@@ -24137,13 +23304,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.909915,
-    "Longitude":-73.896601,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.902003,
     "Longitude":-73.896656,
     "year_begin":2022,
@@ -24155,13 +23315,6 @@
     "Longitude":-73.896656,
     "year_begin":2022,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.902003,
-    "Longitude":-73.896656,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -24232,13 +23385,6 @@
     "Longitude":-73.896656,
     "year_begin":2022,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.909915,
-    "Longitude":-73.896601,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -24358,13 +23504,6 @@
     "Longitude":-73.882173,
     "year_begin":2022,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.894872,
-    "Longitude":-73.882173,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -24501,10 +23640,10 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.896842,
-    "Longitude":-73.896851,
+    "Latitude":40.902003,
+    "Longitude":-73.896656,
     "year_begin":2023,
-    "crime_type":"Theft with Force"
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"226",
@@ -24582,13 +23721,6 @@
     "Longitude":-73.898272204,
     "year_begin":2023,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.8894584964,
-    "Longitude":-73.898272204,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -24774,13 +23906,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.896842,
     "Longitude":-73.896851,
     "year_begin":2023,
@@ -24819,21 +23944,7 @@
     "Latitude":40.8894584964,
     "Longitude":-73.898272204,
     "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.8894584964,
-    "Longitude":-73.898272204,
-    "year_begin":2023,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -24977,13 +24088,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.8894584964,
-    "Longitude":-73.898272204,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.905716,
     "Longitude":-73.896464,
     "year_begin":2023,
@@ -25065,13 +24169,6 @@
     "Longitude":-73.8977678622,
     "year_begin":2023,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.9029606812,
-    "Longitude":-73.8964102466,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -25180,13 +24277,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.905716,
-    "Longitude":-73.896464,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.893068,
     "Longitude":-73.896621,
     "year_begin":2023,
@@ -25233,13 +24323,6 @@
     "Longitude":-73.896571,
     "year_begin":2023,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -25317,13 +24400,6 @@
     "Longitude":-73.896464,
     "year_begin":2023,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -25492,13 +24568,6 @@
     "Longitude":-73.896464,
     "year_begin":2023,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.889867,
-    "Longitude":-73.898076,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -25768,13 +24837,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.8978780538,
-    "Longitude":-73.8969933012,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.893068,
     "Longitude":-73.896621,
     "year_begin":2023,
@@ -25800,13 +24862,6 @@
     "Longitude":-73.88741768,
     "year_begin":2023,
     "crime_type":"Traffic Violations"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.903733,
-    "Longitude":-73.89638,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -25954,13 +25009,6 @@
     "Longitude":-73.896621,
     "year_begin":2023,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.909915,
-    "Longitude":-73.896601,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -26118,31 +25166,10 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.91081,
-    "Longitude":-73.89662,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.903123072,
     "Longitude":-73.8880753273,
     "year_begin":2023,
     "crime_type":"Traffic Violations"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.8898738463,
-    "Longitude":-73.8874176848,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.8898738463,
-    "Longitude":-73.8874176848,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -26195,24 +25222,10 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.8954490755,
-    "Longitude":-73.8800113554,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.89544907,
     "Longitude":-73.88001135,
     "year_begin":2023,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.8954490755,
-    "Longitude":-73.8800113554,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -26293,6 +25306,13 @@
   },
   {
     "District_Code":"226",
+    "Latitude":40.891185,
+    "Longitude":-73.879676,
+    "year_begin":2023,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"226",
     "Latitude":40.8954490755,
     "Longitude":-73.8800113554,
     "year_begin":2023,
@@ -26335,10 +25355,10 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
+    "Latitude":40.896842,
+    "Longitude":-73.896851,
+    "year_begin":2009,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"226",
@@ -26346,13 +25366,6 @@
     "Longitude":-73.8982722,
     "year_begin":2012,
     "crime_type":"Public Disturbance"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -26604,13 +25617,6 @@
     "Latitude":40.88945849,
     "Longitude":-73.8982722,
     "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.88945849,
-    "Longitude":-73.8982722,
-    "year_begin":2006,
     "crime_type":"Drug Offenses"
   },
   {
@@ -26640,6 +25646,13 @@
     "Longitude":-73.896621,
     "year_begin":2006,
     "crime_type":"Physical Assault"
+  },
+  {
+    "District_Code":"226",
+    "Latitude":40.90962766,
+    "Longitude":-73.89659521,
+    "year_begin":2006,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"226",
@@ -26888,34 +25901,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.89580556,
-    "Longitude":-73.89670714,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.91020131,
-    "Longitude":-73.89660517,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.909915,
-    "Longitude":-73.896601,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.893068,
     "Longitude":-73.896621,
     "year_begin":2006,
@@ -26927,13 +25912,6 @@
     "Longitude":-73.89659521,
     "year_begin":2006,
     "crime_type":"Drug Offenses"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -26962,13 +25940,6 @@
     "Longitude":-73.8982722,
     "year_begin":2006,
     "crime_type":"Traffic Violations"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -27301,13 +26272,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.89664354,
-    "Longitude":-73.88052283,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.891185,
     "Longitude":-73.879676,
     "year_begin":2006,
@@ -27571,13 +26535,6 @@
     "Longitude":-73.896621,
     "year_begin":2006,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.908567,
-    "Longitude":-73.896571,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -28169,13 +27126,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.889867,
-    "Longitude":-73.898076,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.88945849,
     "Longitude":-73.8982722,
     "year_begin":2007,
@@ -28327,13 +27277,6 @@
     "Longitude":-73.89662,
     "year_begin":2007,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.893068,
-    "Longitude":-73.896621,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -28582,13 +27525,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.903733,
-    "Longitude":-73.89638,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.908567,
     "Longitude":-73.896571,
     "year_begin":2007,
@@ -28712,13 +27648,6 @@
     "Longitude":-73.896519,
     "year_begin":2007,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.908567,
-    "Longitude":-73.896571,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -28897,13 +27826,6 @@
   },
   {
     "District_Code":"226",
-    "Latitude":40.91081,
-    "Longitude":-73.89662,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"226",
     "Latitude":40.91141723,
     "Longitude":-73.89663222,
     "year_begin":2007,
@@ -28915,13 +27837,6 @@
     "Longitude":-73.896464,
     "year_begin":2007,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.903733,
-    "Longitude":-73.89638,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",
@@ -29090,13 +28005,6 @@
     "Longitude":-73.89660517,
     "year_begin":2007,
     "crime_type":"Drug Offenses"
-  },
-  {
-    "District_Code":"226",
-    "Latitude":40.91081,
-    "Longitude":-73.89662,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"226",

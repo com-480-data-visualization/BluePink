@@ -127,6 +127,13 @@
   },
   {
     "District_Code":"228",
+    "Latitude":40.866347,
+    "Longitude":-73.806384,
+    "year_begin":2008,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"228",
     "Latitude":40.853034,
     "Longitude":-73.827298,
     "year_begin":2008,
@@ -200,13 +207,6 @@
     "Latitude":40.866347,
     "Longitude":-73.806384,
     "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"228",
-    "Latitude":40.866347,
-    "Longitude":-73.806384,
-    "year_begin":2008,
     "crime_type":"Minor Theft"
   },
   {
@@ -642,13 +642,6 @@
     "Longitude":-73.8272179,
     "year_begin":2009,
     "crime_type":"Drug Offenses"
-  },
-  {
-    "District_Code":"228",
-    "Latitude":40.85660391,
-    "Longitude":-73.82645728,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"228",
@@ -719,13 +712,6 @@
     "Longitude":-73.806384,
     "year_begin":2009,
     "crime_type":"Drug Offenses"
-  },
-  {
-    "District_Code":"228",
-    "Latitude":40.875848,
-    "Longitude":-73.801285,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"228",
@@ -1058,17 +1044,10 @@
   },
   {
     "District_Code":"228",
-    "Latitude":40.85328541,
-    "Longitude":-73.8263575,
+    "Latitude":40.875848,
+    "Longitude":-73.801285,
     "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"228",
-    "Latitude":40.85325102,
-    "Longitude":-73.8272179,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"228",
@@ -1950,13 +1929,6 @@
     "Latitude":40.853034,
     "Longitude":-73.827298,
     "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"228",
-    "Latitude":40.853034,
-    "Longitude":-73.827298,
-    "year_begin":2012,
     "crime_type":"Vandalism"
   },
   {
@@ -1996,13 +1968,6 @@
   },
   {
     "District_Code":"228",
-    "Latitude":40.853034,
-    "Longitude":-73.827298,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"228",
     "Latitude":40.866347,
     "Longitude":-73.806384,
     "year_begin":2013,
@@ -2028,13 +1993,6 @@
     "Longitude":-73.806384,
     "year_begin":2013,
     "crime_type":"Stolen Property Possession"
-  },
-  {
-    "District_Code":"228",
-    "Latitude":40.866347,
-    "Longitude":-73.806384,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"228",
@@ -2440,13 +2398,6 @@
     "Latitude":40.85325102,
     "Longitude":-73.8272179,
     "year_begin":2014,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"228",
-    "Latitude":40.85325102,
-    "Longitude":-73.8272179,
-    "year_begin":2014,
     "crime_type":"Vandalism"
   },
   {
@@ -2503,13 +2454,6 @@
     "Latitude":40.866347,
     "Longitude":-73.806384,
     "year_begin":2014,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"228",
-    "Latitude":40.866347,
-    "Longitude":-73.806384,
-    "year_begin":2014,
     "crime_type":"Minor Theft"
   },
   {
@@ -2532,13 +2476,6 @@
     "Longitude":-73.806384,
     "year_begin":2014,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"228",
-    "Latitude":40.866347,
-    "Longitude":-73.806384,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"228",
@@ -2644,13 +2581,6 @@
     "Longitude":-73.806384,
     "year_begin":2014,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"228",
-    "Latitude":40.866347,
-    "Longitude":-73.806384,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"228",
@@ -2934,13 +2864,6 @@
   },
   {
     "District_Code":"228",
-    "Latitude":40.85660391,
-    "Longitude":-73.82645728,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"228",
     "Latitude":40.85161957,
     "Longitude":-73.82649197,
     "year_begin":2015,
@@ -3284,13 +3207,6 @@
   },
   {
     "District_Code":"228",
-    "Latitude":40.85166956,
-    "Longitude":-73.82687861,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"228",
     "Latitude":40.866347,
     "Longitude":-73.806384,
     "year_begin":2016,
@@ -3417,13 +3333,6 @@
   },
   {
     "District_Code":"228",
-    "Latitude":40.85161957,
-    "Longitude":-73.82649197,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"228",
     "Latitude":40.866347,
     "Longitude":-73.806384,
     "year_begin":2016,
@@ -3515,13 +3424,6 @@
   },
   {
     "District_Code":"228",
-    "Latitude":40.85161957,
-    "Longitude":-73.82649197,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"228",
     "Latitude":40.85328541,
     "Longitude":-73.8263575,
     "year_begin":2017,
@@ -3533,13 +3435,6 @@
     "Longitude":-73.82649197,
     "year_begin":2017,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"228",
-    "Latitude":40.85161957,
-    "Longitude":-73.82649197,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"228",
@@ -3946,13 +3841,6 @@
     "Longitude":-73.81385471,
     "year_begin":2018,
     "crime_type":"Traffic Violations"
-  },
-  {
-    "District_Code":"228",
-    "Latitude":40.85161957,
-    "Longitude":-73.82649197,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"228",
@@ -4502,13 +4390,6 @@
   },
   {
     "District_Code":"228",
-    "Latitude":40.853034,
-    "Longitude":-73.827298,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"228",
     "Latitude":40.85660391,
     "Longitude":-73.82645728,
     "year_begin":2019,
@@ -4908,6 +4789,13 @@
   },
   {
     "District_Code":"228",
+    "Latitude":40.85924521,
+    "Longitude":-73.81812844,
+    "year_begin":2020,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"228",
     "Latitude":40.85161957,
     "Longitude":-73.82649197,
     "year_begin":2020,
@@ -4919,13 +4807,6 @@
     "Longitude":-73.806384,
     "year_begin":2020,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"228",
-    "Latitude":40.85161957,
-    "Longitude":-73.82649197,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"228",
@@ -4947,6 +4828,13 @@
     "Longitude":-73.8263575,
     "year_begin":2020,
     "crime_type":"Physical Assault"
+  },
+  {
+    "District_Code":"228",
+    "Latitude":40.85161957,
+    "Longitude":-73.82649197,
+    "year_begin":2020,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"228",
@@ -5171,13 +5059,6 @@
     "Longitude":-73.827298,
     "year_begin":2020,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"228",
-    "Latitude":40.853034,
-    "Longitude":-73.827298,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"228",
@@ -5643,13 +5524,6 @@
   },
   {
     "District_Code":"228",
-    "Latitude":40.86432602,
-    "Longitude":-73.80168629,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"228",
     "Latitude":40.866347,
     "Longitude":-73.806384,
     "year_begin":2022,
@@ -5842,14 +5716,21 @@
     "Latitude":40.85161957,
     "Longitude":-73.82649197,
     "year_begin":2022,
-    "crime_type":"Theft with Force"
+    "crime_type":"Major Theft"
   },
   {
     "District_Code":"228",
-    "Latitude":40.85161957,
-    "Longitude":-73.82649197,
+    "Latitude":40.875687,
+    "Longitude":-73.801857,
     "year_begin":2022,
-    "crime_type":"Major Theft"
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"228",
+    "Latitude":40.853034,
+    "Longitude":-73.827298,
+    "year_begin":2022,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"228",
@@ -6014,13 +5895,6 @@
   },
   {
     "District_Code":"228",
-    "Latitude":40.8516195759,
-    "Longitude":-73.8264919774,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"228",
     "Latitude":40.86465644,
     "Longitude":-73.81385471,
     "year_begin":2023,
@@ -6098,13 +5972,6 @@
   },
   {
     "District_Code":"228",
-    "Latitude":40.8532510222,
-    "Longitude":-73.8272179048,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"228",
     "Latitude":40.8566039126,
     "Longitude":-73.8264572847,
     "year_begin":2023,
@@ -6137,20 +6004,6 @@
     "Longitude":-73.82649197,
     "year_begin":2023,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"228",
-    "Latitude":40.866724,
-    "Longitude":-73.812693,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"228",
-    "Latitude":40.8592452145,
-    "Longitude":-73.8181284445,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"228",
@@ -6322,13 +6175,6 @@
   },
   {
     "District_Code":"228",
-    "Latitude":40.8516195759,
-    "Longitude":-73.8264919774,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"228",
     "Latitude":40.8566039126,
     "Longitude":-73.8264572847,
     "year_begin":2023,
@@ -6364,13 +6210,6 @@
   },
   {
     "District_Code":"228",
-    "Latitude":40.8592452145,
-    "Longitude":-73.8181284445,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"228",
     "Latitude":40.85660391,
     "Longitude":-73.82645728,
     "year_begin":2023,
@@ -6389,13 +6228,6 @@
     "Longitude":-73.806384,
     "year_begin":2023,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"228",
-    "Latitude":40.862852,
-    "Longitude":-73.808299,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"228",
@@ -6448,13 +6280,6 @@
   },
   {
     "District_Code":"228",
-    "Latitude":40.866347,
-    "Longitude":-73.806384,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"228",
     "Latitude":40.86465644,
     "Longitude":-73.81385471,
     "year_begin":2023,
@@ -6466,13 +6291,6 @@
     "Longitude":-73.81385471,
     "year_begin":2023,
     "crime_type":"Traffic Violations"
-  },
-  {
-    "District_Code":"228",
-    "Latitude":40.866347,
-    "Longitude":-73.806384,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"228",
@@ -6480,6 +6298,13 @@
     "Longitude":-73.806384,
     "year_begin":2023,
     "crime_type":"Major Theft"
+  },
+  {
+    "District_Code":"228",
+    "Latitude":40.8687730977,
+    "Longitude":-73.8102384264,
+    "year_begin":2023,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"228",
@@ -6532,13 +6357,6 @@
   },
   {
     "District_Code":"228",
-    "Latitude":40.866347,
-    "Longitude":-73.806384,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"228",
     "Latitude":40.8646564453,
     "Longitude":-73.8138547169,
     "year_begin":2023,
@@ -6585,13 +6403,6 @@
     "Longitude":-73.806384,
     "year_begin":2009,
     "crime_type":"Traffic Violations"
-  },
-  {
-    "District_Code":"228",
-    "Latitude":40.85328541,
-    "Longitude":-73.8263575,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"228",
@@ -6686,13 +6497,6 @@
   },
   {
     "District_Code":"228",
-    "Latitude":40.85924521,
-    "Longitude":-73.81812844,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"228",
     "Latitude":40.85660391,
     "Longitude":-73.82645728,
     "year_begin":2006,
@@ -6921,13 +6725,6 @@
     "Longitude":-73.808299,
     "year_begin":2007,
     "crime_type":"Traffic Violations"
-  },
-  {
-    "District_Code":"228",
-    "Latitude":40.866347,
-    "Longitude":-73.806384,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"228",
@@ -7194,12 +6991,5 @@
     "Longitude":-73.806384,
     "year_begin":2007,
     "crime_type":"Fraud and Forgery"
-  },
-  {
-    "District_Code":"228",
-    "Latitude":40.85924521,
-    "Longitude":-73.81812844,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   }
 ]

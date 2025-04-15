@@ -108,7 +108,7 @@ fetch(nycDistricts)
             })
             .catch((err) => {
               console.error(
-                `❌ Could not load crime data for district ${districtCode}:`,
+                `Could not load crime data for district ${districtCode}:`,
                 err
               );
               alert(`No crime data available for district ${districtCode}.`);
@@ -118,6 +118,37 @@ fetch(nycDistricts)
     }).addTo(map);
   })
   .catch((error) => console.error("Error loading district data:", error));
+
+const specialCrimeIcons = {
+  murder: {
+    match: (type) => type.includes("murder"),
+    iconUrl: "images/skull.png",
+    baseWidth: 16,
+    baseHeight: 10,
+    maxCount: 5,
+  },
+  rape: {
+    match: (type) => type.includes("rape"),
+    iconUrl: "images/black_triangle.png",
+    baseWidth: 10,
+    baseHeight: 10,
+    maxCount: 5,
+  },
+  fire: {
+    match: (type) => type.includes("intentional property fire"),
+    iconUrl: "images/fire.png",
+    baseWidth: 12,
+    baseHeight: 8,
+    maxCount: 5,
+  },
+  kidnapping: {
+    match: (type) => type.includes("kidnapping"),
+    iconUrl: "images/black_cross.png",
+    baseWidth: 10,
+    baseHeight: 10,
+    maxCount: 5,
+  },
+};
 
 function handleSelectAllClick(allLi) {
   const allItems = document.querySelectorAll(".list-items .item");
@@ -176,31 +207,84 @@ function displayCrimesForDistrict(districtCode, districtCrimes) {
     selectedCrimeTypes.has(c.crime_type)
   );
 
-  const locationCounts = {};
+  const locationData = {};
+
+  // Step 1: Group by lat/lon and crime type
   filteredCrimes.forEach((c) => {
     const key = `${c.Latitude},${c.Longitude}`;
-    if (!locationCounts[key]) {
-      locationCounts[key] = {
-        lat: parseFloat(c.Latitude),
-        lon: parseFloat(c.Longitude),
-        count: 0,
+    const lat = parseFloat(c.Latitude);
+    const lon = parseFloat(c.Longitude);
+    const type = c.crime_type.toLowerCase();
+
+    if (!locationData[key]) {
+      locationData[key] = {
+        lat,
+        lon,
+        total: 0,
+        types: {},
       };
     }
-    locationCounts[key].count += 1;
+
+    locationData[key].total += 1;
+
+    if (!locationData[key].types[type]) {
+      locationData[key].types[type] = 0;
+    }
+
+    locationData[key].types[type] += 1;
   });
 
-  const markers = Object.values(locationCounts).map((c) => {
-    return L.circleMarker([c.lat, c.lon], {
-      radius: c.count / 100,
-      color: "red",
-      fillOpacity: 0.6,
-    }).bindPopup(`Crimes at this location: ${c.count}`);
+  const markers = [];
+
+  // Step 2: Create icons and circles for each location
+  Object.values(locationData).forEach((loc) => {
+    const { lat, lon, total, types } = loc;
+
+    // Always show a circle marker for total count
+    const hasNonSpecial = Object.keys(types).some(
+      (type) =>
+        !Object.values(specialCrimeIcons).some((config) => config.match(type))
+    );
+
+    if (hasNonSpecial) {
+      const circle = L.circleMarker([lat, lon], {
+        radius: Math.min(total / 100, 20),
+        color: "red",
+        fillOpacity: 0.5,
+      }).bindPopup(`Crimes at this location: ${total}`);
+      markers.push(circle);
+    }
+
+    // Add icons for each special type
+    let iconIndex = 0;
+    Object.entries(types).forEach(([type, count]) => {
+      for (const [key, config] of Object.entries(specialCrimeIcons)) {
+        if (config.match(type)) {
+          const useCount = Math.min(count, config.maxCount);
+          const width = useCount * 0.8 * config.baseWidth;
+          const height = useCount * 0.8 * config.baseHeight;
+
+          const icon = L.icon({
+            iconUrl: config.iconUrl,
+            iconSize: [width, height],
+            iconAnchor: [width / 2, height / 2],
+            popupAnchor: [0, -10],
+          });
+
+          markers.push(
+            L.marker([lat, lon], { icon }).bindPopup(
+              `<b>${type.toUpperCase()}</b><br>Count: ${count}`
+            )
+          );
+        }
+      }
+    });
   });
 
+  // Step 3: Show all markers
   if (window.crimeLayer) {
     map.removeLayer(window.crimeLayer);
   }
-
   window.crimeLayer = L.layerGroup(markers).addTo(map);
 }
 

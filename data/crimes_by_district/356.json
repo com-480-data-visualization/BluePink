@@ -4,13 +4,6 @@
     "Latitude":40.595944,
     "Longitude":-73.907243,
     "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"356",
-    "Latitude":40.595944,
-    "Longitude":-73.907243,
-    "year_begin":2008,
     "crime_type":"Verbal or Physical Harassment"
   },
   {
@@ -129,13 +122,6 @@
     "District_Code":"356",
     "Latitude":40.595944,
     "Longitude":-73.907243,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"356",
-    "Latitude":40.595944,
-    "Longitude":-73.907243,
     "year_begin":2007,
     "crime_type":"Vandalism"
   },
@@ -159,13 +145,6 @@
     "Longitude":-73.884696,
     "year_begin":2008,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"356",
-    "Latitude":40.595944,
-    "Longitude":-73.907243,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"356",
@@ -369,6 +348,13 @@
     "Longitude":-73.884696,
     "year_begin":2008,
     "crime_type":"Stolen Property Possession"
+  },
+  {
+    "District_Code":"356",
+    "Latitude":40.65170604,
+    "Longitude":-73.86578208,
+    "year_begin":2008,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"356",
@@ -515,13 +501,6 @@
     "Latitude":40.595944,
     "Longitude":-73.907243,
     "year_begin":2009,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"356",
-    "Latitude":40.595944,
-    "Longitude":-73.907243,
-    "year_begin":2009,
     "crime_type":"Major Theft"
   },
   {
@@ -600,6 +579,13 @@
     "Longitude":-73.907243,
     "year_begin":2009,
     "crime_type":"Public Disturbance"
+  },
+  {
+    "District_Code":"356",
+    "Latitude":40.595944,
+    "Longitude":-73.907243,
+    "year_begin":2009,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"356",
@@ -652,13 +638,6 @@
   },
   {
     "District_Code":"356",
-    "Latitude":40.65170604,
-    "Longitude":-73.86578208,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"356",
     "Latitude":40.595944,
     "Longitude":-73.907243,
     "year_begin":2009,
@@ -673,10 +652,10 @@
   },
   {
     "District_Code":"356",
-    "Latitude":40.59651127,
-    "Longitude":-73.90787551,
+    "Latitude":40.595944,
+    "Longitude":-73.907243,
     "year_begin":2009,
-    "crime_type":"Theft with Force"
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"356",
@@ -761,13 +740,6 @@
     "Longitude":-73.90787551,
     "year_begin":2009,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"356",
-    "Latitude":40.595944,
-    "Longitude":-73.907243,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"356",
@@ -1299,13 +1271,6 @@
     "Latitude":40.595944,
     "Longitude":-73.907243,
     "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"356",
-    "Latitude":40.595944,
-    "Longitude":-73.907243,
-    "year_begin":2010,
     "crime_type":"Major Theft"
   },
   {
@@ -1433,13 +1398,6 @@
     "Longitude":-73.884696,
     "year_begin":2010,
     "crime_type":"Drug Offenses"
-  },
-  {
-    "District_Code":"356",
-    "Latitude":40.629316,
-    "Longitude":-73.884696,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"356",
@@ -2832,13 +2790,6 @@
     "Latitude":40.595944,
     "Longitude":-73.907243,
     "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"356",
-    "Latitude":40.595944,
-    "Longitude":-73.907243,
-    "year_begin":2013,
     "crime_type":"Vandalism"
   },
   {
@@ -3207,13 +3158,6 @@
   },
   {
     "District_Code":"356",
-    "Latitude":40.653469,
-    "Longitude":-73.860057,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"356",
     "Latitude":40.629316,
     "Longitude":-73.884696,
     "year_begin":2014,
@@ -3319,13 +3263,6 @@
   },
   {
     "District_Code":"356",
-    "Latitude":40.629316,
-    "Longitude":-73.884696,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"356",
     "Latitude":40.595944,
     "Longitude":-73.907243,
     "year_begin":2014,
@@ -3386,13 +3323,6 @@
     "Longitude":-73.907243,
     "year_begin":2014,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"356",
-    "Latitude":40.595944,
-    "Longitude":-73.907243,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"356",
@@ -3694,6 +3624,20 @@
     "Longitude":-73.86578208,
     "year_begin":2014,
     "crime_type":"Traffic Violations"
+  },
+  {
+    "District_Code":"356",
+    "Latitude":40.653469,
+    "Longitude":-73.860057,
+    "year_begin":2014,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"356",
+    "Latitude":40.653469,
+    "Longitude":-73.860057,
+    "year_begin":2014,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"356",
@@ -3879,6 +3823,20 @@
   },
   {
     "District_Code":"356",
+    "Latitude":40.65170604,
+    "Longitude":-73.86578208,
+    "year_begin":2015,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"356",
+    "Latitude":40.65170604,
+    "Longitude":-73.86578208,
+    "year_begin":2015,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"356",
     "Latitude":40.653469,
     "Longitude":-73.860057,
     "year_begin":2015,
@@ -4726,13 +4684,6 @@
   },
   {
     "District_Code":"356",
-    "Latitude":40.64328846,
-    "Longitude":-73.87617677,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"356",
     "Latitude":40.58372747,
     "Longitude":-73.89371206,
     "year_begin":2017,
@@ -4786,6 +4737,20 @@
     "Longitude":-73.89371206,
     "year_begin":2017,
     "crime_type":"Traffic Violations"
+  },
+  {
+    "District_Code":"356",
+    "Latitude":40.595944,
+    "Longitude":-73.907243,
+    "year_begin":2017,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"356",
+    "Latitude":40.595944,
+    "Longitude":-73.907243,
+    "year_begin":2017,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"356",
@@ -5209,6 +5174,13 @@
   },
   {
     "District_Code":"356",
+    "Latitude":40.59651127,
+    "Longitude":-73.90787551,
+    "year_begin":2018,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"356",
     "Latitude":40.595944,
     "Longitude":-73.907243,
     "year_begin":2018,
@@ -5342,13 +5314,6 @@
   },
   {
     "District_Code":"356",
-    "Latitude":40.585391,
-    "Longitude":-73.883818,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"356",
     "Latitude":40.64328846,
     "Longitude":-73.87617677,
     "year_begin":2018,
@@ -5465,13 +5430,6 @@
     "Longitude":-73.884696,
     "year_begin":2019,
     "crime_type":"Public Disturbance"
-  },
-  {
-    "District_Code":"356",
-    "Latitude":40.629316,
-    "Longitude":-73.884696,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"356",
@@ -5857,13 +5815,6 @@
     "Longitude":-73.907243,
     "year_begin":2020,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"356",
-    "Latitude":40.65170604,
-    "Longitude":-73.86578208,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"356",
@@ -6469,13 +6420,6 @@
   },
   {
     "District_Code":"356",
-    "Latitude":40.595944,
-    "Longitude":-73.907243,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"356",
     "Latitude":40.58858,
     "Longitude":-73.899151,
     "year_begin":2022,
@@ -6493,21 +6437,7 @@
     "Latitude":40.629316,
     "Longitude":-73.884696,
     "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"356",
-    "Latitude":40.629316,
-    "Longitude":-73.884696,
-    "year_begin":2022,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"356",
-    "Latitude":40.64328846,
-    "Longitude":-73.87617677,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"356",
@@ -6791,20 +6721,6 @@
   },
   {
     "District_Code":"356",
-    "Latitude":40.629316,
-    "Longitude":-73.884696,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"356",
-    "Latitude":40.629316,
-    "Longitude":-73.884696,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"356",
     "Latitude":40.59651127,
     "Longitude":-73.90787551,
     "year_begin":2022,
@@ -7082,13 +6998,6 @@
     "Longitude":-73.907243,
     "year_begin":2023,
     "crime_type":"Breaking & Entering"
-  },
-  {
-    "District_Code":"356",
-    "Latitude":40.595944,
-    "Longitude":-73.907243,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"356",
@@ -7806,13 +7715,6 @@
   },
   {
     "District_Code":"356",
-    "Latitude":40.64328846,
-    "Longitude":-73.87617677,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"356",
     "Latitude":40.585391,
     "Longitude":-73.883818,
     "year_begin":2006,
@@ -7827,17 +7729,10 @@
   },
   {
     "District_Code":"356",
-    "Latitude":40.595944,
-    "Longitude":-73.907243,
-    "year_begin":2006,
-    "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"356",
     "Latitude":40.59651127,
     "Longitude":-73.90787551,
     "year_begin":2006,
-    "crime_type":"Theft with Force"
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"356",
@@ -7851,7 +7746,7 @@
     "Latitude":40.595944,
     "Longitude":-73.907243,
     "year_begin":2006,
-    "crime_type":"Theft with Force"
+    "crime_type":"Minor Theft"
   },
   {
     "District_Code":"356",
@@ -8405,13 +8300,6 @@
     "Longitude":-73.907243,
     "year_begin":2007,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"356",
-    "Latitude":40.595944,
-    "Longitude":-73.907243,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"356",

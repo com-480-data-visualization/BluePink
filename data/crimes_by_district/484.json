@@ -53,6 +53,13 @@
     "Latitude":40.64911949,
     "Longitude":-73.83738647,
     "year_begin":2008,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"484",
+    "Latitude":40.64911949,
+    "Longitude":-73.83738647,
+    "year_begin":2008,
     "crime_type":"Minor Theft"
   },
   {
@@ -1128,13 +1135,6 @@
   },
   {
     "District_Code":"484",
-    "Latitude":40.64911949,
-    "Longitude":-73.83738647,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"484",
     "Latitude":40.62632,
     "Longitude":-73.82727,
     "year_begin":2022,
@@ -1209,6 +1209,13 @@
     "Longitude":-73.88275629,
     "year_begin":2023,
     "crime_type":"Public Disturbance"
+  },
+  {
+    "District_Code":"484",
+    "Latitude":40.565042,
+    "Longitude":-73.88131,
+    "year_begin":2023,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"484",

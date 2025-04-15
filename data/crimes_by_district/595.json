@@ -29,6 +29,13 @@
   },
   {
     "District_Code":"595",
+    "Latitude":40.568717,
+    "Longitude":-74.095845,
+    "year_begin":2009,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"595",
     "Latitude":40.549159,
     "Longitude":-74.137929,
     "year_begin":2008,
@@ -82,6 +89,13 @@
     "Longitude":-74.083555,
     "year_begin":2009,
     "crime_type":"Vandalism"
+  },
+  {
+    "District_Code":"595",
+    "Latitude":40.55094739,
+    "Longitude":-74.1136845,
+    "year_begin":2009,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"595",
@@ -253,24 +267,10 @@
   },
   {
     "District_Code":"595",
-    "Latitude":40.56448309,
-    "Longitude":-74.09763018,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"595",
     "Latitude":40.5903421,
     "Longitude":-74.0666242,
     "year_begin":2009,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"595",
-    "Latitude":40.584619,
-    "Longitude":-74.072022,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"595",
@@ -932,13 +932,6 @@
   },
   {
     "District_Code":"595",
-    "Latitude":40.55653435,
-    "Longitude":-74.12811764,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"595",
     "Latitude":40.575972,
     "Longitude":-74.082673,
     "year_begin":2010,
@@ -1191,13 +1184,6 @@
   },
   {
     "District_Code":"595",
-    "Latitude":40.57467919,
-    "Longitude":-74.08488779,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"595",
     "Latitude":40.56448309,
     "Longitude":-74.09763018,
     "year_begin":2010,
@@ -1258,6 +1244,13 @@
     "Longitude":-74.0666242,
     "year_begin":2010,
     "crime_type":"Physical Assault"
+  },
+  {
+    "District_Code":"595",
+    "Latitude":40.561244,
+    "Longitude":-74.100539,
+    "year_begin":2010,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"595",
@@ -1496,13 +1489,6 @@
     "Longitude":-74.0666242,
     "year_begin":2010,
     "crime_type":"Drug Offenses"
-  },
-  {
-    "District_Code":"595",
-    "Latitude":40.584619,
-    "Longitude":-74.072022,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"595",
@@ -2318,20 +2304,6 @@
   },
   {
     "District_Code":"595",
-    "Latitude":40.5903421,
-    "Longitude":-74.0666242,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"595",
-    "Latitude":40.590888,
-    "Longitude":-74.065982,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"595",
     "Latitude":40.572161,
     "Longitude":-74.088972,
     "year_begin":2011,
@@ -2406,13 +2378,6 @@
     "Longitude":-74.07780173,
     "year_begin":2011,
     "crime_type":"Fraud and Forgery"
-  },
-  {
-    "District_Code":"595",
-    "Latitude":40.584619,
-    "Longitude":-74.072022,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"595",
@@ -2630,13 +2595,6 @@
     "Longitude":-74.072022,
     "year_begin":2011,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"595",
-    "Latitude":40.5903421,
-    "Longitude":-74.0666242,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"595",
@@ -3305,13 +3263,6 @@
   },
   {
     "District_Code":"595",
-    "Latitude":40.57306313,
-    "Longitude":-74.08769702,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"595",
     "Latitude":40.56448309,
     "Longitude":-74.09763018,
     "year_begin":2012,
@@ -3399,13 +3350,6 @@
     "Latitude":40.584619,
     "Longitude":-74.072022,
     "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"595",
-    "Latitude":40.584619,
-    "Longitude":-74.072022,
-    "year_begin":2012,
     "crime_type":"Breaking & Entering"
   },
   {
@@ -3414,13 +3358,6 @@
     "Longitude":-74.064313,
     "year_begin":2012,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"595",
-    "Latitude":40.5903421,
-    "Longitude":-74.0666242,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"595",
@@ -3568,13 +3505,6 @@
     "Longitude":-74.065982,
     "year_begin":2012,
     "crime_type":"Breaking & Entering"
-  },
-  {
-    "District_Code":"595",
-    "Latitude":40.57925156,
-    "Longitude":-74.07780173,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"595",
@@ -4068,6 +3998,13 @@
   },
   {
     "District_Code":"595",
+    "Latitude":40.57610827,
+    "Longitude":-74.08243817,
+    "year_begin":2013,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"595",
     "Latitude":40.5707802,
     "Longitude":-74.09027845,
     "year_begin":2013,
@@ -4264,10 +4201,10 @@
   },
   {
     "District_Code":"595",
-    "Latitude":40.59234171,
-    "Longitude":-74.06417776,
+    "Latitude":40.584619,
+    "Longitude":-74.072022,
     "year_begin":2013,
-    "crime_type":"Theft with Force"
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"595",
@@ -4506,13 +4443,6 @@
     "Longitude":-74.09763018,
     "year_begin":2014,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"595",
-    "Latitude":40.56448309,
-    "Longitude":-74.09763018,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"595",
@@ -5090,24 +5020,10 @@
   },
   {
     "District_Code":"595",
-    "Latitude":40.56448309,
-    "Longitude":-74.09763018,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"595",
     "Latitude":40.563634,
     "Longitude":-74.098396,
     "year_begin":2015,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"595",
-    "Latitude":40.584619,
-    "Longitude":-74.072022,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"595",
@@ -5136,13 +5052,6 @@
     "Longitude":-74.09763018,
     "year_begin":2015,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"595",
-    "Latitude":40.57925156,
-    "Longitude":-74.07780173,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"595",
@@ -5283,13 +5192,6 @@
     "Longitude":-74.06238,
     "year_begin":2015,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"595",
-    "Latitude":40.5903421,
-    "Longitude":-74.0666242,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"595",
@@ -6133,13 +6035,6 @@
   },
   {
     "District_Code":"595",
-    "Latitude":40.571655,
-    "Longitude":-74.089461,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"595",
     "Latitude":40.5707802,
     "Longitude":-74.09027845,
     "year_begin":2017,
@@ -6168,13 +6063,6 @@
   },
   {
     "District_Code":"595",
-    "Latitude":40.57925156,
-    "Longitude":-74.07780173,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"595",
     "Latitude":40.54959298,
     "Longitude":-74.13739164,
     "year_begin":2017,
@@ -6186,13 +6074,6 @@
     "Longitude":-74.0666242,
     "year_begin":2017,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"595",
-    "Latitude":40.5903421,
-    "Longitude":-74.0666242,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"595",
@@ -7008,13 +6889,6 @@
   },
   {
     "District_Code":"595",
-    "Latitude":40.5903421,
-    "Longitude":-74.0666242,
-    "year_begin":2018,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"595",
     "Latitude":40.591787,
     "Longitude":-74.064893,
     "year_begin":2018,
@@ -7645,13 +7519,6 @@
   },
   {
     "District_Code":"595",
-    "Latitude":40.584619,
-    "Longitude":-74.072022,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"595",
     "Latitude":40.599086,
     "Longitude":-74.0633,
     "year_begin":2019,
@@ -7715,24 +7582,10 @@
   },
   {
     "District_Code":"595",
-    "Latitude":40.56448309,
-    "Longitude":-74.09763018,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"595",
     "Latitude":40.5903421,
     "Longitude":-74.0666242,
     "year_begin":2020,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"595",
-    "Latitude":40.56448309,
-    "Longitude":-74.09763018,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"595",
@@ -8282,13 +8135,6 @@
   },
   {
     "District_Code":"595",
-    "Latitude":40.56992869,
-    "Longitude":-74.09106918,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"595",
     "Latitude":40.56703715,
     "Longitude":-74.09264172,
     "year_begin":2021,
@@ -8394,13 +8240,6 @@
   },
   {
     "District_Code":"595",
-    "Latitude":40.56889312,
-    "Longitude":-74.09204319,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"595",
     "Latitude":40.55653435,
     "Longitude":-74.12811764,
     "year_begin":2021,
@@ -8412,6 +8251,13 @@
     "Longitude":-74.08488779,
     "year_begin":2021,
     "crime_type":"Drug Offenses"
+  },
+  {
+    "District_Code":"595",
+    "Latitude":40.57413504,
+    "Longitude":-74.08580141,
+    "year_begin":2021,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"595",
@@ -8762,13 +8608,6 @@
     "Longitude":-74.072022,
     "year_begin":2022,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"595",
-    "Latitude":40.592624,
-    "Longitude":-74.06377,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"595",
@@ -9245,13 +9084,6 @@
     "Longitude":-74.072022,
     "year_begin":2022,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"595",
-    "Latitude":40.59419025,
-    "Longitude":-74.06181746,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"595",
@@ -9997,20 +9829,6 @@
   },
   {
     "District_Code":"595",
-    "Latitude":40.571592,
-    "Longitude":-74.101425,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"595",
-    "Latitude":40.56448309,
-    "Longitude":-74.09763018,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"595",
     "Latitude":40.5903421,
     "Longitude":-74.0666242,
     "year_begin":2006,
@@ -10746,13 +10564,6 @@
   },
   {
     "District_Code":"595",
-    "Latitude":40.54959298,
-    "Longitude":-74.13739164,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"595",
     "Latitude":40.550013,
     "Longitude":-74.136732,
     "year_begin":2007,
@@ -10897,13 +10708,6 @@
     "Longitude":-74.09027845,
     "year_begin":2007,
     "crime_type":"Physical Assault"
-  },
-  {
-    "District_Code":"595",
-    "Latitude":40.5707802,
-    "Longitude":-74.09027845,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"595",
@@ -11110,13 +10914,6 @@
   },
   {
     "District_Code":"595",
-    "Latitude":40.56154661,
-    "Longitude":-74.10027114,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"595",
     "Latitude":40.57306313,
     "Longitude":-74.08769702,
     "year_begin":2007,
@@ -11285,6 +11082,13 @@
   },
   {
     "District_Code":"595",
+    "Latitude":40.57925156,
+    "Longitude":-74.07780173,
+    "year_begin":2007,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"595",
     "Latitude":40.584619,
     "Longitude":-74.072022,
     "year_begin":2007,
@@ -11436,13 +11240,6 @@
     "Longitude":-74.0666242,
     "year_begin":2007,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"595",
-    "Latitude":40.5903421,
-    "Longitude":-74.0666242,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"595",
@@ -11660,6 +11457,13 @@
     "Longitude":-74.09027845,
     "year_begin":2008,
     "crime_type":"Verbal or Physical Harassment"
+  },
+  {
+    "District_Code":"595",
+    "Latitude":40.55094739,
+    "Longitude":-74.1136845,
+    "year_begin":2008,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"595",

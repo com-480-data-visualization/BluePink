@@ -512,20 +512,6 @@
   },
   {
     "District_Code":"480",
-    "Latitude":40.771717,
-    "Longitude":-73.870883,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"480",
-    "Latitude":40.771717,
-    "Longitude":-73.870883,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"480",
     "Latitude":40.771951,
     "Longitude":-73.889226,
     "year_begin":2013,
@@ -1656,13 +1642,6 @@
     "Latitude":40.7672019,
     "Longitude":-73.88781639,
     "year_begin":2018,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"480",
-    "Latitude":40.7672019,
-    "Longitude":-73.88781639,
-    "year_begin":2018,
     "crime_type":"Minor Theft"
   },
   {
@@ -2595,13 +2574,6 @@
     "Longitude":-73.88781639,
     "year_begin":2023,
     "crime_type":"Traffic Violations"
-  },
-  {
-    "District_Code":"480",
-    "Latitude":40.7672019,
-    "Longitude":-73.88781639,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"480",

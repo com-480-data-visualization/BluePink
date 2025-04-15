@@ -99,13 +99,6 @@
   },
   {
     "District_Code":"482",
-    "Latitude":40.711094,
-    "Longitude":-73.83529,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
     "Latitude":40.704534,
     "Longitude":-73.837147,
     "year_begin":2008,
@@ -274,13 +267,6 @@
   },
   {
     "District_Code":"482",
-    "Latitude":40.701532,
-    "Longitude":-73.855252,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
     "Latitude":40.70259523,
     "Longitude":-73.85529262,
     "year_begin":2008,
@@ -313,13 +299,6 @@
     "Longitude":-73.853081,
     "year_begin":2008,
     "crime_type":"Fraud and Forgery"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.701532,
-    "Longitude":-73.855252,
-    "year_begin":2008,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -722,20 +701,6 @@
   },
   {
     "District_Code":"482",
-    "Latitude":40.70259523,
-    "Longitude":-73.85529262,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70259523,
-    "Longitude":-73.85529262,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
     "Latitude":40.70059337,
     "Longitude":-73.85456485,
     "year_begin":2009,
@@ -1019,21 +984,7 @@
     "Latitude":40.701532,
     "Longitude":-73.855252,
     "year_begin":2009,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.701532,
-    "Longitude":-73.855252,
-    "year_begin":2009,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.701532,
-    "Longitude":-73.855252,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -1069,13 +1020,6 @@
     "Longitude":-73.85529262,
     "year_begin":2009,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.701532,
-    "Longitude":-73.855252,
-    "year_begin":2009,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -1761,13 +1705,6 @@
     "Latitude":40.70059337,
     "Longitude":-73.85456485,
     "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70059337,
-    "Longitude":-73.85456485,
-    "year_begin":2010,
     "crime_type":"Major Theft"
   },
   {
@@ -1776,27 +1713,6 @@
     "Longitude":-73.855252,
     "year_begin":2010,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70259523,
-    "Longitude":-73.85529262,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70259523,
-    "Longitude":-73.85529262,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70059337,
-    "Longitude":-73.85456485,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -1874,13 +1790,6 @@
     "Longitude":-73.852778,
     "year_begin":2010,
     "crime_type":"Breaking & Entering"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.701532,
-    "Longitude":-73.855252,
-    "year_begin":2010,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -2388,13 +2297,6 @@
   },
   {
     "District_Code":"482",
-    "Latitude":40.708193,
-    "Longitude":-73.850052,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
     "Latitude":40.70896964,
     "Longitude":-73.84151108,
     "year_begin":2011,
@@ -2706,6 +2608,13 @@
     "Latitude":40.70059337,
     "Longitude":-73.85456485,
     "year_begin":2011,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"482",
+    "Latitude":40.70059337,
+    "Longitude":-73.85456485,
+    "year_begin":2011,
     "crime_type":"Weapon Possession"
   },
   {
@@ -2714,27 +2623,6 @@
     "Longitude":-73.85529262,
     "year_begin":2011,
     "crime_type":"Traffic Violations"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70059337,
-    "Longitude":-73.85456485,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.701532,
-    "Longitude":-73.855252,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70259523,
-    "Longitude":-73.85529262,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -2756,6 +2644,13 @@
     "Longitude":-73.85529262,
     "year_begin":2011,
     "crime_type":"Minor Theft"
+  },
+  {
+    "District_Code":"482",
+    "Latitude":40.697145,
+    "Longitude":-73.861464,
+    "year_begin":2011,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"482",
@@ -2791,13 +2686,6 @@
     "Longitude":-73.83487718,
     "year_begin":2011,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70896964,
-    "Longitude":-73.84151108,
-    "year_begin":2011,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -2990,24 +2878,10 @@
   },
   {
     "District_Code":"482",
-    "Latitude":40.701532,
-    "Longitude":-73.855252,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
     "Latitude":40.70059337,
     "Longitude":-73.85456485,
     "year_begin":2012,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70059337,
-    "Longitude":-73.85456485,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -3036,13 +2910,6 @@
     "Longitude":-73.853081,
     "year_begin":2012,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70059337,
-    "Longitude":-73.85456485,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -3085,13 +2952,6 @@
     "Longitude":-73.854204,
     "year_begin":2012,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.698789,
-    "Longitude":-73.853081,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -3141,13 +3001,6 @@
     "Longitude":-73.85529262,
     "year_begin":2012,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70059337,
-    "Longitude":-73.85456485,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -3358,13 +3211,6 @@
     "Longitude":-73.85456485,
     "year_begin":2012,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70059337,
-    "Longitude":-73.85456485,
-    "year_begin":2012,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -3970,13 +3816,6 @@
   },
   {
     "District_Code":"482",
-    "Latitude":40.70204258,
-    "Longitude":-73.85026266,
-    "year_begin":2013,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
     "Latitude":40.70059337,
     "Longitude":-73.85456485,
     "year_begin":2013,
@@ -4219,6 +4058,13 @@
     "Longitude":-73.85529262,
     "year_begin":2013,
     "crime_type":"Traffic Violations"
+  },
+  {
+    "District_Code":"482",
+    "Latitude":40.70204258,
+    "Longitude":-73.85026266,
+    "year_begin":2013,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"482",
@@ -4579,6 +4425,13 @@
   },
   {
     "District_Code":"482",
+    "Latitude":40.70274668,
+    "Longitude":-73.86240813,
+    "year_begin":2021,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"482",
     "Latitude":40.702343,
     "Longitude":-73.85299,
     "year_begin":2021,
@@ -4761,13 +4614,6 @@
   },
   {
     "District_Code":"482",
-    "Latitude":40.70059337,
-    "Longitude":-73.85456485,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
     "Latitude":40.70204258,
     "Longitude":-73.85026266,
     "year_begin":2014,
@@ -4919,13 +4765,6 @@
     "Longitude":-73.85026266,
     "year_begin":2014,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70059337,
-    "Longitude":-73.85456485,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -4961,13 +4800,6 @@
     "Longitude":-73.83784734,
     "year_begin":2014,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.71072246,
-    "Longitude":-73.83487718,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -5086,13 +4918,6 @@
     "Latitude":40.71072246,
     "Longitude":-73.83487718,
     "year_begin":2014,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.71072246,
-    "Longitude":-73.83487718,
-    "year_begin":2014,
     "crime_type":"Vandalism"
   },
   {
@@ -5171,13 +4996,6 @@
     "Longitude":-73.85529262,
     "year_begin":2014,
     "crime_type":"Traffic Violations"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.701532,
-    "Longitude":-73.855252,
-    "year_begin":2014,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -5640,13 +5458,6 @@
     "Longitude":-73.841934,
     "year_begin":2015,
     "crime_type":"Public Disturbance"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70204258,
-    "Longitude":-73.85026266,
-    "year_begin":2015,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -6182,13 +5993,6 @@
   },
   {
     "District_Code":"482",
-    "Latitude":40.70259523,
-    "Longitude":-73.85529262,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
     "Latitude":40.70274668,
     "Longitude":-73.86240813,
     "year_begin":2016,
@@ -6256,13 +6060,6 @@
     "Longitude":-73.83529,
     "year_begin":2016,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70204258,
-    "Longitude":-73.85026266,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -6353,13 +6150,6 @@
     "Latitude":40.70274668,
     "Longitude":-73.86240813,
     "year_begin":2016,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70274668,
-    "Longitude":-73.86240813,
-    "year_begin":2016,
     "crime_type":"Fraud and Forgery"
   },
   {
@@ -6417,13 +6207,6 @@
     "Longitude":-73.83972581,
     "year_begin":2016,
     "crime_type":"Fraud and Forgery"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.710677,
-    "Longitude":-73.8389,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -6522,13 +6305,6 @@
     "Longitude":-73.855252,
     "year_begin":2016,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70232,
-    "Longitude":-73.852778,
-    "year_begin":2016,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -6718,13 +6494,6 @@
     "Longitude":-73.85529262,
     "year_begin":2017,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70274668,
-    "Longitude":-73.86240813,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -6935,13 +6704,6 @@
     "Longitude":-73.853081,
     "year_begin":2017,
     "crime_type":"Fraud and Forgery"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.701532,
-    "Longitude":-73.855252,
-    "year_begin":2017,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -7390,6 +7152,13 @@
     "Longitude":-73.85456485,
     "year_begin":2018,
     "crime_type":"Vandalism"
+  },
+  {
+    "District_Code":"482",
+    "Latitude":40.70259523,
+    "Longitude":-73.85529262,
+    "year_begin":2018,
+    "crime_type":"Intentional property fire"
   },
   {
     "District_Code":"482",
@@ -8072,6 +7841,13 @@
   },
   {
     "District_Code":"482",
+    "Latitude":40.70274668,
+    "Longitude":-73.86240813,
+    "year_begin":2019,
+    "crime_type":"Intentional property fire"
+  },
+  {
+    "District_Code":"482",
     "Latitude":40.700235,
     "Longitude":-73.854204,
     "year_begin":2018,
@@ -8111,13 +7887,6 @@
     "Longitude":-73.853081,
     "year_begin":2019,
     "crime_type":"Verbal or Physical Harassment"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70259523,
-    "Longitude":-73.85529262,
-    "year_begin":2019,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -8576,13 +8345,6 @@
   },
   {
     "District_Code":"482",
-    "Latitude":40.70204258,
-    "Longitude":-73.85026266,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
     "Latitude":40.698789,
     "Longitude":-73.853081,
     "year_begin":2020,
@@ -8608,13 +8370,6 @@
     "Longitude":-73.84151108,
     "year_begin":2020,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70855446,
-    "Longitude":-73.83901247,
-    "year_begin":2020,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -9276,13 +9031,6 @@
   },
   {
     "District_Code":"482",
-    "Latitude":40.70259523,
-    "Longitude":-73.85529262,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
     "Latitude":40.698789,
     "Longitude":-73.853081,
     "year_begin":2021,
@@ -9332,20 +9080,6 @@
   },
   {
     "District_Code":"482",
-    "Latitude":40.711094,
-    "Longitude":-73.83529,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70259523,
-    "Longitude":-73.85529262,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
     "Latitude":40.70204258,
     "Longitude":-73.85026266,
     "year_begin":2021,
@@ -9364,13 +9098,6 @@
     "Longitude":-73.854204,
     "year_begin":2021,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70059337,
-    "Longitude":-73.85456485,
-    "year_begin":2021,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -10158,13 +9885,6 @@
   },
   {
     "District_Code":"482",
-    "Latitude":40.70204258,
-    "Longitude":-73.85026266,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
     "Latitude":40.70790101,
     "Longitude":-73.85110072,
     "year_begin":2022,
@@ -10176,13 +9896,6 @@
     "Longitude":-73.8476227,
     "year_begin":2022,
     "crime_type":"Traffic Violations"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70259523,
-    "Longitude":-73.85529262,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -10424,13 +10137,6 @@
   },
   {
     "District_Code":"482",
-    "Latitude":40.70232,
-    "Longitude":-73.852778,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
     "Latitude":40.698789,
     "Longitude":-73.853081,
     "year_begin":2022,
@@ -10529,13 +10235,6 @@
   },
   {
     "District_Code":"482",
-    "Latitude":40.702343,
-    "Longitude":-73.85299,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
     "Latitude":40.698789,
     "Longitude":-73.853081,
     "year_begin":2022,
@@ -10561,13 +10260,6 @@
     "Longitude":-73.83487718,
     "year_begin":2022,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.702343,
-    "Longitude":-73.85299,
-    "year_begin":2022,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -10886,13 +10578,6 @@
   },
   {
     "District_Code":"482",
-    "Latitude":40.70059337,
-    "Longitude":-73.85456485,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
     "Latitude":40.6998651245,
     "Longitude":-73.8538631858,
     "year_begin":2023,
@@ -10981,13 +10666,6 @@
     "Longitude":-73.8552926269,
     "year_begin":2023,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70232,
-    "Longitude":-73.852778,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -11275,13 +10953,6 @@
     "Longitude":-73.8466560887,
     "year_begin":2023,
     "crime_type":"Fraud and Forgery"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.7020425888,
-    "Longitude":-73.8502626647,
-    "year_begin":2023,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -11712,13 +11383,6 @@
   },
   {
     "District_Code":"482",
-    "Latitude":40.701532,
-    "Longitude":-73.855252,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
     "Latitude":40.700235,
     "Longitude":-73.854204,
     "year_begin":2006,
@@ -11730,20 +11394,6 @@
     "Longitude":-73.853081,
     "year_begin":2006,
     "crime_type":"Minor Theft"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.71039994,
-    "Longitude":-73.83972581,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.698789,
-    "Longitude":-73.853081,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -11915,13 +11565,6 @@
   },
   {
     "District_Code":"482",
-    "Latitude":40.701532,
-    "Longitude":-73.855252,
-    "year_begin":2006,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
     "Latitude":40.700235,
     "Longitude":-73.854204,
     "year_begin":2006,
@@ -12062,13 +11705,6 @@
   },
   {
     "District_Code":"482",
-    "Latitude":40.70059337,
-    "Longitude":-73.85456485,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
-  },
-  {
-    "District_Code":"482",
     "Latitude":40.700235,
     "Longitude":-73.854204,
     "year_begin":2007,
@@ -12101,13 +11737,6 @@
     "Longitude":-73.853081,
     "year_begin":2007,
     "crime_type":"Major Theft"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70562965,
-    "Longitude":-73.83784734,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
@@ -12402,13 +12031,6 @@
     "Longitude":-73.852778,
     "year_begin":2007,
     "crime_type":"Vandalism"
-  },
-  {
-    "District_Code":"482",
-    "Latitude":40.70259523,
-    "Longitude":-73.85529262,
-    "year_begin":2007,
-    "crime_type":"Theft with Force"
   },
   {
     "District_Code":"482",
