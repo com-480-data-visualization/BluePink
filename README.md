@@ -6,12 +6,15 @@
 | Mahdi Fourati                 | 313078 |
 | Benoit Mathey-Doret dit Doret | 324620 |
 
+### Project Structure
+
+```plaintext
 BLUEPINK/
 ├── data/
 │ ├── crimes*by_district/ # JSON files with crime data per NYC district
 │ └── website_data/ # Additional data used for visualizations/statistics
 │
-├── html/  
+├── html/
 │ ├── about.html # About page \_to be written*
 │ └── statistics.html # Page for global statistics _to be written_
 │
@@ -20,7 +23,7 @@ BLUEPINK/
 ├── js/
 │ ├── main.js # Main map rendering and interaction logic
 │ └── menu_icones.js # Configuration for special crime icons and legend
-│  
+│
 │
 ├── notebooks/ # Jupyter notebooks for data preprocessing and EDA
 │ ├── create_data_by_district.ipynb
@@ -37,7 +40,7 @@ BLUEPINK/
 ├── index.html # Main
 ├── README.md
 └── requirements.txt
-
+'''
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 
 ## Milestone 1 (21st March, 5pm)
@@ -60,3 +63,4 @@ BLUEPINK/
 
 - < 24h: 80% of the grade for the milestone
 - < 48h: 70% of the grade for the milestone
+```
