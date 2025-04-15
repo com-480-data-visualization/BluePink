@@ -55,6 +55,7 @@ fetch(nycDistricts)
         layer.on("click", function () {
           map.fitBounds(layer.getBounds());
           document.getElementById("map-description").innerHTML = iconLegendHTML;
+          document.getElementById("main-title").style.display = "none";
 
           if (window.crimeLayer) {
             map.removeLayer(window.crimeLayer);
@@ -208,6 +209,7 @@ function displayCrimesForDistrict(districtCode, districtCrimes) {
   });
 
   const markers = [];
+  logSpecialCrimeStats(locationData);
 
   // Step 2: Create icons and circles for each location
   Object.values(locationData).forEach((loc) => {
@@ -286,4 +288,24 @@ function handleIndividualClick(clickedLi) {
   }
 
   updateSelectedCrimeTypes();
+}
+
+function logSpecialCrimeStats(locationData) {
+  const counts = {};
+
+  Object.values(locationData).forEach((loc) => {
+    Object.entries(loc.types).forEach(([type, count]) => {
+      for (const [key, config] of Object.entries(specialCrimeIcons)) {
+        if (config.match(type)) {
+          const label = config.name || key;
+          counts[label] = (counts[label] || 0) + count;
+        }
+      }
+    });
+  });
+
+  console.log("Special Crime Icons Count:");
+  Object.entries(counts).forEach(([type, count]) => {
+    console.log(`- ${type}: ${count}`);
+  });
 }
