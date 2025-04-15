@@ -122,6 +122,7 @@ fetch(nycDistricts)
   })
   .catch((error) => console.error("Error loading district data:", error));
 
+//Functions to handle type selection---------------------------------------------
 function handleSelectAllClick(allLi) {
   const allItems = document.querySelectorAll(".list-items .item");
   const isAlreadyAll = allLi.classList.contains("checked");

@@ -184,6 +184,8 @@
     border: 0;
     font-family: sans-serif;
     font-size: 1.1rem;
+    height: 100vh;            /* Make sure body takes full viewport */
+    overflow: hidden;
   }
   
   a {
