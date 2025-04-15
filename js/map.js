@@ -52,6 +52,7 @@ fetch(nycDistricts)
 
         layer.on("click", function () {
           map.fitBounds(layer.getBounds());
+          document.getElementById("map-description").innerHTML = iconLegendHTML;
 
           if (window.crimeLayer) {
             map.removeLayer(window.crimeLayer);
@@ -126,6 +127,7 @@ const specialCrimeIcons = {
     baseWidth: 16,
     baseHeight: 10,
     maxCount: 5,
+    legend_scale: 2,
   },
   rape: {
     match: (type) => type.includes("rape"),
@@ -133,6 +135,7 @@ const specialCrimeIcons = {
     baseWidth: 10,
     baseHeight: 10,
     maxCount: 5,
+    legend_scale: 1,
   },
   fire: {
     match: (type) => type.includes("intentional property fire"),
@@ -140,6 +143,7 @@ const specialCrimeIcons = {
     baseWidth: 12,
     baseHeight: 8,
     maxCount: 5,
+    legend_scale: 3,
   },
   kidnapping: {
     match: (type) => type.includes("kidnapping"),
@@ -147,8 +151,31 @@ const specialCrimeIcons = {
     baseWidth: 10,
     baseHeight: 10,
     maxCount: 5,
+    legend_scale: 1.5,
   },
 };
+
+const iconLegendHTML = `
+  <b>Legend:</b>
+  <div style="margin-top: 0.5rem;">
+    ${Object.entries(specialCrimeIcons)
+      .map(([key, config]) => {
+        const width = config.baseWidth * config.legend_scale;
+        const height = config.baseHeight * config.legend_scale;
+        const label = key.charAt(0).toUpperCase() + key.slice(1);
+
+        return `
+          <div style="display: flex; align-items: center; height: 18px; margin-bottom: 1px;">
+            <div style="width: 30px; height: 100%; display: flex; align-items: center; justify-content: center;">
+              <img src="${config.iconUrl}" width="${width}" height="${height}" />
+            </div>
+            <span style="margin-left: 8px;">${label}</span>
+          </div>
+        `;
+      })
+      .join("")}
+  </div>
+`;
 
 function handleSelectAllClick(allLi) {
   const allItems = document.querySelectorAll(".list-items .item");
