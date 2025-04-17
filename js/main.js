@@ -19,104 +19,84 @@ let allCrimeData = [];
 let selectedCrimeTypes = new Set();
 let crimeTypesLoaded = false;
 let currentDistrictCode = null;
+let legendControl = null;
 
-// Modified Control Panel UI - removed view mode toggle
-const controlPanel = L.control({ position: 'topright' });
-controlPanel.onAdd = function(map) {
-  const div = L.DomUtil.create('div', 'control-panel');
-  div.innerHTML = `
-    <div class="panel-container">
-      <div class="panel-title">NYC Crime Map</div>
-      <div class="panel-controls">
-        <div id="crime-filter-container" class="filter-section">
-          <div class="filter-title">Crime Types</div>
-          <div class="select-btn">
-            <span>Select Crime Types</span>
-            <i class="fas fa-chevron-down"></i>
-          </div>
-          <div class="crime-type-dropdown">
-            <ul id="crime-type-options" class="list-items"></ul>
+// Create a dynamic legend that will change content based on view
+function createLegend(isDistrictView = true) {
+  // Remove existing legend if it exists
+  if (legendControl) {
+    map.removeControl(legendControl);
+  }
+  
+  legendControl = L.control({ position: 'bottomleft' });
+  legendControl.onAdd = function(map) {
+    const div = L.DomUtil.create('div', 'info legend');
+    
+    if (isDistrictView) {
+      // Only show district crime levels when in heat map view
+      div.innerHTML = `
+        <div class="legend-container">
+          <h4>NYC Crime Map</h4>
+          <div class="district-legend">
+            <h5>District Crime Levels</h5>
+            <div class="legend-item"><div class="color-box" style="background:#cce5ff"></div> <span>Lowest 20%</span></div>
+            <div class="legend-item"><div class="color-box" style="background:#99ccff"></div> <span>20-40%</span></div>
+            <div class="legend-item"><div class="color-box" style="background:#ffff99"></div> <span>40-60%</span></div>
+            <div class="legend-item"><div class="color-box" style="background:#ff9933"></div> <span>60-80%</span></div>
+            <div class="legend-item"><div class="color-box" style="background:#ff4d4d"></div> <span>Highest 20%</span></div>
           </div>
         </div>
-        <div class="heat-legend">
-          <div class="legend-title">Crime Level</div>
-          <div class="legend-box" style="background:#cce5ff"></div> <span>Lowest 20%</span><br>
-          <div class="legend-box" style="background:#99ccff"></div> <span>20-40%</span><br>
-          <div class="legend-box" style="background:#ffff99"></div> <span>40-60%</span><br>
-          <div class="legend-box" style="background:#ff9933"></div> <span>60-80%</span><br>
-          <div class="legend-box" style="background:#ff4d4d"></div> <span>Top 20%</span>
-        </div>
-      </div>
-      <div id="data-loading" class="data-status">Loading crime data...</div>
-    </div>
-  `;
-  return div;
-};
-controlPanel.addTo(map);
-
-// Add map legend
-const legend = L.control({ position: 'bottomleft' });
-legend.onAdd = function(map) {
-  const div = L.DomUtil.create('div', 'info legend');
-  div.innerHTML = `
-    <div class="legend-container">
-      <h4>NYC Crime Map</h4>
-      <div class="legend-item">
-        <div class="marker-icon" style="background-color: red; border-radius: 50%; width: 10px; height: 10px;"></div>
-        <span>Standard Crime Marker</span>
-      </div>
-      <div class="crime-icons-legend">
-        <h5>Special Crime Types</h5>
-        <div id="special-crime-icons">
-          ${Object.entries(specialCrimeIcons).map(([key, cfg]) => `
-            <div class="legend-item">
-              <img src="${cfg.iconUrl}" alt="${key}" style="width: ${cfg.baseWidth}px; height: ${cfg.baseHeight}px;">
-              <span>${key}</span>
+      `;
+    } else {
+      // Show full legend with crime markers when in district view
+      div.innerHTML = `
+        <div class="legend-container">
+          <h4>NYC Crime Map</h4>
+          <div class="legend-item">
+            <div class="marker-icon" style="background-color: red; border-radius: 50%; width: 10px; height: 10px;"></div>
+            <span>Standard Crime Marker</span>
+          </div>
+          <div class="crime-icons-legend">
+            <h5>Special Crime Types</h5>
+            <div id="special-crime-icons">
+              ${Object.entries(specialCrimeIcons).map(([key, cfg]) => `
+                <div class="legend-item">
+                  <img src="${cfg.iconUrl}" alt="${key}" style="width: ${cfg.baseWidth}px; height: ${cfg.baseHeight}px;">
+                  <span>${key}</span>
+                </div>
+              `).join('')}
             </div>
-          `).join('')}
+          </div>
         </div>
-      </div>
-      <div class="district-legend">
-        <h5>District Crime Levels</h5>
-        <div class="legend-item"><div class="color-box" style="background:#cce5ff"></div> <span>Lowest 20%</span></div>
-        <div class="legend-item"><div class="color-box" style="background:#99ccff"></div> <span>20-40%</span></div>
-        <div class="legend-item"><div class="color-box" style="background:#ffff99"></div> <span>40-60%</span></div>
-        <div class="legend-item"><div class="color-box" style="background:#ff9933"></div> <span>60-80%</span></div>
-        <div class="legend-item"><div class="color-box" style="background:#ff4d4d"></div> <span>Highest 20%</span></div>
-      </div>
-    </div>
-  `;
-  
-  // Add some styling
-  div.style.backgroundColor = 'white';
-  div.style.padding = '10px';
-  div.style.borderRadius = '5px';
-  div.style.boxShadow = '0 0 15px rgba(0,0,0,0.2)';
-  div.style.maxWidth = '250px';
-  
-  const colorBoxes = div.querySelectorAll('.color-box');
-  colorBoxes.forEach(box => {
-    box.style.width = '15px';
-    box.style.height = '15px';
-    box.style.display = 'inline-block';
-    box.style.marginRight = '5px';
-  });
-  
-  const legendItems = div.querySelectorAll('.legend-item');
-  legendItems.forEach(item => {
-    item.style.margin = '5px 0';
-    item.style.display = 'flex';
-    item.style.alignItems = 'center';
-  });
-  
-  return div;
-};
-legend.addTo(map);
-
-// Setup dropdown toggle
-document.querySelector(".select-btn").addEventListener("click", function() {
-  this.nextElementSibling.classList.toggle("open");
-});
+      `;
+    }
+    
+    // Add some styling
+    div.style.backgroundColor = 'white';
+    div.style.padding = '10px';
+    div.style.borderRadius = '5px';
+    div.style.boxShadow = '0 0 15px rgba(0,0,0,0.2)';
+    div.style.maxWidth = '250px';
+    
+    const colorBoxes = div.querySelectorAll('.color-box');
+    colorBoxes.forEach(box => {
+      box.style.width = '15px';
+      box.style.height = '15px';
+      box.style.display = 'inline-block';
+      box.style.marginRight = '5px';
+    });
+    
+    const legendItems = div.querySelectorAll('.legend-item');
+    legendItems.forEach(item => {
+      item.style.margin = '5px 0';
+      item.style.display = 'flex';
+      item.style.alignItems = 'center';
+    });
+    
+    return div;
+  };
+  legendControl.addTo(map);
+}
 
 // Load district boundaries
 fetch("https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/NYC_Community_Districts/FeatureServer/0/query?where=1=1&outFields=*&outSR=4326&f=pgeojson")
@@ -142,6 +122,9 @@ fetch("https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/NYC_Co
             fillOpacity: 0
           });
           
+          // Update legend to show crime markers when district is selected
+          createLegend(false);
+          
           loadDistrictCrimeData(districtCode);
         });
       }
@@ -149,13 +132,11 @@ fetch("https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/NYC_Co
 
     loadAllCrimeData();
     
-    // Add demo data button after map loads
-    setTimeout(addDemoDataButton, 1000);
+    // Initialize legend with district view (heat map) only
+    createLegend(true);
   });
 
 function loadAllCrimeData() {
-  document.getElementById("data-loading").style.display = "block";
-
   const districtCodes = Array.from({length: 70}, (_, i) => i + 101).filter(code =>
     (code >= 101 && code <= 112) || (code >= 201 && code <= 212) ||
     (code >= 301 && code <= 318) || (code >= 401 && code <= 414) ||
@@ -174,8 +155,6 @@ function loadAllCrimeData() {
     
     // Use the JSON file for district coloring
     colorDistrictsByCrime();
-    
-    document.getElementById("data-loading").style.display = "none";
   });
 }
 
@@ -228,12 +207,6 @@ function useDemoData() {
   });
   
   applyColorsToDistricts(demoCrimeCounts);
-  
-  // Show a message to the user
-  const dataStatus = document.getElementById("data-loading");
-  dataStatus.style.display = "block";
-  dataStatus.textContent = "Using sample data (JSON loading failed)";
-  setTimeout(() => { dataStatus.style.display = "none"; }, 5000);
 }
 
 // Separate function to apply colors based on crime counts
@@ -284,7 +257,6 @@ function applyColorsToDistricts(crimeCounts) {
   });
 }
 
-// Add a function to create a simple JSON with crime data if needed
 function generateJsonFile() {
   // This would be used if you want to manually create a JSON file
   const jsonData = [];
@@ -310,113 +282,14 @@ function generateJsonFile() {
   document.body.removeChild(a);
 }
 
-// Add a button to generate demo data (can be helpful for testing)
-function addDemoDataButton() {
-  const controlDiv = document.querySelector('.control-panel .panel-controls');
-  if (controlDiv) {
-    const demoBtn = document.createElement('button');
-    demoBtn.innerHTML = 'Use Demo Data';
-    demoBtn.className = 'demo-button';
-    demoBtn.style.marginTop = '10px';
-    demoBtn.onclick = function() {
-      useDemoData();
-    };
-    controlDiv.appendChild(demoBtn);
-    
-    const jsonBtn = document.createElement('button');
-    jsonBtn.innerHTML = 'Generate JSON';
-    jsonBtn.className = 'demo-button';
-    jsonBtn.style.marginTop = '5px';
-    jsonBtn.onclick = function() {
-      generateJsonFile();
-    };
-    controlDiv.appendChild(jsonBtn);
-  }
-}
-
 function populateCrimeTypeFilter(data) {
   if (crimeTypesLoaded) return;
-  const crimeTypeList = document.getElementById("crime-type-options");
-  const allTypes = new Set(data.map(c => c.crime_type));
-  const allLi = document.createElement("li");
-  allLi.classList.add("item", "checked");
-  allLi.dataset.value = "__all__";
-  allLi.innerHTML = `
-    <span class="checkbox"><i class="fa-solid fa-check check-icon"></i></span>
-    <span class="item-text">All</span>
-  `;
-  allLi.addEventListener("click", () => handleSelectAllClick(allLi));
-  crimeTypeList.appendChild(allLi);
-  Array.from(allTypes).sort().forEach(type => {
-    const li = document.createElement("li");
-    li.classList.add("item", "checked");
-    li.dataset.value = type;
-    li.innerHTML = `
-      <span class="checkbox"><i class="fa-solid fa-check check-icon"></i></span>
-      <span class="item-text">${type}</span>
-    `;
-    li.addEventListener("click", () => handleIndividualClick(li));
-    crimeTypeList.appendChild(li);
-    selectedCrimeTypes.add(type);
-  });
+  // Since we're removing the control panel, we'll just set all crime types as selected
+  selectedCrimeTypes = new Set(data.map(c => c.crime_type));
   crimeTypesLoaded = true;
 }
 
-function handleSelectAllClick(allLi) {
-  const allItems = document.querySelectorAll(".list-items .item");
-  if (allLi.classList.contains("checked")) return;
-  allItems.forEach(item => item.classList.add("checked"));
-  updateSelectedCrimeTypes();
-}
-
-function handleIndividualClick(clickedLi) {
-  const allLi = document.querySelector('.list-items .item[data-value="__all__"]');
-  if (allLi.classList.contains("checked")) {
-    document.querySelectorAll(".list-items .item").forEach(item => item.classList.remove("checked"));
-    clickedLi.classList.add("checked");
-  } else {
-    clickedLi.classList.toggle("checked");
-  }
-  if (clickedLi !== allLi && allLi.classList.contains("checked")) {
-    allLi.classList.remove("checked");
-  }
-  updateSelectedCrimeTypes();
-}
-
-function updateSelectedCrimeTypes() {
-  selectedCrimeTypes.clear();
-  const allLi = document.querySelector('.list-items .item[data-value="__all__"]');
-  const allItems = document.querySelectorAll(".list-items .item");
-  const checkedItems = document.querySelectorAll(".list-items .item.checked");
-  if (allLi.classList.contains("checked")) {
-    allItems.forEach(item => {
-      const value = item.dataset.value;
-      if (value && value !== "__all__") {
-        selectedCrimeTypes.add(value);
-      }
-    });
-  } else {
-    checkedItems.forEach(item => {
-      const value = item.dataset.value;
-      if (value && value !== "__all__") {
-        selectedCrimeTypes.add(value);
-      }
-    });
-  }
-  if (currentDistrictCode) {
-    fetch(`data/crimes_by_district/${currentDistrictCode}.json`)
-      .then(res => res.json())
-      .then(districtCrimes => {
-        displayCrimesForDistrict(currentDistrictCode, districtCrimes);
-      });
-  } else {
-    // Always use district heat map view as default
-    colorDistrictsByCrime();
-  }
-}
-
 function loadDistrictCrimeData(code) {
-  document.getElementById("data-loading").style.display = "block";
   fetch(`data/crimes_by_district/${code}.json`)
     .then(res => {
       if (!res.ok) throw new Error(`No data for district ${code}`);
@@ -425,10 +298,9 @@ function loadDistrictCrimeData(code) {
     .then(districtCrimes => {
       if (markerLayer) map.removeLayer(markerLayer);
       displayCrimesForDistrict(code, districtCrimes);
-      document.getElementById("data-loading").style.display = "none";
     })
     .catch(err => {
-      document.getElementById("data-loading").textContent = `No data for district ${code}`;
+      console.error(`No data for district ${code}`);
     });
 }
 
@@ -490,6 +362,10 @@ map.on('contextmenu', function() {
     currentDistrictCode = null;
     map.setView([40.7128, -74.006], 11);
     if (markerLayer) map.removeLayer(markerLayer);
+    
+    // Change back to district legend when returning to overview
+    createLegend(true);
+    
     colorDistrictsByCrime();
   }
 });
