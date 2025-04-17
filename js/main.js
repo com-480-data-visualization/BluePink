@@ -71,7 +71,6 @@ function createLegend(isDistrictView = true) {
       `;
     }
     
-    // Add some styling
     div.style.backgroundColor = 'white';
     div.style.padding = '10px';
     div.style.borderRadius = '5px';
@@ -117,12 +116,11 @@ fetch("https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/NYC_Co
           currentDistrictCode = districtCode;
           map.fitBounds(layer.getBounds());
           
-          // Hide the district color layer when district is clicked
           districtLayer.setStyle({
             fillOpacity: 0
           });
           
-          // Update legend to show crime markers when district is selected
+          
           createLegend(false);
           
           loadDistrictCrimeData(districtCode);
@@ -132,7 +130,6 @@ fetch("https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/NYC_Co
 
     loadAllCrimeData();
     
-    // Initialize legend with district view (heat map) only
     createLegend(true);
   });
 
@@ -153,7 +150,6 @@ function loadAllCrimeData() {
     allCrimeData = results.flat();
     populateCrimeTypeFilter(allCrimeData);
     
-    // Use the JSON file for district coloring
     colorDistrictsByCrime();
   });
 }
@@ -169,21 +165,18 @@ function colorDistrictsByCrime() {
     .then(crimeData => {
       const crimeCounts = {};
       
-      // Process JSON data
       for (const item of crimeData) {
         const districtCode = item.District_Code.toString();
         const count = item.count;
         
         if (districtCode && !isNaN(count)) {
-          // Store both with and without leading zeros to handle different formats
           crimeCounts[districtCode] = count;
-          // Also add with padding to 3 digits (common district code format)
           const paddedCode = districtCode.padStart(3, '0');
           crimeCounts[paddedCode] = count;
         }
       }
       
-      // If we still don't have valid counts, use demo data
+    
       if (Object.keys(crimeCounts).length === 0 || Object.values(crimeCounts).every(v => v === 0)) {
         return useDemoData();
       }
@@ -199,17 +192,15 @@ function colorDistrictsByCrime() {
 function useDemoData() {
   const demoCrimeCounts = {};
   
-  // Create realistic-looking data for each district
   districtLayer.eachLayer(layer => {
     const code = layer.feature.properties.BoroCD;
-    // Generate a random count between 50 and 1000
+
     demoCrimeCounts[code] = Math.floor(Math.random() * 950) + 50;
   });
   
   applyColorsToDistricts(demoCrimeCounts);
 }
 
-// Separate function to apply colors based on crime counts
 function applyColorsToDistricts(crimeCounts) {
   const allCounts = Object.values(crimeCounts).filter(count => count > 0).sort((a, b) => a - b);
   
@@ -217,20 +208,18 @@ function applyColorsToDistricts(crimeCounts) {
     return;
   }
   
-  // Calculate percentiles for color ranges
   const p20 = allCounts[Math.floor(allCounts.length * 0.2)] || 1;
   const p40 = allCounts[Math.floor(allCounts.length * 0.4)] || 2;
   const p60 = allCounts[Math.floor(allCounts.length * 0.6)] || 3;
   const p80 = allCounts[Math.floor(allCounts.length * 0.8)] || 4;
 
-  // Apply colors to districts
+
   districtLayer.eachLayer(layer => {
-    // Try different district code formats
+  
     const code = layer.feature.properties.BoroCD;
     const codeString = code.toString();
     const codeTrimmed = codeString.replace(/^0+/, '');
     
-    // Try to find counts with different formats of the code
     let count = crimeCounts[code] || 
                 crimeCounts[codeString] || 
                 crimeCounts[codeTrimmed] ||
@@ -238,7 +227,6 @@ function applyColorsToDistricts(crimeCounts) {
     
     let fillColor;
     
-    // Determine color based on count
     if (count <= p20) fillColor = "#cce5ff";
     else if (count <= p40) fillColor = "#99ccff";
     else if (count <= p60) fillColor = "#ffff99";
@@ -258,7 +246,7 @@ function applyColorsToDistricts(crimeCounts) {
 }
 
 function generateJsonFile() {
-  // This would be used if you want to manually create a JSON file
+  // This was used for debugging
   const jsonData = [];
   
   districtLayer.eachLayer(layer => {
@@ -270,7 +258,7 @@ function generateJsonFile() {
     });
   });
   
-  // Create a download link for the JSON
+
   const blob = new Blob([JSON.stringify(jsonData)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
@@ -284,7 +272,7 @@ function generateJsonFile() {
 
 function populateCrimeTypeFilter(data) {
   if (crimeTypesLoaded) return;
-  // Since we're removing the control panel, we'll just set all crime types as selected
+
   selectedCrimeTypes = new Set(data.map(c => c.crime_type));
   crimeTypesLoaded = true;
 }
@@ -356,21 +344,18 @@ function createMarkerView(data) {
   ).addTo(map);
 }
 
-// Add a way to go back to the district view after viewing a specific district
 map.on('contextmenu', function() {
   if (currentDistrictCode) {
     currentDistrictCode = null;
     map.setView([40.7128, -74.006], 11);
     if (markerLayer) map.removeLayer(markerLayer);
     
-    // Change back to district legend when returning to overview
     createLegend(true);
     
     colorDistrictsByCrime();
   }
 });
 
-// CSS styles
 const style = document.createElement('style');
 style.textContent = `
   .legend-container {
@@ -413,6 +398,6 @@ document.head.appendChild(style);
 
 // Initialize map with heat map view by default
 window.addEventListener('DOMContentLoaded', () => {
-  // Force heat map view by default
+  
   colorDistrictsByCrime();
 });
