@@ -20,6 +20,7 @@ let selectedCrimeTypes = new Set();
 let crimeTypesLoaded = false;
 let currentDistrictCode = null;
 let legendControl = null;
+let currentDistrictData = null;
 
 // Create a dynamic legend that will change content based on view
 function createLegend(isDistrictView = true) {
@@ -97,6 +98,49 @@ function createLegend(isDistrictView = true) {
   legendControl.addTo(map);
 }
 
+// Add crime filter dropdown UI
+function setupCrimeFilterUI() {
+  const filterContainer = document.createElement('div');
+  filterContainer.id = 'crime-filter-container';
+  filterContainer.style.display = 'none';
+  filterContainer.style.position = 'absolute';
+  filterContainer.style.top = '10px';
+  filterContainer.style.right = '10px';
+  filterContainer.style.zIndex = '1000';
+  filterContainer.style.backgroundColor = 'white';
+  filterContainer.style.padding = '10px';
+  filterContainer.style.borderRadius = '5px';
+  filterContainer.style.boxShadow = '0 0 15px rgba(0,0,0,0.2)';
+  filterContainer.style.maxWidth = '250px';
+  
+  filterContainer.innerHTML = `
+    <div class="wrapper">
+      <div class="select-btn">
+        <span>Select Crime Types</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+      <div class="content">
+        <div class="search">
+          <i class="fa-solid fa-search"></i>
+          <input type="text" placeholder="Search">
+        </div>
+        <ul class="list-items" id="crime-type-options"></ul>
+      </div>
+    </div>
+  `;
+  
+  document.body.appendChild(filterContainer);
+  
+  // Setup dropdown logic
+  const dropdownBtn = document.querySelector(".select-btn");
+  const crimeTypeList = document.getElementById("crime-type-options");
+  
+  // Toggle dropdown open/close
+  dropdownBtn.addEventListener("click", () => {
+    dropdownBtn.classList.toggle("open");
+  });
+}
+
 // Load district boundaries
 fetch("https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/NYC_Community_Districts/FeatureServer/0/query?where=1=1&outFields=*&outSR=4326&f=pgeojson")
   .then(res => res.json())
@@ -120,8 +164,10 @@ fetch("https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/NYC_Co
             fillOpacity: 0
           });
           
-          
           createLegend(false);
+          
+          // Show crime filter when district is clicked
+          document.getElementById('crime-filter-container').style.display = 'block';
           
           loadDistrictCrimeData(districtCode);
         });
@@ -129,7 +175,7 @@ fetch("https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/NYC_Co
     }).addTo(map);
 
     loadAllCrimeData();
-    
+    setupCrimeFilterUI();
     createLegend(true);
   });
 
@@ -148,8 +194,6 @@ function loadAllCrimeData() {
 
   Promise.all(fetches).then(results => {
     allCrimeData = results.flat();
-    populateCrimeTypeFilter(allCrimeData);
-    
     colorDistrictsByCrime();
   });
 }
@@ -176,7 +220,6 @@ function colorDistrictsByCrime() {
         }
       }
       
-    
       if (Object.keys(crimeCounts).length === 0 || Object.values(crimeCounts).every(v => v === 0)) {
         return useDemoData();
       }
@@ -194,7 +237,6 @@ function useDemoData() {
   
   districtLayer.eachLayer(layer => {
     const code = layer.feature.properties.BoroCD;
-
     demoCrimeCounts[code] = Math.floor(Math.random() * 950) + 50;
   });
   
@@ -213,9 +255,7 @@ function applyColorsToDistricts(crimeCounts) {
   const p60 = allCounts[Math.floor(allCounts.length * 0.6)] || 3;
   const p80 = allCounts[Math.floor(allCounts.length * 0.8)] || 4;
 
-
   districtLayer.eachLayer(layer => {
-  
     const code = layer.feature.properties.BoroCD;
     const codeString = code.toString();
     const codeTrimmed = codeString.replace(/^0+/, '');
@@ -245,38 +285,6 @@ function applyColorsToDistricts(crimeCounts) {
   });
 }
 
-function generateJsonFile() {
-  // This was used for debugging
-  const jsonData = [];
-  
-  districtLayer.eachLayer(layer => {
-    const code = layer.feature.properties.BoroCD;
-    const randomCount = Math.floor(Math.random() * 950) + 50;
-    jsonData.push({
-      District_Code: parseFloat(code),
-      count: randomCount
-    });
-  });
-  
-
-  const blob = new Blob([JSON.stringify(jsonData)], { type: 'application/json' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.setAttribute('hidden', '');
-  a.setAttribute('href', url);
-  a.setAttribute('download', 'district_crime_data.json');
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-}
-
-function populateCrimeTypeFilter(data) {
-  if (crimeTypesLoaded) return;
-
-  selectedCrimeTypes = new Set(data.map(c => c.crime_type));
-  crimeTypesLoaded = true;
-}
-
 function loadDistrictCrimeData(code) {
   fetch(`data/crimes_by_district/${code}.json`)
     .then(res => {
@@ -284,12 +292,132 @@ function loadDistrictCrimeData(code) {
       return res.json();
     })
     .then(districtCrimes => {
+      currentDistrictData = districtCrimes;
+      
+      // Populate crime types filter when district data is loaded
+      populateCrimeTypeFilter(districtCrimes);
+      
       if (markerLayer) map.removeLayer(markerLayer);
       displayCrimesForDistrict(code, districtCrimes);
     })
     .catch(err => {
       console.error(`No data for district ${code}`);
     });
+}
+
+function populateCrimeTypeFilter(data) {
+  const crimeTypeList = document.getElementById("crime-type-options");
+  
+  // Clear existing options
+  crimeTypeList.innerHTML = '';
+  
+  // Get unique crime types
+  const allTypes = new Set(data.map(c => c.crime_type));
+  
+  // Initially select all crime types
+  selectedCrimeTypes = new Set(allTypes);
+  
+  // Add "All" option at the top
+  const allLi = document.createElement("li");
+  allLi.classList.add("item", "checked");
+  allLi.dataset.value = "__all__";
+  allLi.innerHTML = `
+    <span class="checkbox"><i class="fa-solid fa-check check-icon"></i></span>
+    <span class="item-text">All</span>
+  `;
+  allLi.addEventListener("click", () => handleSelectAllClick(allLi));
+  crimeTypeList.appendChild(allLi);
+  
+  // Add individual crime types
+  Array.from(allTypes)
+    .sort()
+    .forEach((type) => {
+      const li = document.createElement("li");
+      li.classList.add("item", "checked");
+      li.dataset.value = type;
+      li.innerHTML = `
+        <span class="checkbox"><i class="fa-solid fa-check check-icon"></i></span>
+        <span class="item-text">${type}</span>
+      `;
+      li.addEventListener("click", () => handleIndividualClick(li));
+      crimeTypeList.appendChild(li);
+    });
+}
+
+function handleSelectAllClick(allLi) {
+  const allItems = document.querySelectorAll(".list-items .item");
+  const isAlreadyAll = allLi.classList.contains("checked");
+
+  if (isAlreadyAll) {
+    // Already selected — do nothing
+    return;
+  }
+
+  // Uncheck all first (to reset)
+  allItems.forEach((item) => item.classList.remove("checked"));
+
+  // Check all items, including "All"
+  allItems.forEach((item) => item.classList.add("checked"));
+
+  updateSelectedCrimeTypes();
+}
+
+function handleIndividualClick(clickedLi) {
+  const allLi = document.querySelector('.list-items .item[data-value="__all__"]');
+  const isAllSelected = allLi.classList.contains("checked");
+
+  // Case 1: "All" is selected → switch to single selection
+  if (isAllSelected) {
+    // Uncheck all
+    document.querySelectorAll(".list-items .item").forEach((item) => {
+      item.classList.remove("checked");
+    });
+
+    // Check only the clicked one
+    clickedLi.classList.add("checked");
+  }
+  // Case 2: "All" is not selected → toggle normally
+  else {
+    clickedLi.classList.toggle("checked");
+  }
+
+  // Always uncheck "All" if any individual is clicked
+  if (allLi.classList.contains("checked")) {
+    allLi.classList.remove("checked");
+  }
+
+  updateSelectedCrimeTypes();
+}
+
+// Update selectedCrimeTypes from UI
+function updateSelectedCrimeTypes() {
+  selectedCrimeTypes = new Set();
+
+  const allItems = document.querySelectorAll(".list-items .item");
+  const allLi = document.querySelector('.list-items .item[data-value="__all__"]');
+  const checkedItems = document.querySelectorAll(".list-items .item.checked");
+
+  if (allLi.classList.contains("checked")) {
+    // "All" is selected → add all types except "All"
+    allItems.forEach((item) => {
+      const value = item.dataset.value;
+      if (value && value !== "__all__") {
+        selectedCrimeTypes.add(value);
+      }
+    });
+  } else {
+    // Only specific items selected
+    checkedItems.forEach((item) => {
+      const value = item.dataset.value;
+      if (value && value !== "__all__") {
+        selectedCrimeTypes.add(value);
+      }
+    });
+  }
+
+  if (currentDistrictCode && currentDistrictData) {
+    displayCrimesForDistrict(currentDistrictCode, currentDistrictData);
+  }
 }
 
 function displayCrimesForDistrict(code, data) {
@@ -350,6 +478,9 @@ map.on('contextmenu', function() {
     map.setView([40.7128, -74.006], 11);
     if (markerLayer) map.removeLayer(markerLayer);
     
+    // Hide crime filter when returning to overview
+    document.getElementById('crime-filter-container').style.display = 'none';
+    
     createLegend(true);
     
     colorDistrictsByCrime();
@@ -393,11 +524,109 @@ style.textContent = `
   .marker-icon {
     margin-right: 5px;
   }
+  
+  /* Crime Filter Dropdown Styles */
+  .wrapper {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+  
+  .wrapper .select-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  .wrapper .select-btn.open {
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .wrapper .content {
+    display: none;
+    border-top: 1px solid #ddd;
+  }
+  
+  .select-btn.open + .content {
+    display: block;
+  }
+  
+  .wrapper .search {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .wrapper .search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 12px;
+  }
+  
+  .wrapper .list-items {
+    max-height: 250px;
+    overflow-y: auto;
+    padding: 5px 10px;
+    margin: 0;
+  }
+  
+  .wrapper .list-items li {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    cursor: pointer;
+    transition: all 0.2s;
+    list-style: none;
+  }
+  
+  .wrapper .list-items li:hover {
+    background: #f5f5f5;
+  }
+  
+  .wrapper .list-items li .checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    border-radius: 3px;
+    margin-right: 8px;
+    border: 1.5px solid #c0c0c0;
+    transition: all 0.2s;
+  }
+  
+  .wrapper .list-items li.checked .checkbox {
+    background: #4070f4;
+    border-color: #4070f4;
+  }
+  
+  .wrapper .list-items li .check-icon {
+    color: #fff;
+    font-size: 11px;
+    transform: scale(0);
+    transition: all 0.2s;
+  }
+  
+  .wrapper .list-items li.checked .check-icon {
+    transform: scale(1);
+  }
 `;
 document.head.appendChild(style);
 
 // Initialize map with heat map view by default
 window.addEventListener('DOMContentLoaded', () => {
+  // Add Font Awesome for icons if not already in HTML
+  const fontAwesome = document.createElement('link');
+  fontAwesome.rel = 'stylesheet';
+  fontAwesome.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css';
+  document.head.appendChild(fontAwesome);
   
   colorDistrictsByCrime();
 });
