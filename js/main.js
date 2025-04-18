@@ -34,7 +34,7 @@ function createLegend(isDistrictView = true) {
     const div = L.DomUtil.create('div', 'info legend');
     
     if (isDistrictView) {
-      // Only show district crime levels when in heat map view
+      // Only show district crime levels when in heat map view !
       div.innerHTML = `
         <div class="legend-container">
           <h4>NYC Crime Map</h4>
@@ -620,9 +620,9 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Initialize map with heat map view by default
+// Initialize map with choropleth map view by default
 window.addEventListener('DOMContentLoaded', () => {
-  // Add Font Awesome for icons if not already in HTML
+  // Add Font Awesome 
   const fontAwesome = document.createElement('link');
   fontAwesome.rel = 'stylesheet';
   fontAwesome.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css';
