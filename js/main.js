@@ -115,10 +115,6 @@ function setupCrimeFilterUI() {
   
   filterContainer.innerHTML = `
     <div class="wrapper">
-      <div class="select-btn">
-        <span>Select Crime Types</span>
-        <i class="fa-solid fa-chevron-down"></i>
-      </div>
       <div class="content">
         <div class="search">
           <i class="fa-solid fa-search"></i>
