@@ -21,6 +21,7 @@ let crimeTypesLoaded = false;
 let currentDistrictCode = null;
 let legendControl = null;
 let currentDistrictData = null;
+let currentCrimeCounts = {}; // Store current crime counts for legend
 
 // Create a dynamic legend that will change content based on view
 function createLegend(isDistrictView = true) {
@@ -34,20 +35,49 @@ function createLegend(isDistrictView = true) {
     const div = L.DomUtil.create('div', 'info legend');
     
     if (isDistrictView) {
-      // Only show district crime levels when in heat map view !
-      div.innerHTML = `
+      // Calculate actual crime count ranges for legend
+      const allCounts = Object.values(currentCrimeCounts).filter(count => count > 0).sort((a, b) => a - b);
+      
+      let legendHTML = `
         <div class="legend-container">
           <h4>NYC Crime Map</h4>
           <div class="district-legend">
-            <h5>District Crime Levels</h5>
-            <div class="legend-item"><div class="color-box" style="background:#cce5ff"></div> <span>Lowest 20%</span></div>
-            <div class="legend-item"><div class="color-box" style="background:#99ccff"></div> <span>20-40%</span></div>
-            <div class="legend-item"><div class="color-box" style="background:#ffff99"></div> <span>40-60%</span></div>
-            <div class="legend-item"><div class="color-box" style="background:#ff9933"></div> <span>60-80%</span></div>
-            <div class="legend-item"><div class="color-box" style="background:#ff4d4d"></div> <span>Highest 20%</span></div>
+            <h5>District Crime Levels </h5>
+            <h5>(Number of occurrences) </h5>
+      `;
+      
+      if (allCounts.length > 0) {
+        const p20Index = Math.floor(allCounts.length * 0.2);
+        const p40Index = Math.floor(allCounts.length * 0.4);
+        const p60Index = Math.floor(allCounts.length * 0.6);
+        const p80Index = Math.floor(allCounts.length * 0.8);
+        
+        const minCount = Math.min(...allCounts);
+        const p20Count = allCounts[p20Index] || minCount;
+        const p40Count = allCounts[p40Index] || minCount;
+        const p60Count = allCounts[p60Index] || minCount;
+        const p80Count = allCounts[p80Index] || minCount;
+        const maxCount = Math.max(...allCounts);
+        
+        legendHTML += `
+            <div class="legend-item"><div class="color-box" style="background:#cce5ff"></div> <span>${minCount} - ${p20Count}</span></div>
+            <div class="legend-item"><div class="color-box" style="background:#99ccff"></div> <span>${p20Count + 1} - ${p40Count}</span></div>
+            <div class="legend-item"><div class="color-box" style="background:#ffff99"></div> <span>${p40Count + 1} - ${p60Count}</span></div>
+            <div class="legend-item"><div class="color-box" style="background:#ff9933"></div> <span>${p60Count + 1} - ${p80Count}</span></div>
+            <div class="legend-item"><div class="color-box" style="background:#ff4d4d"></div> <span>${p80Count + 1} - ${maxCount}</span></div>
+        `;
+      } else {
+        legendHTML += `
+            <div class="legend-item"><div class="color-box" style="background:#cce5ff"></div> <span>No data available</span></div>
+        `;
+      }
+      
+      legendHTML += `
           </div>
         </div>
       `;
+      
+      div.innerHTML = legendHTML;
     } else {
       // Show full legend with crime markers when in district view
       div.innerHTML = `
@@ -220,6 +250,8 @@ function colorDistrictsByCrime() {
         return useDemoData();
       }
 
+      // Store crime counts globally for legend use
+      currentCrimeCounts = crimeCounts;
       applyColorsToDistricts(crimeCounts);
     })
     .catch(() => {
@@ -236,6 +268,8 @@ function useDemoData() {
     demoCrimeCounts[code] = Math.floor(Math.random() * 950) + 50;
   });
   
+  // Store demo crime counts globally for legend use
+  currentCrimeCounts = demoCrimeCounts;
   applyColorsToDistricts(demoCrimeCounts);
 }
 
@@ -279,6 +313,9 @@ function applyColorsToDistricts(crimeCounts) {
     const name = layer.feature.properties.BoroCD_name || `District ${code}`;
     layer.bindPopup(`<b>${name}</b><br>Crime Count: ${count}`);
   });
+
+  // Update the legend after applying colors
+  createLegend(true);
 }
 
 function loadDistrictCrimeData(code) {
