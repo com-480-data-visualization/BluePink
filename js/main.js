@@ -16,15 +16,99 @@ baseGray.addTo(map);
 let markerLayer = null;
 let districtLayer = null;
 let allCrimeData = [];
+let economicsData = [];
 let selectedCrimeTypes = new Set();
 let crimeTypesLoaded = false;
 let currentDistrictCode = null;
 let legendControl = null;
 let currentDistrictData = null;
-let currentCrimeCounts = {}; // Store current crime counts for legend
+let currentCrimeCounts = {};
+let currentEconomicsData = {};
+let currentMapMode = 'crime'; // 'crime' or 'economics'
+let selectedEconomicMetric = 'individuals_below_FPL';
+let selectedYear = 2005;
+
+// Create toggle button for switching between maps
+function createMapToggleButton() {
+  const toggleContainer = document.createElement('div');
+  toggleContainer.id = 'map-toggle-container';
+  toggleContainer.style.position = 'absolute';
+  toggleContainer.style.top = '10px';
+  toggleContainer.style.right = '10px';
+  toggleContainer.style.zIndex = '1000';
+  toggleContainer.style.backgroundColor = 'white';
+  toggleContainer.style.padding = '10px';
+  toggleContainer.style.borderRadius = '5px';
+  toggleContainer.style.boxShadow = '0 0 15px rgba(0,0,0,0.2)';
+  
+  toggleContainer.innerHTML = `
+    <div class="map-controls">
+      <h4 style="margin: 0 0 10px 0; font-size: 14px;">Map View</h4>
+      <div class="toggle-buttons">
+        <button id="crime-btn" class="toggle-btn active">Crime Data</button>
+        <button id="economics-btn" class="toggle-btn">Economics Data</button>
+      </div>
+      <div id="economics-controls" style="display: none; margin-top: 10px;">
+        <label style="font-size: 12px;">Metric:</label>
+        <select id="metric-select" style="width: 100%; margin: 5px 0;">
+          <option value="individuals_below_FPL">% Below Poverty Line</option>
+          <option value="Employement_pop_ratio">Employment Rate</option>
+        </select>
+        <label style="font-size: 12px;">Year:</label>
+        <select id="year-select" style="width: 100%; margin: 5px 0;">
+          <!-- Years will be populated dynamically -->
+        </select>
+      </div>
+    </div>
+  `;
+  
+  document.body.appendChild(toggleContainer);
+  
+  // Add event listeners
+  document.getElementById('crime-btn').addEventListener('click', () => switchToMode('crime'));
+  document.getElementById('economics-btn').addEventListener('click', () => switchToMode('economics'));
+  document.getElementById('metric-select').addEventListener('change', (e) => {
+    selectedEconomicMetric = e.target.value;
+    if (currentMapMode === 'economics') {
+      colorDistrictsByEconomics();
+    }
+  });
+  document.getElementById('year-select').addEventListener('change', (e) => {
+    selectedYear = parseInt(e.target.value);
+    if (currentMapMode === 'economics') {
+      colorDistrictsByEconomics();
+    }
+  });
+}
+
+function switchToMode(mode) {
+  currentMapMode = mode;
+  
+  // Update button states
+  document.querySelectorAll('.toggle-btn').forEach(btn => btn.classList.remove('active'));
+  document.getElementById(`${mode}-btn`).classList.add('active');
+  
+  // Show/hide controls
+  document.getElementById('economics-controls').style.display = mode === 'economics' ? 'block' : 'none';
+  document.getElementById('crime-filter-container').style.display = 'none';
+  
+  // Clear any district-specific views
+  if (currentDistrictCode) {
+    currentDistrictCode = null;
+    map.setView([40.7128, -74.006], 11);
+    if (markerLayer) map.removeLayer(markerLayer);
+  }
+  
+  // Apply appropriate coloring
+  if (mode === 'crime') {
+    colorDistrictsByCrime();
+  } else {
+    colorDistrictsByEconomics();
+  }
+}
 
 // Create a dynamic legend that will change content based on view
-function createLegend(isDistrictView = true) {
+function createLegend(isDistrictView = true, mapMode = 'crime') {
   // Remove existing legend if it exists
   if (legendControl) {
     map.removeControl(legendControl);
@@ -35,41 +119,74 @@ function createLegend(isDistrictView = true) {
     const div = L.DomUtil.create('div', 'info legend');
     
     if (isDistrictView) {
-      // Calculate actual crime count ranges for legend
-      const allCounts = Object.values(currentCrimeCounts).filter(count => count > 0).sort((a, b) => a - b);
-      
       let legendHTML = `
         <div class="legend-container">
-          <h4>NYC Crime Map</h4>
+          <h4>NYC ${mapMode === 'crime' ? 'Crime' : 'Economics'} Map</h4>
           <div class="district-legend">
-            <h5>District Crime Levels </h5>
-            <h5>(Number of occurrences) </h5>
       `;
       
-      if (allCounts.length > 0) {
-        const p20Index = Math.floor(allCounts.length * 0.2);
-        const p40Index = Math.floor(allCounts.length * 0.4);
-        const p60Index = Math.floor(allCounts.length * 0.6);
-        const p80Index = Math.floor(allCounts.length * 0.8);
+      if (mapMode === 'crime') {
+        const allCounts = Object.values(currentCrimeCounts).filter(count => count > 0).sort((a, b) => a - b);
+        legendHTML += `<h5>District Crime Levels</h5>`;
         
-        const minCount = Math.min(...allCounts);
-        const p20Count = allCounts[p20Index] || minCount;
-        const p40Count = allCounts[p40Index] || minCount;
-        const p60Count = allCounts[p60Index] || minCount;
-        const p80Count = allCounts[p80Index] || minCount;
-        const maxCount = Math.max(...allCounts);
-        
-        legendHTML += `
-            <div class="legend-item"><div class="color-box" style="background:#cce5ff"></div> <span>${minCount} - ${p20Count}</span></div>
-            <div class="legend-item"><div class="color-box" style="background:#99ccff"></div> <span>${p20Count + 1} - ${p40Count}</span></div>
-            <div class="legend-item"><div class="color-box" style="background:#ffff99"></div> <span>${p40Count + 1} - ${p60Count}</span></div>
-            <div class="legend-item"><div class="color-box" style="background:#ff9933"></div> <span>${p60Count + 1} - ${p80Count}</span></div>
-            <div class="legend-item"><div class="color-box" style="background:#ff4d4d"></div> <span>${p80Count + 1} - ${maxCount}</span></div>
-        `;
+        if (allCounts.length > 0) {
+          const p20Index = Math.floor(allCounts.length * 0.2);
+          const p40Index = Math.floor(allCounts.length * 0.4);
+          const p60Index = Math.floor(allCounts.length * 0.6);
+          const p80Index = Math.floor(allCounts.length * 0.8);
+          
+          const minCount = Math.min(...allCounts);
+          const p20Count = allCounts[p20Index] || minCount;
+          const p40Count = allCounts[p40Index] || minCount;
+          const p60Count = allCounts[p60Index] || minCount;
+          const p80Count = allCounts[p80Index] || minCount;
+          const maxCount = Math.max(...allCounts);
+          
+          legendHTML += `
+              <div class="legend-item"><div class="color-box" style="background:#cce5ff"></div> <span>${minCount} - ${p20Count}</span></div>
+              <div class="legend-item"><div class="color-box" style="background:#99ccff"></div> <span>${p20Count + 1} - ${p40Count}</span></div>
+              <div class="legend-item"><div class="color-box" style="background:#ffff99"></div> <span>${p40Count + 1} - ${p60Count}</span></div>
+              <div class="legend-item"><div class="color-box" style="background:#ff9933"></div> <span>${p60Count + 1} - ${p80Count}</span></div>
+              <div class="legend-item"><div class="color-box" style="background:#ff4d4d"></div> <span>${p80Count + 1} - ${maxCount}</span></div>
+          `;
+        } else {
+          legendHTML += `<div class="legend-item"><div class="color-box" style="background:#cce5ff"></div> <span>No data available</span></div>`;
+        }
       } else {
-        legendHTML += `
-            <div class="legend-item"><div class="color-box" style="background:#cce5ff"></div> <span>No data available</span></div>
-        `;
+        // Economics legend
+        const metricName = selectedEconomicMetric === 'individuals_below_FPL' ? 'Poverty Rate' : 'Employment Rate';
+        const allValues = Object.values(currentEconomicsData).filter(val => !isNaN(val)).sort((a, b) => a - b);
+        legendHTML += `<h5>${metricName} (${selectedYear})</h5>`;
+        
+        if (allValues.length > 0) {
+          const p20Index = Math.floor(allValues.length * 0.2);
+          const p40Index = Math.floor(allValues.length * 0.4);
+          const p60Index = Math.floor(allValues.length * 0.6);
+          const p80Index = Math.floor(allValues.length * 0.8);
+          
+          const minVal = Math.min(...allValues);
+          const p20Val = allValues[p20Index] || minVal;
+          const p40Val = allValues[p40Index] || minVal;
+          const p60Val = allValues[p60Index] || minVal;
+          const p80Val = allValues[p80Index] || minVal;
+          const maxVal = Math.max(...allValues);
+          
+          const formatValue = (val) => selectedEconomicMetric === 'individuals_below_FPL' ? 
+            `${(val * 100).toFixed(1)}%` : `${(val * 100).toFixed(1)}%`;
+          
+          // For poverty rate, higher values are worse (red), for employment rate, higher values are better (green)
+          const isReversed = selectedEconomicMetric === 'Employement_pop_ratio';
+          
+          legendHTML += `
+              <div class="legend-item"><div class="color-box" style="background:${isReversed ? '#ff4d4d' : '#cce5ff'}"></div> <span>${formatValue(minVal)} - ${formatValue(p20Val)}</span></div>
+              <div class="legend-item"><div class="color-box" style="background:${isReversed ? '#ff9933' : '#99ccff'}"></div> <span>${formatValue(p20Val)} - ${formatValue(p40Val)}</span></div>
+              <div class="legend-item"><div class="color-box" style="background:#ffff99"></div> <span>${formatValue(p40Val)} - ${formatValue(p60Val)}</span></div>
+              <div class="legend-item"><div class="color-box" style="background:${isReversed ? '#99ccff' : '#ff9933'}"></div> <span>${formatValue(p60Val)} - ${formatValue(p80Val)}</span></div>
+              <div class="legend-item"><div class="color-box" style="background:${isReversed ? '#cce5ff' : '#ff4d4d'}"></div> <span>${formatValue(p80Val)} - ${formatValue(maxVal)}</span></div>
+          `;
+        } else {
+          legendHTML += `<div class="legend-item"><div class="color-box" style="background:#cce5ff"></div> <span>No data available</span></div>`;
+        }
       }
       
       legendHTML += `
@@ -79,7 +196,7 @@ function createLegend(isDistrictView = true) {
       
       div.innerHTML = legendHTML;
     } else {
-      // Show full legend with crime markers when in district view
+      // Show full legend with crime markers when in district view (only for crime mode)
       div.innerHTML = `
         <div class="legend-container">
           <h4>NYC Crime Map</h4>
@@ -134,7 +251,7 @@ function setupCrimeFilterUI() {
   filterContainer.id = 'crime-filter-container';
   filterContainer.style.display = 'none';
   filterContainer.style.position = 'absolute';
-  filterContainer.style.top = '10px';
+  filterContainer.style.top = '80px';
   filterContainer.style.right = '10px';
   filterContainer.style.zIndex = '1000';
   filterContainer.style.backgroundColor = 'white';
@@ -162,9 +279,149 @@ function setupCrimeFilterUI() {
   const crimeTypeList = document.getElementById("crime-type-options");
   
   // Toggle dropdown open/close
-  dropdownBtn.addEventListener("click", () => {
-    dropdownBtn.classList.toggle("open");
+  if (dropdownBtn) {
+    dropdownBtn.addEventListener("click", () => {
+      dropdownBtn.classList.toggle("open");
+    });
+  }
+}
+
+// Load economics data
+function loadEconomicsData() {
+  // Replace this with your actual data file path
+  fetch("data/eco_data/eco_data.json")
+    .then(res => {
+      if (!res.ok) {
+        return generateDemoEconomicsData();
+      }
+      return res.json();
+    })
+    .then(data => {
+      economicsData = data;
+      populateYearSelector();
+      if (currentMapMode === 'economics') {
+        colorDistrictsByEconomics();
+      }
+    })
+    .catch(() => {
+      economicsData = generateDemoEconomicsData();
+      populateYearSelector();
+      if (currentMapMode === 'economics') {
+        colorDistrictsByEconomics();
+      }
+    });
+}
+
+function generateDemoEconomicsData() {
+  const districts = [
+    "Astoria", "Jackson Heights", "Elmhurst", "Corona", "Flushing",
+    "Manhattan", "Brooklyn", "Queens", "Bronx", "Staten Island"
+  ];
+  const years = [2005, 2010, 2015, 2020];
+  const data = [];
+  
+  let districtCode = 401;
+  
+  districts.forEach(district => {
+    years.forEach(year => {
+      data.push({
+        District: district,
+        Year: year,
+        individuals_below_FPL: Math.random() * 0.3 + 0.05, // 5% to 35%
+        Employement_pop_ratio: Math.random() * 0.3 + 0.5, // 50% to 80%
+        District_Code: districtCode
+      });
+    });
+    districtCode++;
   });
+  
+  return data;
+}
+
+function populateYearSelector() {
+  const yearSelect = document.getElementById('year-select');
+  const years = [...new Set(economicsData.map(d => d.Year))].sort();
+  
+  yearSelect.innerHTML = '';
+  years.forEach(year => {
+    const option = document.createElement('option');
+    option.value = year;
+    option.textContent = year;
+    if (year === selectedYear) option.selected = true;
+    yearSelect.appendChild(option);
+  });
+}
+
+function colorDistrictsByEconomics() {
+  const yearData = economicsData.filter(d => d.Year === selectedYear);
+  const economicsValues = {};
+  
+  yearData.forEach(item => {
+    const districtCode = item.District_Code.toString();
+    const value = item[selectedEconomicMetric];
+    
+    if (districtCode && !isNaN(value)) {
+      economicsValues[districtCode] = value;
+      const paddedCode = districtCode.padStart(3, '0');
+      economicsValues[paddedCode] = value;
+    }
+  });
+  
+  currentEconomicsData = economicsValues;
+  applyEconomicsColorsToDistricts(economicsValues);
+}
+
+function applyEconomicsColorsToDistricts(economicsValues) {
+  const allValues = Object.values(economicsValues).filter(val => !isNaN(val)).sort((a, b) => a - b);
+  
+  if (allValues.length === 0) {
+    return;
+  }
+  
+  const p20 = allValues[Math.floor(allValues.length * 0.2)] || allValues[0];
+  const p40 = allValues[Math.floor(allValues.length * 0.4)] || allValues[0];
+  const p60 = allValues[Math.floor(allValues.length * 0.6)] || allValues[0];
+  const p80 = allValues[Math.floor(allValues.length * 0.8)] || allValues[0];
+
+  districtLayer.eachLayer(layer => {
+    const code = layer.feature.properties.BoroCD;
+    const codeString = code.toString();
+    const codeTrimmed = codeString.replace(/^0+/, '');
+    
+    let value = economicsValues[code] || 
+                economicsValues[codeString] || 
+                economicsValues[codeTrimmed] ||
+                economicsValues[code.toString().padStart(3, '0')];
+    
+    let fillColor = "#cccccc"; // Default gray for missing data
+    
+    if (value !== undefined && !isNaN(value)) {
+      // For employment rate, higher is better (reverse the colors)
+      const isReversed = selectedEconomicMetric === 'Employement_pop_ratio';
+      
+      if (value <= p20) fillColor = isReversed ? "#ff4d4d" : "#cce5ff";
+      else if (value <= p40) fillColor = isReversed ? "#ff9933" : "#99ccff";
+      else if (value <= p60) fillColor = "#ffff99";
+      else if (value <= p80) fillColor = isReversed ? "#99ccff" : "#ff9933";
+      else fillColor = isReversed ? "#cce5ff" : "#ff4d4d";
+    }
+
+    layer.setStyle({
+      fillColor,
+      fillOpacity: 0.6,
+      color: "black",
+      weight: 1
+    });
+
+    const name = layer.feature.properties.BoroCD_name || `District ${code}`;
+    const metricName = selectedEconomicMetric === 'individuals_below_FPL' ? 'Poverty Rate' : 'Employment Rate';
+    const displayValue = value !== undefined ? 
+      `${(value * 100).toFixed(1)}%` : 'No data';
+    
+    layer.bindPopup(`<b>${name}</b><br>${metricName}: ${displayValue}<br>Year: ${selectedYear}`);
+  });
+
+  createLegend(true, 'economics');
 }
 
 // Load district boundaries
@@ -183,26 +440,31 @@ fetch("https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/NYC_Co
         const districtName = feature.properties.BoroCD_name || `District ${districtCode}`;
         layer.bindPopup(`<b>${districtName}</b>`);
         layer.on("click", () => {
-          currentDistrictCode = districtCode;
-          map.fitBounds(layer.getBounds());
-          
-          districtLayer.setStyle({
-            fillOpacity: 0
-          });
-          
-          createLegend(false);
-          
-          // Show crime filter when district is clicked
-          document.getElementById('crime-filter-container').style.display = 'block';
-          
-          loadDistrictCrimeData(districtCode);
+          // Only allow district drilling down for crime mode
+          if (currentMapMode === 'crime') {
+            currentDistrictCode = districtCode;
+            map.fitBounds(layer.getBounds());
+            
+            districtLayer.setStyle({
+              fillOpacity: 0
+            });
+            
+            createLegend(false, 'crime');
+            
+            // Show crime filter when district is clicked
+            document.getElementById('crime-filter-container').style.display = 'block';
+            
+            loadDistrictCrimeData(districtCode);
+          }
         });
       }
     }).addTo(map);
 
     loadAllCrimeData();
+    loadEconomicsData();
     setupCrimeFilterUI();
-    createLegend(true);
+    createMapToggleButton();
+    createLegend(true, 'crime');
   });
 
 function loadAllCrimeData() {
@@ -220,7 +482,9 @@ function loadAllCrimeData() {
 
   Promise.all(fetches).then(results => {
     allCrimeData = results.flat();
-    colorDistrictsByCrime();
+    if (currentMapMode === 'crime') {
+      colorDistrictsByCrime();
+    }
   });
 }
 
@@ -250,7 +514,6 @@ function colorDistrictsByCrime() {
         return useDemoData();
       }
 
-      // Store crime counts globally for legend use
       currentCrimeCounts = crimeCounts;
       applyColorsToDistricts(crimeCounts);
     })
@@ -259,7 +522,6 @@ function colorDistrictsByCrime() {
     });
 }
 
-// Function to generate and use demo data
 function useDemoData() {
   const demoCrimeCounts = {};
   
@@ -268,7 +530,6 @@ function useDemoData() {
     demoCrimeCounts[code] = Math.floor(Math.random() * 950) + 50;
   });
   
-  // Store demo crime counts globally for legend use
   currentCrimeCounts = demoCrimeCounts;
   applyColorsToDistricts(demoCrimeCounts);
 }
@@ -314,8 +575,7 @@ function applyColorsToDistricts(crimeCounts) {
     layer.bindPopup(`<b>${name}</b><br>Crime Count: ${count}`);
   });
 
-  // Update the legend after applying colors
-  createLegend(true);
+  createLegend(true, 'crime');
 }
 
 function loadDistrictCrimeData(code) {
@@ -327,7 +587,6 @@ function loadDistrictCrimeData(code) {
     .then(districtCrimes => {
       currentDistrictData = districtCrimes;
       
-      // Populate crime types filter when district data is loaded
       populateCrimeTypeFilter(districtCrimes);
       
       if (markerLayer) map.removeLayer(markerLayer);
@@ -341,16 +600,12 @@ function loadDistrictCrimeData(code) {
 function populateCrimeTypeFilter(data) {
   const crimeTypeList = document.getElementById("crime-type-options");
   
-  // Clear existing options
   crimeTypeList.innerHTML = '';
   
-  // Get unique crime types
   const allTypes = new Set(data.map(c => c.crime_type));
   
-  // Initially select all crime types
   selectedCrimeTypes = new Set(allTypes);
   
-  // Add "All" option at the top
   const allLi = document.createElement("li");
   allLi.classList.add("item", "checked");
   allLi.dataset.value = "__all__";
@@ -361,7 +616,6 @@ function populateCrimeTypeFilter(data) {
   allLi.addEventListener("click", () => handleSelectAllClick(allLi));
   crimeTypeList.appendChild(allLi);
   
-  // Add individual crime types
   Array.from(allTypes)
     .sort()
     .forEach((type) => {
@@ -382,14 +636,10 @@ function handleSelectAllClick(allLi) {
   const isAlreadyAll = allLi.classList.contains("checked");
 
   if (isAlreadyAll) {
-    // Already selected — do nothing
     return;
   }
 
-  // Uncheck all first (to reset)
   allItems.forEach((item) => item.classList.remove("checked"));
-
-  // Check all items, including "All"
   allItems.forEach((item) => item.classList.add("checked"));
 
   updateSelectedCrimeTypes();
@@ -399,22 +649,16 @@ function handleIndividualClick(clickedLi) {
   const allLi = document.querySelector('.list-items .item[data-value="__all__"]');
   const isAllSelected = allLi.classList.contains("checked");
 
-  // Case 1: "All" is selected → switch to single selection
   if (isAllSelected) {
-    // Uncheck all
     document.querySelectorAll(".list-items .item").forEach((item) => {
       item.classList.remove("checked");
     });
 
-    // Check only the clicked one
     clickedLi.classList.add("checked");
-  }
-  // Case 2: "All" is not selected → toggle normally
-  else {
+  } else {
     clickedLi.classList.toggle("checked");
   }
 
-  // Always uncheck "All" if any individual is clicked
   if (allLi.classList.contains("checked")) {
     allLi.classList.remove("checked");
   }
@@ -422,7 +666,6 @@ function handleIndividualClick(clickedLi) {
   updateSelectedCrimeTypes();
 }
 
-// Update selectedCrimeTypes from UI
 function updateSelectedCrimeTypes() {
   selectedCrimeTypes = new Set();
 
@@ -431,7 +674,6 @@ function updateSelectedCrimeTypes() {
   const checkedItems = document.querySelectorAll(".list-items .item.checked");
 
   if (allLi.classList.contains("checked")) {
-    // "All" is selected → add all types except "All"
     allItems.forEach((item) => {
       const value = item.dataset.value;
       if (value && value !== "__all__") {
@@ -439,7 +681,6 @@ function updateSelectedCrimeTypes() {
       }
     });
   } else {
-    // Only specific items selected
     checkedItems.forEach((item) => {
       const value = item.dataset.value;
       if (value && value !== "__all__") {
@@ -461,205 +702,8 @@ function createMarkerView(data) {
   if (markerLayer) map.removeLayer(markerLayer);
   const grouped = {};
   data.filter(c => selectedCrimeTypes.has(c.crime_type)).forEach(c => {
-    const lat = parseFloat(c.Latitude);
-    const lon = parseFloat(c.Longitude);
-    const type = c.crime_type.toLowerCase();
-    if (isNaN(lat) || isNaN(lon)) return;
-    const key = `${lat.toFixed(5)},${lon.toFixed(5)}`;
-    if (!grouped[key]) grouped[key] = { lat, lon, total: 0, types: {} };
-    grouped[key].total++;
-    grouped[key].types[type] = (grouped[key].types[type] || 0) + 1;
+
+    const lat = c.latitude;
+    const lng = c.longitude;
   });
-  markerLayer = L.layerGroup(
-    Object.values(grouped).flatMap(loc => {
-      const markers = [];
-      const hasNormal = Object.keys(loc.types).some(type =>
-        !Object.values(specialCrimeIcons).some(cfg => cfg.match(type))
-      );
-      if (hasNormal) {
-        markers.push(L.circleMarker([loc.lat, loc.lon], {
-          radius: Math.min(Math.max(loc.total / 100, 3), 12),
-          color: "red",
-          fillOpacity: 0.5
-        }).bindPopup(`Crimes: ${loc.total}`));
-      }
-      Object.entries(loc.types).forEach(([type, count]) => {
-        for (const [key, cfg] of Object.entries(specialCrimeIcons)) {
-          if (cfg.match(type)) {
-            const useCount = Math.min(count, cfg.maxCount);
-            const width = useCount * 0.8 * cfg.baseWidth;
-            const height = useCount * 0.8 * cfg.baseHeight;
-            const icon = L.icon({
-              iconUrl: cfg.iconUrl,
-              iconSize: [width, height],
-              iconAnchor: [width / 2, height / 2],
-              popupAnchor: [0, -10]
-            });
-            markers.push(L.marker([loc.lat, loc.lon], { icon })
-              .bindPopup(`<b>${type.toUpperCase()}</b><br>Count: ${count}`));
-          }
-        }
-      });
-      return markers;
-    })
-  ).addTo(map);
 }
-
-map.on('contextmenu', function() {
-  if (currentDistrictCode) {
-    currentDistrictCode = null;
-    map.setView([40.7128, -74.006], 11);
-    if (markerLayer) map.removeLayer(markerLayer);
-    
-    // Hide crime filter when returning to overview
-    document.getElementById('crime-filter-container').style.display = 'none';
-    
-    createLegend(true);
-    
-    colorDistrictsByCrime();
-  }
-});
-
-const style = document.createElement('style');
-style.textContent = `
-  .legend-container {
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-  }
-  
-  .legend-container h4 {
-    margin: 0 0 10px 0;
-    font-size: 14px;
-  }
-  
-  .legend-container h5 {
-    margin: 10px 0 5px 0;
-    font-size: 12px;
-  }
-  
-  .legend-item {
-    margin: 5px 0;
-    display: flex;
-    align-items: center;
-  }
-  
-  .color-box {
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-    margin-right: 5px;
-  }
-  
-  .crime-icons-legend img {
-    margin-right: 5px;
-  }
-  
-  .marker-icon {
-    margin-right: 5px;
-  }
-  
-  /* Crime Filter Dropdown Styles */
-  .wrapper {
-    width: 100%;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-  }
-  
-  .wrapper .select-btn {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    background: #fff;
-    border: 1px solid #ddd;
-  }
-  
-  .wrapper .select-btn.open {
-    border-radius: 5px 5px 0 0;
-  }
-  
-  .wrapper .content {
-    display: none;
-    border-top: 1px solid #ddd;
-  }
-  
-  .select-btn.open + .content {
-    display: block;
-  }
-  
-  .wrapper .search {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .wrapper .search input {
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 5px;
-    font-size: 12px;
-  }
-  
-  .wrapper .list-items {
-    max-height: 250px;
-    overflow-y: auto;
-    padding: 5px 10px;
-    margin: 0;
-  }
-  
-  .wrapper .list-items li {
-    display: flex;
-    align-items: center;
-    padding: 8px 0;
-    cursor: pointer;
-    transition: all 0.2s;
-    list-style: none;
-  }
-  
-  .wrapper .list-items li:hover {
-    background: #f5f5f5;
-  }
-  
-  .wrapper .list-items li .checkbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 16px;
-    width: 16px;
-    border-radius: 3px;
-    margin-right: 8px;
-    border: 1.5px solid #c0c0c0;
-    transition: all 0.2s;
-  }
-  
-  .wrapper .list-items li.checked .checkbox {
-    background: #4070f4;
-    border-color: #4070f4;
-  }
-  
-  .wrapper .list-items li .check-icon {
-    color: #fff;
-    font-size: 11px;
-    transform: scale(0);
-    transition: all 0.2s;
-  }
-  
-  .wrapper .list-items li.checked .check-icon {
-    transform: scale(1);
-  }
-`;
-document.head.appendChild(style);
-
-// Initialize map with choropleth map view by default
-window.addEventListener('DOMContentLoaded', () => {
-  // Add Font Awesome 
-  const fontAwesome = document.createElement('link');
-  fontAwesome.rel = 'stylesheet';
-  fontAwesome.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css';
-  document.head.appendChild(fontAwesome);
-  
-  colorDistrictsByCrime();
-});
