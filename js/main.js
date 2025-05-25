@@ -7,6 +7,9 @@ import {
   applyColorsToDistricts
 } from './heatmap.js';
 
+import { setupDistrictInfoPanel, showDistrictInfoPanel } from './eco_info.js';
+
+
 
 // Load the map ---------------------------------------------------------------
 var map = L.map("map").setView([40.7128, -74.006], 11);
@@ -172,7 +175,7 @@ fetch("https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/NYC_Co
           
           // Show crime filter when district is clicked
           document.getElementById('crime-filter-container').style.display = 'block';
-          
+          showDistrictInfoPanel(districtCode);
           loadDistrictCrimeData(districtCode);
         });
       }
@@ -542,5 +545,6 @@ window.addEventListener('DOMContentLoaded', () => {
   fontAwesome.rel = 'stylesheet';
   fontAwesome.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css';
   document.head.appendChild(fontAwesome);
+  setupDistrictInfoPanel();
 
 });
