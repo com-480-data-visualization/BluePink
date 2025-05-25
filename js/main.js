@@ -1,5 +1,12 @@
 // Load special icon
 import { specialCrimeIcons, iconLegendHTML } from "./menu_icones.js";
+import {
+  loadAllCrimeData,
+  colorDistrictsByCrime,
+  useDemoData,
+  applyColorsToDistricts
+} from './heatmap.js';
+
 
 // Load the map ---------------------------------------------------------------
 var map = L.map("map").setView([40.7128, -74.006], 11);
@@ -15,14 +22,13 @@ baseGray.addTo(map);
 // Global state
 let markerLayer = null;
 let districtLayer = null;
-let allCrimeData = [];
 let selectedCrimeTypes = new Set();
-let crimeTypesLoaded = false;
 let currentDistrictCode = null;
 let legendControl = null;
 let currentDistrictData = null;
 
-// Create a dynamic legend that will change content based on view
+// Creates and displays a dynamic legend on the map.
+// The legend adapts based on whether the map is in district view or heatmap view.
 function createLegend(isDistrictView = true) {
   // Remove existing legend if it exists
   if (legendControl) {
@@ -98,7 +104,8 @@ function createLegend(isDistrictView = true) {
   legendControl.addTo(map);
 }
 
-// Add crime filter dropdown UI
+// Sets up the UI container for the crime type filter dropdown.
+// This filter appears when a district is selected.
 function setupCrimeFilterUI() {
   const filterContainer = document.createElement('div');
   filterContainer.id = 'crime-filter-container';
@@ -137,7 +144,8 @@ function setupCrimeFilterUI() {
   });
 }
 
-// Load district boundaries
+// Loads district boundary data from ArcGIS and initializes the map.
+// Adds event listeners to each district for interactivity.
 fetch("https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/NYC_Community_Districts/FeatureServer/0/query?where=1=1&outFields=*&outSR=4326&f=pgeojson")
   .then(res => res.json())
   .then(data => {
@@ -170,117 +178,15 @@ fetch("https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/NYC_Co
       }
     }).addTo(map);
 
-    loadAllCrimeData();
+    loadAllCrimeData(districtLayer);
     setupCrimeFilterUI();
     createLegend(true);
   });
 
-function loadAllCrimeData() {
-  const districtCodes = Array.from({length: 70}, (_, i) => i + 101).filter(code =>
-    (code >= 101 && code <= 112) || (code >= 201 && code <= 212) ||
-    (code >= 301 && code <= 318) || (code >= 401 && code <= 414) ||
-    (code >= 501 && code <= 503)
-  );
 
-  const fetches = districtCodes.map(code =>
-    fetch(`data/crimes_by_district/${code}.json`)
-      .then(res => res.ok ? res.json() : [])
-      .catch(() => [])
-  );
 
-  Promise.all(fetches).then(results => {
-    allCrimeData = results.flat();
-    colorDistrictsByCrime();
-  });
-}
-
-function colorDistrictsByCrime() {
-  fetch("data/website_data/GPS_grouped.json")
-    .then(res => {
-      if (!res.ok) {
-        return useDemoData();
-      }
-      return res.json();
-    })
-    .then(crimeData => {
-      const crimeCounts = {};
-      
-      for (const item of crimeData) {
-        const districtCode = item.District_Code.toString();
-        const count = item.count;
-        
-        if (districtCode && !isNaN(count)) {
-          crimeCounts[districtCode] = count;
-          const paddedCode = districtCode.padStart(3, '0');
-          crimeCounts[paddedCode] = count;
-        }
-      }
-      
-      if (Object.keys(crimeCounts).length === 0 || Object.values(crimeCounts).every(v => v === 0)) {
-        return useDemoData();
-      }
-
-      applyColorsToDistricts(crimeCounts);
-    })
-    .catch(() => {
-      useDemoData();
-    });
-}
-
-// Function to generate and use demo data
-function useDemoData() {
-  const demoCrimeCounts = {};
-  
-  districtLayer.eachLayer(layer => {
-    const code = layer.feature.properties.BoroCD;
-    demoCrimeCounts[code] = Math.floor(Math.random() * 950) + 50;
-  });
-  
-  applyColorsToDistricts(demoCrimeCounts);
-}
-
-function applyColorsToDistricts(crimeCounts) {
-  const allCounts = Object.values(crimeCounts).filter(count => count > 0).sort((a, b) => a - b);
-  
-  if (allCounts.length === 0) {
-    return;
-  }
-  
-  const p20 = allCounts[Math.floor(allCounts.length * 0.2)] || 1;
-  const p40 = allCounts[Math.floor(allCounts.length * 0.4)] || 2;
-  const p60 = allCounts[Math.floor(allCounts.length * 0.6)] || 3;
-  const p80 = allCounts[Math.floor(allCounts.length * 0.8)] || 4;
-
-  districtLayer.eachLayer(layer => {
-    const code = layer.feature.properties.BoroCD;
-    const codeString = code.toString();
-    const codeTrimmed = codeString.replace(/^0+/, '');
-    
-    let count = crimeCounts[code] || 
-                crimeCounts[codeString] || 
-                crimeCounts[codeTrimmed] ||
-                crimeCounts[code.toString().padStart(3, '0')] || 0;
-    
-    let fillColor;
-    
-    if (count <= p20) fillColor = "#cce5ff";
-    else if (count <= p40) fillColor = "#99ccff";
-    else if (count <= p60) fillColor = "#ffff99";
-    else if (count <= p80) fillColor = "#ff9933";
-    else fillColor = "#ff4d4d";
-
-    layer.setStyle({
-      fillColor,
-      fillOpacity: 0.6,
-      color: "black",
-      weight: 1
-    });
-
-    const name = layer.feature.properties.BoroCD_name || `District ${code}`;
-    layer.bindPopup(`<b>${name}</b><br>Crime Count: ${count}`);
-  });
-}
-
+// Loads individual district crime data based on the selected district code.
+// Also sets up crime type filters and displays corresponding markers.
 function loadDistrictCrimeData(code) {
   fetch(`data/crimes_by_district/${code}.json`)
     .then(res => {
@@ -301,6 +207,8 @@ function loadDistrictCrimeData(code) {
     });
 }
 
+// Populates the dropdown UI with unique crime types from the district data.
+// Initializes each type as "selected" by default.
 function populateCrimeTypeFilter(data) {
   const crimeTypeList = document.getElementById("crime-type-options");
   
@@ -340,6 +248,8 @@ function populateCrimeTypeFilter(data) {
     });
 }
 
+// Handles "All" option click in the crime type filter.
+// Ensures all crime types are selected if "All" is checked.
 function handleSelectAllClick(allLi) {
   const allItems = document.querySelectorAll(".list-items .item");
   const isAlreadyAll = allLi.classList.contains("checked");
@@ -358,6 +268,8 @@ function handleSelectAllClick(allLi) {
   updateSelectedCrimeTypes();
 }
 
+// Handles individual crime type click events.
+// Toggles selection and updates the filter state accordingly.
 function handleIndividualClick(clickedLi) {
   const allLi = document.querySelector('.list-items .item[data-value="__all__"]');
   const isAllSelected = allLi.classList.contains("checked");
@@ -385,7 +297,8 @@ function handleIndividualClick(clickedLi) {
   updateSelectedCrimeTypes();
 }
 
-// Update selectedCrimeTypes from UI
+// Updates the global `selectedCrimeTypes` set based on current UI state.
+// Also refreshes the markers on the map to match selected filters.
 function updateSelectedCrimeTypes() {
   selectedCrimeTypes = new Set();
 
@@ -416,10 +329,14 @@ function updateSelectedCrimeTypes() {
   }
 }
 
+// Triggers marker view generation based on selected district and filters.
+// Delegates to `createMarkerView`.
 function displayCrimesForDistrict(code, data) {
   createMarkerView(data);
 }
 
+// Creates and adds Leaflet markers to the map based on crime data.
+// Supports clustering and special icons for different crime types.
 function createMarkerView(data) {
   if (markerLayer) map.removeLayer(markerLayer);
   const grouped = {};
@@ -468,6 +385,8 @@ function createMarkerView(data) {
   ).addTo(map);
 }
 
+// Resets the map when the user right-clicks (context menu).
+// Clears selected district and returns to overview view.
 map.on('contextmenu', function() {
   if (currentDistrictCode) {
     currentDistrictCode = null;
@@ -479,7 +398,7 @@ map.on('contextmenu', function() {
     
     createLegend(true);
     
-    colorDistrictsByCrime();
+    colorDistrictsByCrime(districtLayer);
   }
 });
 
@@ -623,6 +542,5 @@ window.addEventListener('DOMContentLoaded', () => {
   fontAwesome.rel = 'stylesheet';
   fontAwesome.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css';
   document.head.appendChild(fontAwesome);
-  
-  colorDistrictsByCrime();
+
 });
