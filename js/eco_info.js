@@ -1,4 +1,3 @@
-
 export function showDistrictInfoPanel(districtCode) {
   fetch(`data/data_by_district/${districtCode}.json`)
     .then((res) => {
@@ -14,7 +13,12 @@ export function showDistrictInfoPanel(districtCode) {
 
       content.innerHTML = `
         <h3>${info.District || "District " + info.District_Code}</h3>
-        <p><strong>Total Crimes between 2006-2023:</strong> ${info.total_crimes.toLocaleString()}</p>
+        <p><strong>Total Crimes (2006-2023):</strong> ${
+          info.total_crimes != null
+            ? info.total_crimes.toLocaleString()
+            : "Information not available"
+        }</p>
+
         <h4>Main Crimes</h4>
         <div class="main-crimes-bar-chart">
           ${Object.entries(info.main_crimes)
@@ -33,12 +37,21 @@ export function showDistrictInfoPanel(districtCode) {
             .join("")}
         </div>
         <h4>Socio-economic info:</h4>
-        <p><strong>Inhabitants below FPL*:</strong> ${(
-          info.individuals_below_FPL_median * 100
-        ).toFixed(1)}%<span style="font-size: 80%;">**</span></p>
-        <p><strong>Employment Ratio:</strong> ${(
-          info.Employement_pop_ratio_mean * 100
-        ).toFixed(1)}%<span style="font-size: 80%;">**</span></p>
+        <p><strong>Inhabitants below FPL*:</strong> ${
+          info.individuals_below_FPL_median != null
+            ? (info.individuals_below_FPL_median * 100).toFixed(1) +
+              "%<span style='font-size: 80%;'>**</span>"
+            : "<span style='font-size: 80%;'>Information not available</span>"
+        }</p>
+
+<p><strong>Employment Ratio:</strong> ${
+        info.Employement_pop_ratio_mean != null
+          ? (info.Employement_pop_ratio_mean * 100).toFixed(1) +
+            "%<span style='font-size: 80%;'>**</span>"
+          : "<span style='font-size: 80%;'>Information not available</span>"
+      }</p>
+
+
         <p class="footnote">*FPL: Federal Poverty Level</p>
         <p class="footnote">**Median over 2006–2022</p>
       `;
@@ -50,14 +63,13 @@ export function showDistrictInfoPanel(districtCode) {
     });
 }
 
-
 export function setupDistrictInfoPanel() {
   const panel = document.createElement("div");
   panel.id = "district-info-panel";
   panel.style.position = "absolute";
   panel.style.top = "50%";
   panel.style.right = "10px";
-  panel.style.width = "300px";
+  panel.style.width = "320px";
   panel.style.transform = "translateY(-50%)";
   panel.style.maxHeight = "90vh";
   panel.style.overflowY = "auto";

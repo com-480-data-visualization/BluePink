@@ -4,7 +4,7 @@
     "main_crimes":{
       "Minor Theft":32677,
       "Major Theft":15698,
-      "Verbal or Physical Harassment":10315,
+      "Harassment":10315,
       "Physical Assault":9108,
       "Public Disturbance":8506
     },

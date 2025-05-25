@@ -4,7 +4,7 @@
     "main_crimes":{
       "Minor Theft":16326,
       "Physical Assault":14939,
-      "Verbal or Physical Harassment":11375,
+      "Harassment":11375,
       "Vandalism":10835,
       "Major Theft":10001
     },
