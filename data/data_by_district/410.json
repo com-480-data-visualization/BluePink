@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"410",
+    "main_crimes":{
+      "Verbal or Physical Harassment":17038,
+      "Minor Theft":16636,
+      "Physical Assault":16174,
+      "Vandalism":13709,
+      "Major Theft":13048
+    },
+    "total_crimes":99631,
+    "District":"Howard Beach",
+    "individuals_below_FPL_median":0.10587,
+    "individuals_below_FPL_mean":0.1101217647,
+    "individuals_below_FPL_std":0.0244255517,
+    "Employement_pop_ratio_median":0.576,
+    "Employement_pop_ratio_mean":0.5744705882,
+    "Employement_pop_ratio_std":0.0198498037
+  }
+]

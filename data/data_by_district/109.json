@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"109",
+    "main_crimes":{
+      "Minor Theft":20004,
+      "Physical Assault":18624,
+      "Verbal or Physical Harassment":17613,
+      "Vandalism":12876,
+      "Drug Offenses":11614
+    },
+    "total_crimes":118884,
+    "District":"Manhattanville",
+    "individuals_below_FPL_median":0.25604,
+    "individuals_below_FPL_mean":0.2581288235,
+    "individuals_below_FPL_std":0.0333223268,
+    "Employement_pop_ratio_median":0.549,
+    "Employement_pop_ratio_mean":0.55475,
+    "Employement_pop_ratio_std":0.0363822301
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"402",
+    "main_crimes":{
+      "Minor Theft":18673,
+      "Verbal or Physical Harassment":14133,
+      "Major Theft":12816,
+      "Physical Assault":12716,
+      "Vandalism":12183
+    },
+    "total_crimes":88414,
+    "District":"Sunnyside\/Woodside",
+    "individuals_below_FPL_median":0.11585,
+    "individuals_below_FPL_mean":0.1229888235,
+    "individuals_below_FPL_std":0.0297294052,
+    "Employement_pop_ratio_median":0.639,
+    "Employement_pop_ratio_mean":0.6435882353,
+    "Employement_pop_ratio_std":0.0307023184
+  }
+]

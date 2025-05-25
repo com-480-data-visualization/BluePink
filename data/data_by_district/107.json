@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"107",
+    "main_crimes":{
+      "Minor Theft":42187,
+      "Major Theft":23074,
+      "Verbal or Physical Harassment":20753,
+      "Physical Assault":15098,
+      "Vandalism":12851
+    },
+    "total_crimes":144742,
+    "District":"Upper West Side",
+    "individuals_below_FPL_median":0.09929,
+    "individuals_below_FPL_mean":0.0995776471,
+    "individuals_below_FPL_std":0.0104960537,
+    "Employement_pop_ratio_median":0.663,
+    "Employement_pop_ratio_mean":0.6572352941,
+    "Employement_pop_ratio_std":0.0298381664
+  }
+]

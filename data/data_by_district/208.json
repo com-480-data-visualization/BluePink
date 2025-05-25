@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"208",
+    "main_crimes":{
+      "Minor Theft":14799,
+      "Verbal or Physical Harassment":11035,
+      "Major Theft":10063,
+      "Physical Assault":9146,
+      "Vandalism":9092
+    },
+    "total_crimes":71240,
+    "District":"Riverdale",
+    "individuals_below_FPL_median":0.17081,
+    "individuals_below_FPL_mean":0.1683905882,
+    "individuals_below_FPL_std":0.0262518546,
+    "Employement_pop_ratio_median":0.567,
+    "Employement_pop_ratio_mean":0.5647058824,
+    "Employement_pop_ratio_std":0.0285345508
+  }
+]

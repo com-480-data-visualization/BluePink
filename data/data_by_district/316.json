@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"316",
+    "main_crimes":{
+      "Physical Assault":36078,
+      "Verbal or Physical Harassment":26293,
+      "Minor Theft":18598,
+      "Vandalism":16728,
+      "Drug Offenses":15916
+    },
+    "total_crimes":160633,
+    "District":"Brownsville",
+    "individuals_below_FPL_median":0.36003,
+    "individuals_below_FPL_mean":0.3565,
+    "individuals_below_FPL_std":0.0352564063,
+    "Employement_pop_ratio_median":0.47,
+    "Employement_pop_ratio_mean":0.4737647059,
+    "Employement_pop_ratio_std":0.0248634506
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"501",
+    "main_crimes":{
+      "Verbal or Physical Harassment":39465,
+      "Physical Assault":32389,
+      "Minor Theft":28433,
+      "Vandalism":26503,
+      "Public Disturbance":20567
+    },
+    "total_crimes":191565,
+    "District":"St. George",
+    "individuals_below_FPL_median":0.179,
+    "individuals_below_FPL_mean":0.1791664706,
+    "individuals_below_FPL_std":0.0265146261,
+    "Employement_pop_ratio_median":0.547,
+    "Employement_pop_ratio_mean":0.5522352941,
+    "Employement_pop_ratio_std":0.0225403233
+  }
+]

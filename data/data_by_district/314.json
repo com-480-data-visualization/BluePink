@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"314",
+    "main_crimes":{
+      "Minor Theft":24210,
+      "Physical Assault":21604,
+      "Verbal or Physical Harassment":16273,
+      "Major Theft":13942,
+      "Vandalism":12367
+    },
+    "total_crimes":120187,
+    "District":"Flatbush\/Midwood",
+    "individuals_below_FPL_median":0.21126,
+    "individuals_below_FPL_mean":0.1990705882,
+    "individuals_below_FPL_std":0.0336373651,
+    "Employement_pop_ratio_median":0.568,
+    "Employement_pop_ratio_mean":0.5748823529,
+    "Employement_pop_ratio_std":0.0247433889
+  }
+]

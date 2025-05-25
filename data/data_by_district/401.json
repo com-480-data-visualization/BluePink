@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"401",
+    "main_crimes":{
+      "Minor Theft":31525,
+      "Physical Assault":24029,
+      "Verbal or Physical Harassment":24016,
+      "Major Theft":17606,
+      "Vandalism":17590
+    },
+    "total_crimes":148462,
+    "District":"Astoria",
+    "individuals_below_FPL_median":0.16424,
+    "individuals_below_FPL_mean":0.1623058824,
+    "individuals_below_FPL_std":0.0236237645,
+    "Employement_pop_ratio_median":0.644,
+    "Employement_pop_ratio_mean":0.6366470588,
+    "Employement_pop_ratio_std":0.0323572658
+  }
+]

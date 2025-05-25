@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"105",
+    "main_crimes":{
+      "Minor Theft":111045,
+      "Major Theft":73979,
+      "Physical Assault":27720,
+      "Verbal or Physical Harassment":24932,
+      "Public Disturbance":15984
+    },
+    "total_crimes":309151,
+    "District":"Midtown Business District",
+    "individuals_below_FPL_median":0.13027,
+    "individuals_below_FPL_mean":0.1271741176,
+    "individuals_below_FPL_std":0.0156784183,
+    "Employement_pop_ratio_median":0.7075,
+    "Employement_pop_ratio_mean":0.6772175,
+    "Employement_pop_ratio_std":0.1237981781
+  }
+]

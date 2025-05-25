@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"502",
+    "main_crimes":{
+      "Minor Theft":22893,
+      "Verbal or Physical Harassment":21535,
+      "Vandalism":14426,
+      "Physical Assault":10608,
+      "Public Disturbance":9396
+    },
+    "total_crimes":100632,
+    "District":"South Beach",
+    "individuals_below_FPL_median":0.096,
+    "individuals_below_FPL_mean":0.0990888235,
+    "individuals_below_FPL_std":0.0210865617,
+    "Employement_pop_ratio_median":0.555,
+    "Employement_pop_ratio_mean":0.5478235294,
+    "Employement_pop_ratio_std":0.0196189809
+  }
+]

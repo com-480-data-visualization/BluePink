@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"304",
+    "main_crimes":{
+      "Physical Assault":21680,
+      "Verbal or Physical Harassment":15683,
+      "Minor Theft":15671,
+      "Vandalism":13335,
+      "Major Theft":11029
+    },
+    "total_crimes":104826,
+    "District":"Bushwick",
+    "individuals_below_FPL_median":0.28452,
+    "individuals_below_FPL_mean":0.28189,
+    "individuals_below_FPL_std":0.0444212515,
+    "Employement_pop_ratio_median":0.6,
+    "Employement_pop_ratio_mean":0.5907647059,
+    "Employement_pop_ratio_std":0.0531913167
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"164",
+    "main_crimes":{
+      "Minor Theft":2701,
+      "Major Theft":2354,
+      "Physical Assault":2074,
+      "Verbal or Physical Harassment":1959,
+      "Vandalism":1524
+    },
+    "total_crimes":14349,
+    "District":null,
+    "individuals_below_FPL_median":null,
+    "individuals_below_FPL_mean":null,
+    "individuals_below_FPL_std":null,
+    "Employement_pop_ratio_median":null,
+    "Employement_pop_ratio_mean":null,
+    "Employement_pop_ratio_std":null
+  }
+]

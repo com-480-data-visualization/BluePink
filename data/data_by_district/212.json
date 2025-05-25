@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"212",
+    "main_crimes":{
+      "Physical Assault":32815,
+      "Verbal or Physical Harassment":25256,
+      "Minor Theft":18295,
+      "Vandalism":17800,
+      "Major Theft":14324
+    },
+    "total_crimes":155339,
+    "District":"Williamsbridge",
+    "individuals_below_FPL_median":0.1774,
+    "individuals_below_FPL_mean":0.1831635294,
+    "individuals_below_FPL_std":0.0309953238,
+    "Employement_pop_ratio_median":0.554,
+    "Employement_pop_ratio_mean":0.5578823529,
+    "Employement_pop_ratio_std":0.0222004571
+  }
+]

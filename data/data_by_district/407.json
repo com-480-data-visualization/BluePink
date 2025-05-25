@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"407",
+    "main_crimes":{
+      "Minor Theft":34789,
+      "Major Theft":21562,
+      "Verbal or Physical Harassment":21161,
+      "Physical Assault":19142,
+      "Vandalism":15571
+    },
+    "total_crimes":139000,
+    "District":"Flushing",
+    "individuals_below_FPL_median":0.1464,
+    "individuals_below_FPL_mean":0.1433994118,
+    "individuals_below_FPL_std":0.0248170872,
+    "Employement_pop_ratio_median":0.553,
+    "Employement_pop_ratio_mean":0.55,
+    "Employement_pop_ratio_std":0.0220255533
+  }
+]

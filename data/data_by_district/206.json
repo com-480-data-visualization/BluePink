@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"206",
+    "main_crimes":{
+      "Physical Assault":29265,
+      "Minor Theft":19483,
+      "Verbal or Physical Harassment":18749,
+      "Vandalism":14717,
+      "Public Disturbance":11906
+    },
+    "total_crimes":134448,
+    "District":"East Tremont",
+    "individuals_below_FPL_median":0.41895,
+    "individuals_below_FPL_mean":0.4083035294,
+    "individuals_below_FPL_std":0.0318152296,
+    "Employement_pop_ratio_median":0.463,
+    "Employement_pop_ratio_mean":0.4514323529,
+    "Employement_pop_ratio_std":0.0613846707
+  }
+]

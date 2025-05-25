@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"413",
+    "main_crimes":{
+      "Verbal or Physical Harassment":21612,
+      "Physical Assault":21093,
+      "Minor Theft":17419,
+      "Vandalism":16219,
+      "Major Theft":15276
+    },
+    "total_crimes":122053,
+    "District":"Queens Village",
+    "individuals_below_FPL_median":0.07113,
+    "individuals_below_FPL_mean":0.0746070588,
+    "individuals_below_FPL_std":0.0166156932,
+    "Employement_pop_ratio_median":0.592,
+    "Employement_pop_ratio_mean":0.595,
+    "Employement_pop_ratio_std":0.0226825924
+  }
+]

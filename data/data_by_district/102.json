@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"102",
+    "main_crimes":{
+      "Minor Theft":54172,
+      "Major Theft":35292,
+      "Physical Assault":13733,
+      "Verbal or Physical Harassment":12463,
+      "Vandalism":11735
+    },
+    "total_crimes":159258,
+    "District":"Greenwich Village",
+    "individuals_below_FPL_median":0.07962,
+    "individuals_below_FPL_mean":0.0824317647,
+    "individuals_below_FPL_std":0.0131625098,
+    "Employement_pop_ratio_median":0.719,
+    "Employement_pop_ratio_mean":0.7038758824,
+    "Employement_pop_ratio_std":0.074473993
+  }
+]

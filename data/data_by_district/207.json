@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"207",
+    "main_crimes":{
+      "Physical Assault":29316,
+      "Minor Theft":27347,
+      "Verbal or Physical Harassment":20424,
+      "Drug Offenses":17146,
+      "Vandalism":15948
+    },
+    "total_crimes":158572,
+    "District":"Bedford Park",
+    "individuals_below_FPL_median":0.31,
+    "individuals_below_FPL_mean":0.3069329412,
+    "individuals_below_FPL_std":0.0325061842,
+    "Employement_pop_ratio_median":0.559,
+    "Employement_pop_ratio_mean":0.5529411765,
+    "Employement_pop_ratio_std":0.0333662827
+  }
+]

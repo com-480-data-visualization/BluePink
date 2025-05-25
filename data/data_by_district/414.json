@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"414",
+    "main_crimes":{
+      "Physical Assault":22444,
+      "Verbal or Physical Harassment":22296,
+      "Minor Theft":16137,
+      "Vandalism":14788,
+      "Public Disturbance":8686
+    },
+    "total_crimes":108822,
+    "District":"The Rockaways",
+    "individuals_below_FPL_median":0.19724,
+    "individuals_below_FPL_mean":0.19351,
+    "individuals_below_FPL_std":0.0232032595,
+    "Employement_pop_ratio_median":0.519,
+    "Employement_pop_ratio_mean":0.5175294118,
+    "Employement_pop_ratio_std":0.0243339209
+  }
+]

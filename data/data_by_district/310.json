@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"310",
+    "main_crimes":{
+      "Minor Theft":19220,
+      "Verbal or Physical Harassment":12276,
+      "Vandalism":9885,
+      "Major Theft":9553,
+      "Physical Assault":9243
+    },
+    "total_crimes":80158,
+    "District":"Bay Ridge",
+    "individuals_below_FPL_median":0.15,
+    "individuals_below_FPL_mean":0.1504558824,
+    "individuals_below_FPL_std":0.0210595169,
+    "Employement_pop_ratio_median":0.57,
+    "Employement_pop_ratio_mean":0.5698823529,
+    "Employement_pop_ratio_std":0.0228716045
+  }
+]

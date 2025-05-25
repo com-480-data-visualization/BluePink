@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"104",
+    "main_crimes":{
+      "Minor Theft":31594,
+      "Major Theft":27514,
+      "Verbal or Physical Harassment":19301,
+      "Physical Assault":18921,
+      "Vandalism":10884
+    },
+    "total_crimes":143598,
+    "District":"Chelsea\/Clinton",
+    "individuals_below_FPL_median":0.13131,
+    "individuals_below_FPL_mean":0.1309388235,
+    "individuals_below_FPL_std":0.0137608516,
+    "Employement_pop_ratio_median":0.7075,
+    "Employement_pop_ratio_mean":0.690845,
+    "Employement_pop_ratio_std":0.0704337448
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"356",
+    "main_crimes":{
+      "Minor Theft":197,
+      "Traffic Violations":187,
+      "Major Theft":165,
+      "Physical Assault":158,
+      "Vandalism":131
+    },
+    "total_crimes":1206,
+    "District":null,
+    "individuals_below_FPL_median":null,
+    "individuals_below_FPL_mean":null,
+    "individuals_below_FPL_std":null,
+    "Employement_pop_ratio_median":null,
+    "Employement_pop_ratio_mean":null,
+    "Employement_pop_ratio_std":null
+  }
+]

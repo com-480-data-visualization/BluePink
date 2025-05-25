@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"307",
+    "main_crimes":{
+      "Minor Theft":16326,
+      "Physical Assault":14939,
+      "Verbal or Physical Harassment":11375,
+      "Vandalism":10835,
+      "Major Theft":10001
+    },
+    "total_crimes":84508,
+    "District":"Sunset Park",
+    "individuals_below_FPL_median":0.24283,
+    "individuals_below_FPL_mean":0.2481170588,
+    "individuals_below_FPL_std":0.0439251915,
+    "Employement_pop_ratio_median":0.599,
+    "Employement_pop_ratio_mean":0.6020588235,
+    "Employement_pop_ratio_std":0.0226370012
+  }
+]

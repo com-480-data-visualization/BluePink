@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"406",
+    "main_crimes":{
+      "Minor Theft":18596,
+      "Major Theft":9429,
+      "Verbal or Physical Harassment":7514,
+      "Vandalism":6970,
+      "Physical Assault":5490
+    },
+    "total_crimes":59242,
+    "District":"Rego Park\/Forest Hills",
+    "individuals_below_FPL_median":0.09674,
+    "individuals_below_FPL_mean":0.0977617647,
+    "individuals_below_FPL_std":0.0230284509,
+    "Employement_pop_ratio_median":0.612,
+    "Employement_pop_ratio_mean":0.6039411765,
+    "Employement_pop_ratio_std":0.0228759442
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"227",
+    "main_crimes":{
+      "Minor Theft":361,
+      "Verbal or Physical Harassment":244,
+      "Physical Assault":239,
+      "Vandalism":224,
+      "Traffic Violations":206
+    },
+    "total_crimes":1960,
+    "District":null,
+    "individuals_below_FPL_median":null,
+    "individuals_below_FPL_mean":null,
+    "individuals_below_FPL_std":null,
+    "Employement_pop_ratio_median":null,
+    "Employement_pop_ratio_mean":null,
+    "Employement_pop_ratio_std":null
+  }
+]

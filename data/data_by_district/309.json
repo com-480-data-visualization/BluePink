@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"309",
+    "main_crimes":{
+      "Physical Assault":19957,
+      "Verbal or Physical Harassment":17930,
+      "Minor Theft":17201,
+      "Vandalism":11928,
+      "Major Theft":10414
+    },
+    "total_crimes":108470,
+    "District":"Crown Heights South",
+    "individuals_below_FPL_median":0.20023,
+    "individuals_below_FPL_mean":0.2006617647,
+    "individuals_below_FPL_std":0.0258295793,
+    "Employement_pop_ratio_median":0.577,
+    "Employement_pop_ratio_mean":0.5794117647,
+    "Employement_pop_ratio_std":0.0316880475
+  }
+]

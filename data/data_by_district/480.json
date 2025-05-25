@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"480",
+    "main_crimes":{
+      "Weapon Possession":115,
+      "Minor Theft":61,
+      "Traffic Violations":61,
+      "Major Theft":49,
+      "Physical Assault":35
+    },
+    "total_crimes":443,
+    "District":null,
+    "individuals_below_FPL_median":null,
+    "individuals_below_FPL_mean":null,
+    "individuals_below_FPL_std":null,
+    "Employement_pop_ratio_median":null,
+    "Employement_pop_ratio_mean":null,
+    "Employement_pop_ratio_std":null
+  }
+]

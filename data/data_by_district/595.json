@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"595",
+    "main_crimes":{
+      "Vandalism":354,
+      "Verbal or Physical Harassment":303,
+      "Minor Theft":251,
+      "Physical Assault":230,
+      "Major Theft":156
+    },
+    "total_crimes":1769,
+    "District":null,
+    "individuals_below_FPL_median":null,
+    "individuals_below_FPL_mean":null,
+    "individuals_below_FPL_std":null,
+    "Employement_pop_ratio_median":null,
+    "Employement_pop_ratio_mean":null,
+    "Employement_pop_ratio_std":null
+  }
+]

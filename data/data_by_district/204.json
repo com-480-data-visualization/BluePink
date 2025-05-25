@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"204",
+    "main_crimes":{
+      "Physical Assault":39032,
+      "Minor Theft":30025,
+      "Verbal or Physical Harassment":25233,
+      "Drug Offenses":22050,
+      "Vandalism":17551
+    },
+    "total_crimes":194868,
+    "District":"Concourse\/Highbridge",
+    "individuals_below_FPL_median":0.36068,
+    "individuals_below_FPL_mean":0.3548847059,
+    "individuals_below_FPL_std":0.0307539213,
+    "Employement_pop_ratio_median":0.535,
+    "Employement_pop_ratio_mean":0.5209411765,
+    "Employement_pop_ratio_std":0.0310251321
+  }
+]

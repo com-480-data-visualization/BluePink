@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"404",
+    "main_crimes":{
+      "Minor Theft":32418,
+      "Physical Assault":23626,
+      "Major Theft":15668,
+      "Verbal or Physical Harassment":14885,
+      "Vandalism":11293
+    },
+    "total_crimes":121951,
+    "District":"Elmhurst\/Corona",
+    "individuals_below_FPL_median":0.18794,
+    "individuals_below_FPL_mean":0.1830894118,
+    "individuals_below_FPL_std":0.0383845766,
+    "Employement_pop_ratio_median":0.6,
+    "Employement_pop_ratio_mean":0.611,
+    "Employement_pop_ratio_std":0.0311086805
+  }
+]

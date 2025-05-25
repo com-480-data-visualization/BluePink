@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"483",
+    "main_crimes":{
+      "Minor Theft":350,
+      "Major Theft":226,
+      "Weapon Possession":93,
+      "Breaking & Entering":85,
+      "Vandalism":80
+    },
+    "total_crimes":1116,
+    "District":null,
+    "individuals_below_FPL_median":null,
+    "individuals_below_FPL_mean":null,
+    "individuals_below_FPL_std":null,
+    "Employement_pop_ratio_median":null,
+    "Employement_pop_ratio_mean":null,
+    "Employement_pop_ratio_std":null
+  }
+]

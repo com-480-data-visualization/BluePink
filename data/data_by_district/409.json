@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"409",
+    "main_crimes":{
+      "Minor Theft":17703,
+      "Physical Assault":17156,
+      "Verbal or Physical Harassment":16369,
+      "Vandalism":13076,
+      "Major Theft":10615
+    },
+    "total_crimes":94137,
+    "District":"Woodhaven",
+    "individuals_below_FPL_median":0.134,
+    "individuals_below_FPL_mean":0.1356817647,
+    "individuals_below_FPL_std":0.0204991757,
+    "Employement_pop_ratio_median":0.595,
+    "Employement_pop_ratio_mean":0.5961176471,
+    "Employement_pop_ratio_std":0.0170875772
+  }
+]

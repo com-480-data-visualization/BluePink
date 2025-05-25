@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"408",
+    "main_crimes":{
+      "Minor Theft":15521,
+      "Verbal or Physical Harassment":13205,
+      "Major Theft":12244,
+      "Vandalism":11678,
+      "Physical Assault":10183
+    },
+    "total_crimes":80988,
+    "District":"Fresh Meadows\/Briarwood",
+    "individuals_below_FPL_median":0.12888,
+    "individuals_below_FPL_mean":0.1250117647,
+    "individuals_below_FPL_std":0.0259661314,
+    "Employement_pop_ratio_median":0.577,
+    "Employement_pop_ratio_mean":0.5725882353,
+    "Employement_pop_ratio_std":0.0263250328
+  }
+]

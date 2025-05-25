@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"412",
+    "main_crimes":{
+      "Physical Assault":49371,
+      "Minor Theft":41132,
+      "Verbal or Physical Harassment":36859,
+      "Vandalism":29008,
+      "Major Theft":26228
+    },
+    "total_crimes":261626,
+    "District":"Jamaica\/St. Albans",
+    "individuals_below_FPL_median":0.13156,
+    "individuals_below_FPL_mean":0.1379264706,
+    "individuals_below_FPL_std":0.0267866251,
+    "Employement_pop_ratio_median":0.579,
+    "Employement_pop_ratio_mean":0.5794117647,
+    "Employement_pop_ratio_std":0.0228255855
+  }
+]

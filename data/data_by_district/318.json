@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"318",
+    "main_crimes":{
+      "Minor Theft":29007,
+      "Verbal or Physical Harassment":27000,
+      "Physical Assault":23207,
+      "Major Theft":19948,
+      "Vandalism":18019
+    },
+    "total_crimes":157183,
+    "District":"Canarsie",
+    "individuals_below_FPL_median":0.11427,
+    "individuals_below_FPL_mean":0.11036,
+    "individuals_below_FPL_std":0.0154204511,
+    "Employement_pop_ratio_median":0.591,
+    "Employement_pop_ratio_mean":0.5834117647,
+    "Employement_pop_ratio_std":0.02210503
+  }
+]

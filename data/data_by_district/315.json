@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"315",
+    "main_crimes":{
+      "Minor Theft":21637,
+      "Major Theft":13586,
+      "Physical Assault":13453,
+      "Verbal or Physical Harassment":13423,
+      "Vandalism":12083
+    },
+    "total_crimes":99304,
+    "District":"Sheepshead Bay",
+    "individuals_below_FPL_median":0.162,
+    "individuals_below_FPL_mean":0.15765,
+    "individuals_below_FPL_std":0.0244097184,
+    "Employement_pop_ratio_median":0.524,
+    "Employement_pop_ratio_mean":0.5298235294,
+    "Employement_pop_ratio_std":0.0277358867
+  }
+]

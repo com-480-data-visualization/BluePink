@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"484",
+    "main_crimes":{
+      "Vandalism":43,
+      "Major Theft":32,
+      "Minor Theft":27,
+      "Verbal or Physical Harassment":26,
+      "Physical Assault":24
+    },
+    "total_crimes":197,
+    "District":null,
+    "individuals_below_FPL_median":null,
+    "individuals_below_FPL_mean":null,
+    "individuals_below_FPL_std":null,
+    "Employement_pop_ratio_median":null,
+    "Employement_pop_ratio_mean":null,
+    "Employement_pop_ratio_std":null
+  }
+]

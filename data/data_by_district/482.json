@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"482",
+    "main_crimes":{
+      "Vandalism":439,
+      "Minor Theft":420,
+      "Major Theft":284,
+      "Physical Assault":161,
+      "Traffic Violations":157
+    },
+    "total_crimes":1729,
+    "District":null,
+    "individuals_below_FPL_median":null,
+    "individuals_below_FPL_mean":null,
+    "individuals_below_FPL_std":null,
+    "Employement_pop_ratio_median":null,
+    "Employement_pop_ratio_mean":null,
+    "Employement_pop_ratio_std":null
+  }
+]

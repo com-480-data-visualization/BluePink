@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"202",
+    "main_crimes":{
+      "Physical Assault":23282,
+      "Verbal or Physical Harassment":16585,
+      "Minor Theft":15636,
+      "Public Disturbance":14752,
+      "Vandalism":10933
+    },
+    "total_crimes":111948,
+    "District":"Hunts Point",
+    "individuals_below_FPL_median":0.41124,
+    "individuals_below_FPL_mean":0.4151223529,
+    "individuals_below_FPL_std":0.0441293043,
+    "Employement_pop_ratio_median":0.43,
+    "Employement_pop_ratio_mean":0.4155252941,
+    "Employement_pop_ratio_std":0.0727266174
+  }
+]

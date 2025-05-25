@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"301",
+    "main_crimes":{
+      "Minor Theft":34204,
+      "Major Theft":23146,
+      "Vandalism":21289,
+      "Physical Assault":21274,
+      "Verbal or Physical Harassment":20871
+    },
+    "total_crimes":157579,
+    "District":"Williamsburg\/Greenpoint",
+    "individuals_below_FPL_median":0.25096,
+    "individuals_below_FPL_mean":0.2612541176,
+    "individuals_below_FPL_std":0.054036205,
+    "Employement_pop_ratio_median":0.647,
+    "Employement_pop_ratio_mean":0.6368235294,
+    "Employement_pop_ratio_std":0.0540581114
+  }
+]

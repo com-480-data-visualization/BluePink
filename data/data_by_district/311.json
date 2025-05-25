@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"311",
+    "main_crimes":{
+      "Minor Theft":20547,
+      "Verbal or Physical Harassment":16141,
+      "Physical Assault":13857,
+      "Major Theft":12147,
+      "Vandalism":11759
+    },
+    "total_crimes":97777,
+    "District":"Bensonhurst",
+    "individuals_below_FPL_median":0.17883,
+    "individuals_below_FPL_mean":0.1773870588,
+    "individuals_below_FPL_std":0.0267325389,
+    "Employement_pop_ratio_median":0.547,
+    "Employement_pop_ratio_mean":0.5450588235,
+    "Employement_pop_ratio_std":0.0332574627
+  }
+]

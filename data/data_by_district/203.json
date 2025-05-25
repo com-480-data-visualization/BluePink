@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"203",
+    "main_crimes":{
+      "Physical Assault":29951,
+      "Verbal or Physical Harassment":22642,
+      "Minor Theft":18484,
+      "Vandalism":14718,
+      "Drug Offenses":13899
+    },
+    "total_crimes":138115,
+    "District":"Morrisania",
+    "individuals_below_FPL_median":0.41895,
+    "individuals_below_FPL_mean":0.4083035294,
+    "individuals_below_FPL_std":0.0318152296,
+    "Employement_pop_ratio_median":0.464,
+    "Employement_pop_ratio_mean":0.4561558824,
+    "Employement_pop_ratio_std":0.0668932029
+  }
+]

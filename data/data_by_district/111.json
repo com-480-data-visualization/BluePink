@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"111",
+    "main_crimes":{
+      "Physical Assault":37829,
+      "Minor Theft":32302,
+      "Verbal or Physical Harassment":31656,
+      "Drug Offenses":25525,
+      "Vandalism":23042
+    },
+    "total_crimes":219478,
+    "District":"East Harlem",
+    "individuals_below_FPL_median":0.31243,
+    "individuals_below_FPL_mean":0.32255,
+    "individuals_below_FPL_std":0.0339724158,
+    "Employement_pop_ratio_median":0.492,
+    "Employement_pop_ratio_mean":0.4898823529,
+    "Employement_pop_ratio_std":0.0194643339
+  }
+]

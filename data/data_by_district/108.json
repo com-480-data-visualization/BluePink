@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"108",
+    "main_crimes":{
+      "Minor Theft":37491,
+      "Major Theft":28652,
+      "Verbal or Physical Harassment":12365,
+      "Physical Assault":9844,
+      "Vandalism":8090
+    },
+    "total_crimes":119107,
+    "District":"Upper East Side",
+    "individuals_below_FPL_median":0.061,
+    "individuals_below_FPL_mean":0.0633735294,
+    "individuals_below_FPL_std":0.0136352525,
+    "Employement_pop_ratio_median":0.679,
+    "Employement_pop_ratio_mean":0.6807058824,
+    "Employement_pop_ratio_std":0.0196937957
+  }
+]

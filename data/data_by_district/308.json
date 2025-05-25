@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"308",
+    "main_crimes":{
+      "Physical Assault":20252,
+      "Verbal or Physical Harassment":16682,
+      "Minor Theft":16625,
+      "Drug Offenses":12354,
+      "Vandalism":11708
+    },
+    "total_crimes":109430,
+    "District":"Crown Heights North",
+    "individuals_below_FPL_median":0.23809,
+    "individuals_below_FPL_mean":0.2301664706,
+    "individuals_below_FPL_std":0.03832895,
+    "Employement_pop_ratio_median":0.595,
+    "Employement_pop_ratio_mean":0.6004117647,
+    "Employement_pop_ratio_std":0.040637204
+  }
+]

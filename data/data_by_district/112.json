@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"112",
+    "main_crimes":{
+      "Minor Theft":29461,
+      "Physical Assault":28330,
+      "Verbal or Physical Harassment":21863,
+      "Vandalism":19271,
+      "Major Theft":17171
+    },
+    "total_crimes":161219,
+    "District":"Washington Heights",
+    "individuals_below_FPL_median":0.24169,
+    "individuals_below_FPL_mean":0.2303688235,
+    "individuals_below_FPL_std":0.0378595204,
+    "Employement_pop_ratio_median":0.575,
+    "Employement_pop_ratio_mean":0.5752941176,
+    "Employement_pop_ratio_std":0.0324475822
+  }
+]

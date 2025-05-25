@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"305",
+    "main_crimes":{
+      "Physical Assault":51265,
+      "Minor Theft":36468,
+      "Verbal or Physical Harassment":35609,
+      "Vandalism":27347,
+      "Major Theft":23535
+    },
+    "total_crimes":251024,
+    "District":"East New York",
+    "individuals_below_FPL_median":0.28431,
+    "individuals_below_FPL_mean":0.2771570588,
+    "individuals_below_FPL_std":0.0413953258,
+    "Employement_pop_ratio_median":0.512,
+    "Employement_pop_ratio_mean":0.5077647059,
+    "Employement_pop_ratio_std":0.034604063
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "District_Code":"101",
+    "main_crimes":{
+      "Minor Theft":32677,
+      "Major Theft":15698,
+      "Verbal or Physical Harassment":10315,
+      "Physical Assault":9108,
+      "Public Disturbance":8506
+    },
+    "total_crimes":97937,
+    "District":"Battery Park\/Tribeca",
+    "individuals_below_FPL_median":0.07962,
+    "individuals_below_FPL_mean":0.0824317647,
+    "individuals_below_FPL_std":0.0131625098,
+    "Employement_pop_ratio_median":0.719,
+    "Employement_pop_ratio_mean":0.6958888235,
+    "Employement_pop_ratio_std":0.1069291185
+  }
+]
