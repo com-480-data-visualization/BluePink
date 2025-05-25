@@ -1,0 +1,55 @@
+.legend-container {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  max-width: 350px;
+}
+
+.legend-container h4 {
+  margin: 0 0 10px 0;
+  font-size: 13px;
+}
+
+.legend-container h5 {
+  margin: 10px 0 5px 0;
+  font-size: 12px;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 25px;
+}
+
+.legend-icon-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  min-height: 20px;
+}
+
+.legend-item {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.color-box {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 5px;
+  background-clip: padding-box;
+}
+
+.marker-icon {
+  margin-right: 5px;
+}
+
+.crime-icons-legend img {
+  margin-right: 5px;
+}
