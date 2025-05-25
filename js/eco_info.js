@@ -14,7 +14,7 @@ export function showDistrictInfoPanel(districtCode) {
       const panel = document.getElementById("district-info-panel");
       panel.innerHTML = `
         <h3>${info.District || "District " + info.District_Code}</h3>
-        <p><strong>Total Crimes:</strong> ${info.total_crimes.toLocaleString()}</p>
+        <p><strong>Total Crimes between 2006-2023:</strong> ${info.total_crimes.toLocaleString()}</p>
         <h4>Main Crimes</h4>
             <div class="main-crimes-bar-chart">
             ${Object.entries(info.main_crimes)
