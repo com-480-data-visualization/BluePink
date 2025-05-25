@@ -1,5 +1,3 @@
-// district_infos.js
-
 
 export function showDistrictInfoPanel(districtCode) {
   fetch(`data/data_by_district/${districtCode}.json`)
@@ -9,33 +7,33 @@ export function showDistrictInfoPanel(districtCode) {
       return res.json();
     })
     .then((data) => {
-      const info = data[0]; // assuming 1 object per file
+      const info = data[0];
       const total = info.total_crimes;
       const panel = document.getElementById("district-info-panel");
-      panel.innerHTML = `
+      const content = document.getElementById("district-info-content");
+
+      content.innerHTML = `
         <h3>${info.District || "District " + info.District_Code}</h3>
         <p><strong>Total Crimes between 2006-2023:</strong> ${info.total_crimes.toLocaleString()}</p>
         <h4>Main Crimes</h4>
-            <div class="main-crimes-bar-chart">
-            ${Object.entries(info.main_crimes)
+        <div class="main-crimes-bar-chart">
+          ${Object.entries(info.main_crimes)
             .map(([crime, count]) => {
-                const width = (count / total) * 100;
-                return `
+              const width = (count / total) * 100;
+              return `
                 <div class="crime-bar-row">
-                    <div class="crime-label">${crime}</div>
-                    <div class="crime-bar">
+                  <div class="crime-label">${crime}</div>
+                  <div class="crime-bar">
                     <div class="crime-fill" style="width:${width}%"></div>
-                    </div>
-                    <div class="crime-count">${count.toLocaleString()}</div>
+                  </div>
+                  <div class="crime-count">${count.toLocaleString()}</div>
                 </div>
-                `;
+              `;
             })
             .join("")}
         </div>
-
-
         <h4>Socio-economic info:</h4>
-        <p><strong>Inhabitants bellow FPL*:</strong> ${(
+        <p><strong>Inhabitants below FPL*:</strong> ${(
           info.individuals_below_FPL_median * 100
         ).toFixed(1)}%</p>
         <p><strong>Employment Ratio:</strong> ${(
@@ -50,6 +48,7 @@ export function showDistrictInfoPanel(districtCode) {
       console.error(err);
     });
 }
+
 
 export function setupDistrictInfoPanel() {
   const panel = document.createElement("div");
@@ -67,6 +66,19 @@ export function setupDistrictInfoPanel() {
   panel.style.boxShadow = "0 0 10px rgba(0,0,0,0.2)";
   panel.style.zIndex = "1001";
   panel.style.display = "none";
+
+  // Back arrow
+  const backArrow = document.createElement("div");
+  backArrow.innerHTML = `
+    <i class="fa-solid fa-arrow-left" style="cursor:pointer; font-size: 18px; margin-bottom: 10px;"></i>
+  `;
+  backArrow.onclick = () => location.reload();
+  panel.appendChild(backArrow);
+
+  // Content container
+  const content = document.createElement("div");
+  content.id = "district-info-content";
+  panel.appendChild(content);
 
   document.body.appendChild(panel);
 }
