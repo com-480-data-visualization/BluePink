@@ -5,9 +5,13 @@
   padding: 8px;
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  max-width: 350px;
+  max-width: 90vw;        /* responsive */
+  width: 100%;            /* allow shrinking */
+  min-width: 180px;
   line-height: 1.2;
+  box-sizing: border-box; /* ensures padding doesn't overflow */
 }
+
 
 .legend-container h4 {
   margin: 0 0 10px 0;
@@ -24,8 +28,11 @@
 .icon-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px 15px;
+  gap: 6px 12px;
+  justify-content: flex-start;
+  flex-shrink: 1;
 }
+
 .legend-icon-item {
   display: flex;
   align-items: center;
@@ -55,4 +62,23 @@
 
 .crime-icons-legend img {
   margin-right: 5px;
+}
+
+@media (max-width: 480px) {
+  .legend-container {
+    font-size: 10px;
+    padding: 6px;
+  }
+
+  .legend-icon-item {
+    font-size: 9px;
+    min-width: 50px;
+    gap: 3px;
+  }
+
+  .crime-icons-legend img {
+    width: 12px !important;
+    height: 12px !important;
+    margin-right: 3px;
+  }
 }
