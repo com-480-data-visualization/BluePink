@@ -1,16 +1,13 @@
 // Load special icon
 import {
-  specialCrimeIcons,
-  iconLegendHTML
+  specialCrimeIcons
 } from "./crimes_icones.js";
 
 import { createLegendControl } from "./legend.js";
 
 import {
   loadAllCrimeData,
-  colorDistrictsByCrime,
-  useDemoData,
-  applyColorsToDistricts,
+  colorDistrictsByCrime
 } from "./heatmap.js";
 
 import {
