@@ -69,15 +69,15 @@ function createLegend(isDistrictView = true) {
           </div>
           <div class="crime-icons-legend">
             <h5>Special Crime Types</h5>
-            <div id="special-crime-icons">
+            <div id="special-crime-icons" class="icon-grid">
               ${Object.entries(specialCrimeIcons)
                 .map(
                   ([key, cfg]) => `
-                <div class="legend-item">
-                  <img src="${cfg.iconUrl}" alt="${key}" style="width: ${cfg.baseWidth}px; height: ${cfg.baseHeight}px;">
-                  <span>${key}</span>
-                </div>
-              `
+                  <div class="legend-icon-item">
+                    <img src="${cfg.iconUrl}" alt="${key}" style="width: ${cfg.baseWidth * (cfg.legend_scale || 1)}px; height: ${cfg.baseHeight * (cfg.legend_scale || 1)}px;">
+                    <span>${key}</span>
+                  </div>
+                  `
                 )
                 .join("")}
             </div>
@@ -90,19 +90,19 @@ function createLegend(isDistrictView = true) {
     div.style.padding = "10px";
     div.style.borderRadius = "5px";
     div.style.boxShadow = "0 0 15px rgba(0,0,0,0.2)";
-    div.style.maxWidth = "250px";
+    div.style.maxWidth = "350px";
 
     const colorBoxes = div.querySelectorAll(".color-box");
     colorBoxes.forEach((box) => {
       box.style.width = "15px";
-      box.style.height = "15px";
+      box.style.height = "12px";
       box.style.display = "inline-block";
       box.style.marginRight = "5px";
     });
 
     const legendItems = div.querySelectorAll(".legend-item");
     legendItems.forEach((item) => {
-      item.style.margin = "5px 0";
+      item.style.margin = "3px 0";
       item.style.display = "flex";
       item.style.alignItems = "center";
     });
@@ -167,29 +167,31 @@ fetch(
         opacity: 0.7,
       }),
       onEachFeature: (feature, layer) => {
-  // Disable popups completely
-  layer.bindPopup = () => layer;
+        // Disable popups completely
+        layer.bindPopup = () => layer;
 
-  const districtCode = parseInt(feature.properties.BoroCD);
-  const districtName = feature.properties.BoroCD_name || `District ${districtCode}`;
+        const districtCode = parseInt(feature.properties.BoroCD);
+        const districtName =
+          feature.properties.BoroCD_name || `District ${districtCode}`;
 
-  layer.on("click", () => {
-    console.log("Clicked district", feature.properties);
+        layer.on("click", () => {
+          console.log("Clicked district", feature.properties);
 
-    currentDistrictCode = districtCode;
-    map.fitBounds(layer.getBounds());
+          currentDistrictCode = districtCode;
+          map.fitBounds(layer.getBounds());
 
-    districtLayer.setStyle({
-      fillOpacity: 0
-    });
+          districtLayer.setStyle({
+            fillOpacity: 0,
+          });
 
-    createLegend(false);
+          createLegend(false);
 
-    document.getElementById('crime-filter-container').style.display = 'block';
-    showDistrictInfoPanel(districtCode);
-    loadDistrictCrimeData(districtCode);
-  });
-},
+          document.getElementById("crime-filter-container").style.display =
+            "block";
+          showDistrictInfoPanel(districtCode);
+          loadDistrictCrimeData(districtCode);
+        });
+      },
     }).addTo(map);
 
     loadAllCrimeData(districtLayer);
@@ -425,19 +427,34 @@ const style = document.createElement("style");
 style.textContent = `
   .legend-container {
     font-family: Arial, sans-serif;
-    font-size: 12px;
+    font-size: 11px;
   }
   
   .legend-container h4 {
     margin: 0 0 10px 0;
-    font-size: 14px;
+    font-size: 13px;
   }
   
   .legend-container h5 {
     margin: 10px 0 5px 0;
     font-size: 12px;
   }
-  
+
+  .icon-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 8px 25px;
+}
+
+.legend-icon-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  min-height: 20px;
+}
+
+
   .legend-item {
     margin: 5px 0;
     display: flex;

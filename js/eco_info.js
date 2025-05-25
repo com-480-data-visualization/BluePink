@@ -55,9 +55,10 @@ export function setupDistrictInfoPanel() {
   const panel = document.createElement("div");
   panel.id = "district-info-panel";
   panel.style.position = "absolute";
-  panel.style.top = "10px";
+  panel.style.top = "50%";
   panel.style.right = "10px";
   panel.style.width = "300px";
+  panel.style.transform = "translateY(-50%)";
   panel.style.maxHeight = "90vh";
   panel.style.overflowY = "auto";
   panel.style.padding = "15px";

@@ -9,7 +9,7 @@
       "Traffic Violations":157
     },
     "total_crimes":1729,
-    "District":null,
+    "District":"Highland Park",
     "individuals_below_FPL_median":null,
     "individuals_below_FPL_mean":null,
     "individuals_below_FPL_std":null,

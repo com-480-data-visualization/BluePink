@@ -9,7 +9,7 @@
       "Physical Assault":24
     },
     "total_crimes":197,
-    "District":null,
+    "District":"Jamaica Bay Park",
     "individuals_below_FPL_median":null,
     "individuals_below_FPL_mean":null,
     "individuals_below_FPL_std":null,
