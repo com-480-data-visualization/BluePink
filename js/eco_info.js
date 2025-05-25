@@ -35,11 +35,12 @@ export function showDistrictInfoPanel(districtCode) {
         <h4>Socio-economic info:</h4>
         <p><strong>Inhabitants below FPL*:</strong> ${(
           info.individuals_below_FPL_median * 100
-        ).toFixed(1)}%</p>
+        ).toFixed(1)}%<span style="font-size: 80%;">**</span></p>
         <p><strong>Employment Ratio:</strong> ${(
           info.Employement_pop_ratio_mean * 100
-        ).toFixed(1)}%</p>
-        <p class="footnote">*FPL: Federal Poverty Level. Median over 2006–2022</p>
+        ).toFixed(1)}%<span style="font-size: 80%;">**</span></p>
+        <p class="footnote">*FPL: Federal Poverty Level</p>
+        <p class="footnote">**Median over 2006–2022</p>
       `;
 
       panel.style.display = "block";
