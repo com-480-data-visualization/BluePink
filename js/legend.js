@@ -24,10 +24,9 @@ export function createLegendControl(isDistrictView = true) {
         <h4>NYC Crime Map</h4>
         <div class="legend-item">
           <div class="marker-icon" style="background-color: red; border-radius: 50%; width: 10px; height: 10px;"></div>
-          <span>Standard Crime Marker</span>
+          <span>Standard Crime</span>
         </div>
         <div class="crime-icons-legend">
-          <h5>Special Crime Types</h5>
           <div id="special-crime-icons" class="icon-grid">
             ${Object.entries(specialCrimeIcons)
               .map(
