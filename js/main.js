@@ -1,5 +1,11 @@
 // Load special icon
-import { specialCrimeIcons, iconLegendHTML } from "./menu_icones.js";
+import {
+  specialCrimeIcons,
+  iconLegendHTML
+} from "./crimes_icones.js";
+
+import { createLegendControl } from "./legend.js";
+
 import {
   loadAllCrimeData,
   colorDistrictsByCrime,
@@ -36,70 +42,12 @@ let currentDistrictCode = null;
 let legendControl = null;
 let currentDistrictData = null;
 
-// Creates and displays a dynamic legend on the map.
-// The legend adapts based on whether the map is in district view or heatmap view.
+
 function createLegend(isDistrictView = true) {
-  // Remove existing legend if it exists
   if (legendControl) {
     map.removeControl(legendControl);
   }
-
-  legendControl = L.control({ position: "bottomleft" });
-  legendControl.onAdd = function (map) {
-    const div = L.DomUtil.create("div", "info legend");
-
-    if (isDistrictView) {
-      // Only show district crime levels when in heat map view !
-      div.innerHTML = `
-        <div class="legend-container">
-          <h4>NYC Crime Map</h4>
-          <div class="district-legend">
-            <h5>District Crime Levels</h5>
-            <div class="legend-item"><div class="color-box" style="background:#cce5ff"></div> <span>Lowest 20%</span></div>
-            <div class="legend-item"><div class="color-box" style="background:#99ccff"></div> <span>20-40%</span></div>
-            <div class="legend-item"><div class="color-box" style="background:#ffff99"></div> <span>40-60%</span></div>
-            <div class="legend-item"><div class="color-box" style="background:#ff9933"></div> <span>60-80%</span></div>
-            <div class="legend-item"><div class="color-box" style="background:#ff4d4d"></div> <span>Highest 20%</span></div>
-          </div>
-        </div>
-      `;
-    } else {
-      // Show full legend with crime markers when in district view
-      div.innerHTML = `
-        <div class="legend-container">
-          <h4>NYC Crime Map</h4>
-          <div class="legend-item">
-            <div class="marker-icon" style="background-color: red; border-radius: 50%; width: 10px; height: 10px;"></div>
-            <span>Standard Crime Marker</span>
-          </div>
-          <div class="crime-icons-legend">
-            <h5>Special Crime Types</h5>
-            <div id="special-crime-icons" class="icon-grid">
-              ${Object.entries(specialCrimeIcons)
-                .map(
-                  ([key, cfg]) => `
-                  <div class="legend-icon-item">
-                    <img src="${cfg.iconUrl}" alt="${key}" style="width: ${cfg.baseWidth * (cfg.legend_scale || 1)}px; height: ${cfg.baseHeight * (cfg.legend_scale || 1)}px;">
-                    <span>${key}</span>
-                  </div>
-                  `
-                )
-                .join("")}
-            </div>
-          </div>
-        </div>
-      `;
-    }
-
-    const legendItems = div.querySelectorAll(".legend-item");
-    legendItems.forEach((item) => {
-      item.style.margin = "3px 0";
-      item.style.display = "flex";
-      item.style.alignItems = "center";
-    });
-
-    return div;
-  };
+  legendControl = createLegendControl(isDistrictView);
   legendControl.addTo(map);
 }
 
@@ -219,7 +167,6 @@ function handleCrimeFilterClick(clickedLi) {
     displayCrimesForDistrict(currentDistrictCode, currentDistrictData);
   }
 }
-
 
 
 // Triggers marker view generation based on selected district and filters.
