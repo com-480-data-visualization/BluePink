@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Statistics</title>
-    <meta name="description" content="Welcome to Data Visualization" />
-    <meta name="author" content="K Lis" />
+    <meta name="description" content="stats" />
+    <meta name="author" content="Benoit" />
 
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="../styles/style2.css" />
   </head>
   <body>
     <nav>
       <ul class="width-limited">
-        <li><a href="home.html">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li><a href="statistics.html">Statistics</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
@@ -25,25 +25,127 @@
     </header>
 
     <main class="width-limited">
-      <h4>Introduction</h4>
+      <h2>Motivation</h2>
       <p>
-        This visualization unveils the deepest mysteries of our world, showing
-        the facts through the lens of statistical data anlysis and colorful
-        animations. The truth shines brightly and guides the lost minds.
+        Crime is a daily concern for many New Yorkers, whether long-time
+        residents, newcomers, or tourists. Yet, finding clear, intuitive, and
+        localized information about crime in the city is surprisingly difficult.
+        Most existing tools are either too technical, outdated, or lacking
+        context. Our website aims to change that.
       </p>
       <p>
-        We investigate the changes in population of alligators in Lac Léman over
-        the last century and extrapolate the trend to predict a world of reptile
-        domination. Read more <a href="description.html">about our model</a> or
-        the <a href="data.html">sources of our data</a>.
+        We built an interactive platform that allows anyone, from a concerned
+        resident to a curious visitor, to explore crimes committed around them
+        with just a few clicks. Using a dynamic map and easy-to-use filters,
+        users can see exactly what types of crimes have occurred in specific
+        neighborhoods, and when. Whether you're walking through Midtown or
+        living in the Bronx, the platform gives you direct visibility into your
+        local safety landscape, something that’s often hidden in overwhelming
+        datasets or hard-to-navigate public records.
+      </p>
+      <p>
+        But we didn’t stop at showing what happens. We also wanted to explore
+        why. That’s why we integrated socio-economic data, like poverty and
+        unemployment rates, into the experience. This added layer helps users
+        understand the broader context: why some areas experience more crime
+        than others, and how economic factors may influence safety. By combining
+        intuitive crime mapping with meaningful social insight, our goal is to
+        empower everyday users with knowledge. This tool isn't just for
+        researchers or policymakers, it's for anyone who wants to better
+        understand their city and make informed decisions, whether it's about
+        where to live, travel, or advocate for change.
+      </p>
+      <p>
+        In this section, we will present some statistics that we have gathered
+        from the data. We will also show you how to interact with the plots and
+        what they mean. We hope that this will help you understand the data
+        better and make it more accessible.
       </p>
 
-      <h4>How to use</h4>
+      <h2>Crime Situation at New York City</h2>
       <p>
-        Here we would tell you how to interact with the plot below. Sadly, it is
-        not interactive at this stage of the project. Please imagine that the
-        plot is interactive and that clicking on it activates captivating
-        animations.
+        Let first have a look at the diffrent types of crimes that we
+        considered. The dataset contained a lot of various crimes, spanding from
+        fraud or prostitution to kidnapping or murder. We decided to keep only
+        certain type and to group them in categories.
+      </p>
+      <img
+        src="../../images/crime_type.png"
+        alt="Crime Types"
+        style="display: block; margin: 0 auto; width: 50%"
+      />
+      <p>
+        It is then interessant to look at which crime is the most frequent in
+        New York City. The plot below illustrates this by showing the number of
+        incidents for each crime category. In figure 2 we can see that most of
+        the crimes are theft or physical assault. The the most serious crimes,
+        like rape and murder, are fortunately much less frequent. Nevertheless,
+        they still represent a significant concern for the community since in
+        average, 1398 rape, 411 muder, 1085 arson fire and 186 kidnapping
+        complaints are reported each year.
+      </p>
+      <figure style="text-align: center">
+        <img
+          src="../../images/crime_repartition.png"
+          alt="Crime Types"
+          style="display: block; margin: 0 auto; width: 50%"
+        />
+        <figcaption>
+          Figure 2: Crime Distribution in New York City from 2006 to 2023
+        </figcaption>
+      </figure>
+
+      <figure style="text-align: center">
+        <img
+          src="../../images/borought_rep.png"
+          alt="Crime Types"
+          style="display: block; margin: 0 auto; width: 40%"
+        />
+        <figcaption>
+          Figure 3: Crime Distribution across boroughs in New York City from
+          2006 to 2023
+        </figcaption>
+      </figure>
+
+      <p>
+        If you are a woman, you might be interested in knowing that 54% of the
+        victims of crime in New York City are women. This is a significant
+        statistic that highlights the importance of addressing violence against
+        women in our communities. On the contrary, about 75% of the suspect are
+        men.
+      </p>
+      <figure style="text-align: center">
+        <img
+          src="../../images/occurence_hours.png"
+          alt="Crime Types"
+          style="display: block; margin: 0 auto; width: 50%"
+        />
+        <figcaption>
+          Figure 4: Most dangerous hours in New York City from 2006 to 2023
+        </figcaption>
+      </figure>
+
+      <h2>Relation with Socio-Economic Factors</h2>
+      <div style="display: flex; justify-content: space-between">
+        <div>
+          <img
+            src="../../images/time_blow.png"
+            alt="Plot 1"
+            style="width: 100%"
+          />
+        </div>
+        <div>
+          <img
+            src="../../images/time_unemployment.png"
+            alt="Plot 2"
+            style="width: 100%"
+          />
+        </div>
+      </div>
+      <p>
+        The plot below shows the population of alligators in Lac Léman over the
+        last century. The data is based on a model that predicts the future
+        population of alligators in the lake.
       </p>
     </main>
   </body>

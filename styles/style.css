@@ -2,218 +2,216 @@
    🗺️ Map Styling
    ==================================================================== */
 
-   #map {
-    height: calc(100vh - 60px); /* Full height minus nav */
-  }
-  
-  #map-overlay {
-    position: absolute;
-    top: 70px;
-    left: 50px;
-    width: 300px;
-    max-width: 90vw;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    text-align: left;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-  }
-  
-  /* ====================================================================
+#map {
+  height: calc(100vh - 60px); /* Full height minus nav */
+}
+
+#map-overlay {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  width: 300px;
+  max-width: 90vw;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* ====================================================================
      🧭 Navigation Bar
      ==================================================================== */
-  
-  nav {
-    width: 100%;
-    padding: 1rem 0;
-    background-color: #333;
-  }
-  
-  nav ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style-type: none;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    max-width: 55rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  nav li {
-    margin-right: 3rem;
-  }
-  
-  nav a {
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-  }
-  
-  /* ====================================================================
+
+nav {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #333;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  max-width: 55rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav li {
+  margin-right: 3rem;
+}
+
+nav a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* ====================================================================
      🧊 Crime Filter Dropdown
      ==================================================================== */
-  
-  #crime-filter-container {
-    display: none; /* shown when district is selected */
-    margin-top: 1.5rem;
-  }
-  
-  .container {
-    position: relative;
-    width: 100%;
-    margin: 0;
-  }
-  
-  .select-btn {
-    display: flex;
-    height: 50px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .select-btn .btn-text {
-    font-size: 17px;
-    font-weight: 400;
-    color: #333;
-  }
-  
-  .select-btn .arrow-dwn {
-    display: flex;
-    height: 21px;
-    width: 21px;
-    color: #fff;
-    font-size: 14px;
-    border-radius: 50%;
-    background: #6e93f7;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s;
-  }
-  
-  .select-btn.open .arrow-dwn {
-    transform: rotate(-180deg);
-  }
-  
-  .list-items {
-    position: relative;
-    margin-top: 15px;
-    border-radius: 8px;
-    padding: 16px;
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    display: none;
-    max-height: 150px;       
-    overflow-y: auto; 
-  }
-  
-  .select-btn.open ~ .list-items {
-    display: block;
-  }
-  
-  .item {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    height: 30px;
-    cursor: pointer;
-    transition: 0.3s;
-    padding: 0 15px;
-    border-radius: 8px;
-  }
-  
-  .item:hover {
-    background-color: #e7edfe;
-  }
-  
-  .item .item-text {
-    font-size: 14px;
-    font-weight: 400;
-    color: #333;
-  }
-  
-  .item .checkbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 14px;
-    width: 14px;
-    border-radius: 4px;
-    margin-right: 12px;
-    border: 1.5px solid #c0c0c0;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .item.checked .checkbox {
-    background-color: #4070f4;
-    border-color: #4070f4;
-  }
-  
-  .checkbox .check-icon {
-    color: #fff;
-    font-size: 11px;
-    transform: scale(0);
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .item.checked .check-icon {
-    transform: scale(1);
-  }
-  
-  /* ====================================================================
+
+#crime-filter-container {
+  display: none; /* shown when district is selected */
+  margin-top: 1.5rem;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+.select-btn {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.select-btn .btn-text {
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+}
+
+.select-btn .arrow-dwn {
+  display: flex;
+  height: 21px;
+  width: 21px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 50%;
+  background: #6e93f7;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.select-btn.open .arrow-dwn {
+  transform: rotate(-180deg);
+}
+
+.list-items {
+  position: relative;
+  margin-top: 15px;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.select-btn.open ~ .list-items {
+  display: block;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 0 15px;
+  border-radius: 8px;
+}
+
+.item:hover {
+  background-color: #e7edfe;
+}
+
+.item .item-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+
+.item .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 14px;
+  width: 14px;
+  border-radius: 4px;
+  margin-right: 12px;
+  border: 1.5px solid #c0c0c0;
+  transition: all 0.3s ease-in-out;
+}
+
+.item.checked .checkbox {
+  background-color: #4070f4;
+  border-color: #4070f4;
+}
+
+.checkbox .check-icon {
+  color: #fff;
+  font-size: 11px;
+  transform: scale(0);
+  transition: all 0.2s ease-in-out;
+}
+
+.item.checked .check-icon {
+  transform: scale(1);
+}
+
+/* ====================================================================
      🌍 Global Defaults
      ==================================================================== */
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  html,
-  body {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    font-family: sans-serif;
-    font-size: 1.1rem;
-    height: 100vh;            /* Make sure body takes full viewport */
-    overflow: hidden;
-  }
-  
-  a {
-    color: rgb(0, 44, 122);
-    text-decoration: none;
-  }
-  
-  p {
-    text-align: justify;
-    font-size: 1rem;
-  }
-  
-  h1 {
-    font-size: 1.6rem;
-    color: rgb(0, 44, 122);
-    margin-bottom: 0.75rem;
-    text-align: center; 
-  }
-  
-  footer {
-    padding-bottom: 2rem;
-  }
 
+* {
+  box-sizing: border-box;
+}
 
-    /* ====================================================================
-     Heat map
+html,
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  height: 100vh; /* Make sure body takes full viewport */
+  overflow: hidden;
+}
+
+a {
+  color: rgb(0, 44, 122);
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: rgb(0, 44, 122);
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+footer {
+  padding-bottom: 2rem;
+}
+
+/* ====================================================================
+     Heat map asav
      ==================================================================== */
-
 
 /* Control panel styles */
 .control-panel {
