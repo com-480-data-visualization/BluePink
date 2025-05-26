@@ -17,6 +17,9 @@ import {
 
 import { setupDistrictInfoPanel, showDistrictInfoPanel } from "./eco_info.js";
 
+import { setupMapControls, getCurrentMapType } from "./map_control.js";
+import { colorDistrictsByEconomics } from "./economic_choropleth.js";
+
 // Load the map ---------------------------------------------------------------
 var map = L.map("map").setView([40.7128, -74.006], 11);
 
@@ -44,7 +47,8 @@ function createLegend(isDistrictView = true) {
   if (legendControl) {
     map.removeControl(legendControl);
   }
-  legendControl = createLegendControl(isDistrictView);
+  const mapType = getCurrentMapType(); // Get current map type
+  legendControl = createLegendControl(isDistrictView, mapType);
   legendControl.addTo(map);
 }
 
@@ -94,7 +98,10 @@ fetch(
 
     loadAllCrimeData(districtLayer);
     setupCrimeFilterUI();
-    createLegend(true);
+    //createLegend(true);
+
+    setupMapControls(map, districtLayer);
+
   });
 
 // Loads individual district crime data based on the selected district code.
@@ -233,12 +240,17 @@ map.on("contextmenu", function () {
     map.setView([40.7128, -74.006], 11);
     if (markerLayer) map.removeLayer(markerLayer);
 
-    // Hide crime filter when returning to overview
     document.getElementById("crime-filter-container").style.display = "none";
 
     createLegend(true);
 
-    colorDistrictsByCrime(districtLayer);
+    // Re-apply the appropriate choropleth coloring based on current map type
+    const mapType = getCurrentMapType();
+    if (mapType === 'economic') {
+      colorDistrictsByEconomics(districtLayer);
+    } else {
+      colorDistrictsByCrime(districtLayer);
+    }
   }
 });
 
