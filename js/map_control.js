@@ -83,7 +83,7 @@ export function setupMapControls(map, districtLayer) {
   });
 
   document.getElementById('economic-map-btn').addEventListener('click', () => {
-    // Only now load & draw economic data
+    // Defer loading economic data until the user actually switches
     loadEconomicData(districtLayer);
     switchMapType('economic', map, districtLayer);
   });
@@ -137,3 +137,6 @@ export function getCurrentMapType() {
 export function getCurrentEconomicMetric() {
   return currentEconomicMetric;
 }
+
+// Export updateLegend so other modules (e.g. main.js) can swap in the marker‐view legend
+export { updateLegend };
