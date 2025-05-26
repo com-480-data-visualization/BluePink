@@ -81,7 +81,7 @@ nav a {
 }
 
 .select-btn .btn-text {
-  font-size: 17px;
+  font-size: 14.5px;
   font-weight: 400;
   color: #333;
 }
@@ -195,11 +195,11 @@ a {
 
 p {
   text-align: justify;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: rgb(0, 44, 122);
   margin-bottom: 0.75rem;
   text-align: center;
@@ -275,7 +275,7 @@ footer {
   margin-bottom: 15px;
 }
 
-.filter-title {
+.filter-main-title {
   font-weight: bold;
   margin-bottom: 8px;
 }
