@@ -28,7 +28,7 @@
 nav {
   width: 100%;
   padding: 1rem 0;
-  background-color: #323030;
+  background-color: #3d3d40;
 }
 
 nav ul {
@@ -41,6 +41,7 @@ nav ul {
   max-width: 55rem;
   margin-left: auto;
   margin-right: auto;
+  gap: 1.5rem;
 }
 
 nav li {
@@ -49,8 +50,19 @@ nav li {
 
 nav a {
   font-weight: bold;
+  font-weight: 400;
   color: white;
   text-decoration: none;
+}
+figcaption {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.6); /* subtle gray */
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.5rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ====================================================================

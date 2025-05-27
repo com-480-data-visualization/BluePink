@@ -34,11 +34,6 @@ p {
   font-size: 1rem;
 }
 
-h2 {
-  font-size: 1.5rem;
-  color: rgb(0, 44, 122);
-  margin-bottom: 0.75rem;
-}
 
 footer {
   padding-bottom: 2rem;
@@ -53,16 +48,16 @@ footer {
 
 .content-wrapper h1 {
   font-size: 3.5rem;
-  color: rgb(86, 133, 203);
+  color: rgb(86, 119, 203);
   margin-bottom: 0.75rem;
   text-align: center;
 }
 
 .content-wrapper h2 {
   font-size: 1.5rem;
-  margin-top: 2rem;
-  color: rgb(86, 133, 203);
-  margin-bottom: 0.75rem;
+  margin-top: 2.5rem;
+  color: rgb(86, 119, 203);
+  margin-bottom: 1.5rem;
 }
 
 .content-wrapper p {
@@ -86,5 +81,6 @@ footer {
   font-size: 0.9rem;
   text-align: center;
 }
+
 
 

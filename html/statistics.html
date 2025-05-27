@@ -61,51 +61,100 @@
           data better and make it more accessible.
         </p>
 
-        <h2>Crime Situation at New York City</h2>
-        <p>
-          Let first have a look at the diffrent types of crimes that we
-          considered. The dataset contained a lot of various crimes, spanding
-          from fraud or prostitution to kidnapping or murder. We decided to keep
-          only certain type and to group them in categories.
-        </p>
-        <img
-          src="../../images/crime_type.png"
-          alt="Crime Types"
-          style="display: block; margin: 0 auto; width: 50%"
-        />
-<<<<<<< Updated upstream
-        <p>
-          It is then interessant to look at which crime is the most frequent in
-          New York City. The plot below illustrates this by showing the number
-          of incidents for each crime category. In figure 2 we can see that most
-          of the crimes are theft or physical assault. The the most serious
-          crimes, like rape and murder, are fortunately much less frequent.
-          Nevertheless, they still represent a significant concern for the
-          community since in average, 1398 rape, 411 muder, 1085 arson fire and
-          186 kidnapping complaints are reported each year.
-        </p>
-        <figure style="text-align: center">
-          <img
-            src="../../images/crime_repartition.png"
-            alt="Crime Types"
-            style="display: block; margin: 0 auto; width: 50%"
-          />
-          <figcaption>
-            Figure 2: Crime Distribution in New York City from 2006 to 2023
-          </figcaption>
-        </figure>
+        <h2>Crime Situation in New York City</h2>
+        <div style="display: flex; gap: 2rem; align-items: center; justify-content: center; flex-wrap: wrap;">
+  <!-- Image -->
+  <img
+    src="../../images/crime_type.png"
+    alt="Crime Types"
+    style="width: 45%; max-width: 400px; height: auto;"
+  />
+
+  <!-- Text -->
+  <p style="flex: 1; min-width: 250px;">
+    Let’s first take a look at the different types of crimes we considered. The dataset contained a wide variety of offenses, ranging from fraud and prostitution to kidnapping and murder. To simplify the analysis, we kept only the most common crime types and grouped them into categories that are easier for everyone to understand.
+  </p>
+</div>
 
         <figure style="text-align: center">
-          <img
-            src="../../images/borought_rep.png"
-            alt="Crime Types"
-            style="display: block; margin: 0 auto; width: 40%"
-          />
+          <iframe
+            src="../images/offense_type_repartition.html"
+            style="width: 100%; height: 600px; border: none"
+            title="Offense Type Repartition Chart"
+            loading="lazy"
+          ></iframe>
+
           <figcaption>
-            Figure 3: Crime Distribution across boroughs in New York City from
+            Figure 2: Crime Distribution in New York City from 2006 to 2023. The
+            top 3 crimes are minor theft that represent 19.49% of the crimes
+            followed by physical assault (16.32%) and verbal or physical
+            harassement (14.72%).
+          </figcaption>
+        </figure>
+        <p>
+          It is then interessant to look at which crime is the most frequent in
+          New York City. The plot above illustrates this by showing the
+          percentage each crime category represents among all reported incidents
+          between 2006 and 2023. We can see that most of the crimes are theft or
+          physical assault. The most serious crimes, like rape and murder, are
+          fortunately much less frequent. Nevertheless, they still represent a
+          significant concern for the community since in average, 1398 rape, 411
+          muder, 1085 arson fire and 186 kidnapping complaints are reported each
+          year.
+        </p>
+
+        <figure
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              gap: 2rem;
+              justify-content: center;
+              align-items: center;
+              flex-wrap: wrap;
+            "
+          >
+            <!-- Donut chart -->
+            <iframe
+              src="../images/borough_complaints_pie.html"
+              style="width: 450px; height: 450px; border: none"
+              title="Complaints by Borough"
+            ></iframe>
+
+            <!-- Bar chart -->
+            <iframe
+              src="../images/population_bar.html"
+              style="width: 410px; height: 320px; border: none"
+              title="Population by Borough"
+            ></iframe>
+          </div>
+
+          <figcaption>
+            Figure 3: Crime and Population distribution across boroughs in New York City from
             2006 to 2023
           </figcaption>
         </figure>
+        <p>
+          We can see that crime complaints are relatively balanced across the
+          boroughs, except for Staten Island, which accounts for only 4.64% of
+          reported crimes. This is largely explained by the fact that Staten
+          Island makes up just 5.8% of New York City’s population. Overall, the
+          distribution of complaints appears to correlate with population size.
+          Boroughs with more residents tend to report more crimes. However, we
+          cannot draw definitive conclusions from this pattern alone. With only
+          five boroughs, the Pearson correlation (r = 0.829, p = 0.0829) is not
+          statistically significant. Notably, Queens is the second most populous
+          borough but ranks only fourth in reported crimes. To uncover clearer
+          trends and more nuanced insights, a deeper analysis at the district
+          level is necessary. This is why our interactive map focuses on
+          community districts rather than boroughs.
+        </p>
 
         <p>
           If you are a woman, you might be interested in knowing that 54% of the
@@ -141,80 +190,6 @@
               style="width: 100%"
             />
           </div>
-=======
-        <figcaption>
-          Figure 2: Crime Distribution in New York City from 2006 to 2023
-        </figcaption>
-      </figure>
-
-      <figure style="text-align: center">
-        <img
-          src="../../images/borought_rep.png"
-          alt="Crime Types"
-          style="display: block; margin: 0 auto; width: 40%"
-        />
-        <figcaption>
-          Figure 3: Crime Distribution across boroughs in New York City from
-          2006 to 2023
-        </figcaption>
-      </figure>
-
-      <p>
-        If you are a woman, you might be interested in knowing that 54% of the
-        victims of crime in New York City are women. This is a significant
-        statistic that highlights the importance of addressing violence against
-        women in our communities. On the contrary, about 75% of the suspect are
-        men.
-      </p>
-      <figure style="text-align: center">
-        <img
-          src="../../images/occurence_hours.png"
-          alt="Crime Types"
-          style="display: block; margin: 0 auto; width: 50%"
-        />
-        <figcaption>
-          Figure 4: Most dangerous hours in New York City from 2006 to 2023
-        </figcaption>
-      </figure>
-
-      <h2>Relation with Socio-Economic Factors</h2>
-      <figure style="text-align: center">
-        <img
-          src="../../images/time_crime.png"
-          alt="Crime Types"
-          style="display: block; margin: 0 auto; width: 55%"
-        />
-        <figcaption>
-          Figure 4: Most dangerous hours in New York City from 2006 to 2023
-        </figcaption>
-      </figure>
-      <div
-        style="
-          display: flex;
-          justify-content: space-between;
-          text-align: center;
-        "
-      >
-        <div>
-          <img
-            src="../../images/time_blow.png"
-            alt="Plot 1"
-            style="width: 90%"
-          />
-          <figcaption>
-            Figure 4: Most dangerous hours in New York City from 2006 to 2023
-          </figcaption>
-        </div>
-        <div>
-          <img
-            src="../../images/time_unemployment.png"
-            alt="Plot 2"
-            style="width: 90%"
-          />
-          <figcaption>
-            Figure 4: Most dangerous hours in New York City from 2006 to 2023
-          </figcaption>
->>>>>>> Stashed changes
         </div>
         <p>
           The plot below shows the population of alligators in Lac Léman over
@@ -222,13 +197,6 @@
           future population of alligators in the lake.
         </p>
       </div>
-<<<<<<< Updated upstream
-=======
-      <p>
-        The plots seems to be well correlated. Now let's look if a rich borough
-        is safer than a poor one.
-      </p>
->>>>>>> Stashed changes
     </main>
     <footer>
       <div class="footer-content">
