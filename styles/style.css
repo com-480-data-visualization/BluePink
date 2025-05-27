@@ -184,7 +184,7 @@ body {
   border: 0;
   font-family: sans-serif;
   font-size: 1.1rem;
-  height: 100vh; /* Make sure body takes full viewport */
+  height: 100vh;
 }
 
 a {
@@ -199,7 +199,7 @@ p {
 
 h1 {
   font-size: 1.5rem;
-  color: rgb(0, 44, 122);
+  color: rgb(86, 133, 203);
   margin-bottom: 0.75rem;
   text-align: center;
 }
