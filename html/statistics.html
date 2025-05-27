@@ -62,19 +62,32 @@
         </p>
 
         <h2>Crime Situation in New York City</h2>
-        <div style="display: flex; gap: 2rem; align-items: center; justify-content: center; flex-wrap: wrap;">
-  <!-- Image -->
-  <img
-    src="../../images/crime_type.png"
-    alt="Crime Types"
-    style="width: 45%; max-width: 400px; height: auto;"
-  />
+        <div
+          style="
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <!-- Image -->
+          <img
+            src="../../images/crime_type.png"
+            alt="Crime Types"
+            style="width: 45%; max-width: 400px; height: auto"
+          />
 
-  <!-- Text -->
-  <p style="flex: 1; min-width: 250px;">
-    Let’s first take a look at the different types of crimes we considered. The dataset contained a wide variety of offenses, ranging from fraud and prostitution to kidnapping and murder. To simplify the analysis, we kept only the most common crime types and grouped them into categories that are easier for everyone to understand.
-  </p>
-</div>
+          <!-- Text -->
+          <p style="flex: 1; min-width: 250px">
+            Let’s first take a look at the different types of crimes we
+            considered. The dataset contained a wide variety of offenses,
+            ranging from fraud and prostitution to kidnapping and murder. To
+            simplify the analysis, we kept only the most common crime types and
+            grouped them into categories that are easier for everyone to
+            understand.
+          </p>
+        </div>
 
         <figure style="text-align: center">
           <iframe
@@ -103,43 +116,6 @@
           year.
         </p>
 
-        <figure
-          style="
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-          "
-        >
-          <div
-            style="
-              display: flex;
-              gap: 2rem;
-              justify-content: center;
-              align-items: center;
-              flex-wrap: wrap;
-            "
-          >
-            <!-- Donut chart -->
-            <iframe
-              src="../images/borough_complaints_pie.html"
-              style="width: 450px; height: 450px; border: none"
-              title="Complaints by Borough"
-            ></iframe>
-
-            <!-- Bar chart -->
-            <iframe
-              src="../images/population_bar.html"
-              style="width: 410px; height: 320px; border: none"
-              title="Population by Borough"
-            ></iframe>
-          </div>
-
-          <figcaption>
-            Figure 3: Crime and Population distribution across boroughs in New York City from
-            2006 to 2023
-          </figcaption>
-        </figure>
         <p>
           We can see that crime complaints are relatively balanced across the
           boroughs, except for Staten Island, which accounts for only 4.64% of
@@ -155,24 +131,80 @@
           level is necessary. This is why our interactive map focuses on
           community districts rather than boroughs.
         </p>
+      </div>
 
+      <figure
+        class="wide-figure"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+          "
+        >
+          <!-- Donut chart -->
+          <iframe
+            src="../images/borough_complaints_pie.html"
+            style="width: 400px; height: 400px; border: none"
+            title="Complaints by Borough"
+          ></iframe>
+
+          <!-- Bar chart -->
+          <iframe
+            src="../images/population_bar.html"
+            style="width: 410px; height: 320px; border: none"
+            title="Population by Borough"
+          ></iframe>
+        </div>
+
+        <figcaption>
+          Figure 3: Crime and Population distribution across boroughs in New
+          York City from 2006 to 2023
+        </figcaption>
+      </figure>
+      <div class="content-wrapper">
         <p>
-          If you are a woman, you might be interested in knowing that 54% of the
-          victims of crime in New York City are women. This is a significant
-          statistic that highlights the importance of addressing violence
-          against women in our communities. On the contrary, about 75% of the
-          suspect are men.
+          Regarding who is targeted by these crimes, if you are a woman, you
+          might be interested in knowing that 54% of the victims of crime in New
+          York City are women. This is a significant statistic that highlights
+          the importance of addressing violence against women in our
+          communities. On the contrary, about 75% of the suspect are men.
         </p>
         <figure style="text-align: center">
-          <img
-            src="../../images/occurence_hours.png"
-            alt="Crime Types"
-            style="display: block; margin: 0 auto; width: 50%"
-          />
+          <iframe
+            src="../../images/crime_by_hour.html"
+            style="width: 700px; height: 500px; border: none"
+            title="Population by Borough"
+          ></iframe>
           <figcaption>
-            Figure 4: Most dangerous hours in New York City from 2006 to 2023
+            Figure 4: Most dangerous hours in New York City from 2006 to 2023.
+            We can see that less crimes arrive at night but we have to be
+            careful with this information since there are also less people on
+            the streets.
           </figcaption>
         </figure>
+
+        <p>
+          Finally, looking at when crimes occur, we can see that most of the
+          crimes are committed during the day, mostly between 12:00 and 18:00 with the 
+          pick around 15:00. This is likely due to the fact that more people are
+          out and about during these hours, making it easier for criminals to
+          commit crimes. However, it is important to note that this does not
+          mean that it is safe to be out at night. In fact, the data shows that
+          there are still a significant number of crimes committed at night,
+          particularly between 18:00 and 24:00. It is always important to be
+          aware of your surroundings and take precautions to stay safe, no matter
+          what time of day it is.
+        </p>
 
         <h2>Relation with Socio-Economic Factors</h2>
         <div style="display: flex; justify-content: space-between">
