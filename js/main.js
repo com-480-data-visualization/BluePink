@@ -13,6 +13,7 @@ import {
 import {
   setupCrimeFilterUI,
   populateCrimeTypeFilter,
+  populateYearSlider
 } from "./filter_crimeType.js";
 
 import { setupDistrictInfoPanel, showDistrictInfoPanel } from "./eco_info.js";
@@ -39,9 +40,9 @@ let markerLayer = null;
 let districtLayer = null;
 let selectedCrimeTypes = new Set();
 let currentDistrictCode = null;
+let selectedYear = null;
 let legendControl = null;
 let currentDistrictData = null;
-
 
 function createLegend(isDistrictView = true) {
   if (legendControl) {
@@ -51,8 +52,6 @@ function createLegend(isDistrictView = true) {
   legendControl = createLegendControl(isDistrictView, mapType);
   legendControl.addTo(map);
 }
-
-
 
 // Loads district boundary data from ArcGIS and initializes the map.
 // Adds event listeners to each district for interactivity.
@@ -73,12 +72,8 @@ fetch(
         layer.bindPopup = () => layer;
 
         const districtCode = parseInt(feature.properties.BoroCD);
-        const districtName =
-          feature.properties.BoroCD_name || `District ${districtCode}`;
 
         layer.on("click", () => {
-          console.log("Clicked district", feature.properties);
-
           currentDistrictCode = districtCode;
           map.fitBounds(layer.getBounds());
 
@@ -86,10 +81,10 @@ fetch(
             fillOpacity: 0,
           });
 
-          // hide the map-type buttons
+          // Hide the map-type controls
           document.getElementById("map-controls").style.display = "none";
 
-          // swap in the marker-view legend
+          // Swap in the marker-view legend
           updateLegend(map, false, getCurrentMapType());
 
           document.getElementById("crime-filter-container").style.display =
@@ -102,31 +97,39 @@ fetch(
 
     loadAllCrimeData(districtLayer);
     setupCrimeFilterUI();
-    //createLegend(true);
-
     setupMapControls(map, districtLayer);
 
   });
 
 // Loads individual district crime data based on the selected district code.
-// Also sets up crime type filters and displays corresponding markers.
+// Also sets up crime type filters, year slider, and displays corresponding markers.
 function loadDistrictCrimeData(code) {
+  console.log(`Loading data for district ${code}`); // Debug log
+  
   fetch(`data/crimes_by_district/${code}.json`)
     .then((res) => {
       if (!res.ok) throw new Error(`No data for district ${code}`);
       return res.json();
     })
     .then((districtCrimes) => {
+      console.log(`Loaded ${districtCrimes.length} crime records for district ${code}`); // Debug log
       currentDistrictData = districtCrimes;
 
-      // Populate crime types filter when district data is loaded
+      // Populate crime types filter
       populateCrimeTypeFilter(districtCrimes, selectedCrimeTypes, handleCrimeFilterClick);
 
-      if (markerLayer) map.removeLayer(markerLayer);
+      // Populate year slider with proper callback
+      populateYearSlider(districtCrimes, (year) => {
+        console.log(`Year changed to: ${year}`); // Debug log
+        selectedYear = year;
+        displayCrimesForDistrict(code, currentDistrictData);
+      });
+
+      // Initial display
       displayCrimesForDistrict(code, districtCrimes);
     })
     .catch((err) => {
-      console.error(`No data for district ${code}`);
+      console.error(`Error loading data for district ${code}:`, err);
     });
 }
 
@@ -148,58 +151,71 @@ function handleCrimeFilterClick(clickedLi) {
     const isAllSelected = allLi.classList.contains("checked");
 
     if (isAllSelected) {
-      // If "All" was selected before, clear and select only clicked
       document.querySelectorAll(".list-items .item").forEach((item) => {
         item.classList.remove("checked");
       });
       clickedLi.classList.add("checked");
     } else {
       clickedLi.classList.toggle("checked");
-
-      // If any individual item is toggled, uncheck "All"
       if (allLi.classList.contains("checked")) {
         allLi.classList.remove("checked");
       }
     }
   }
 
-  // Update selectedCrimeTypes set
   selectedCrimeTypes.clear();
   document.querySelectorAll(".list-items .item.checked").forEach((item) => {
     const val = item.dataset.value;
     if (val && val !== "__all__") selectedCrimeTypes.add(val);
   });
 
-  // Re-render markers
   if (currentDistrictCode && currentDistrictData) {
     displayCrimesForDistrict(currentDistrictCode, currentDistrictData);
   }
 }
 
-
-// Triggers marker view generation based on selected district and filters.
-// Delegates to `createMarkerView`.
 function displayCrimesForDistrict(code, data) {
   createMarkerView(data);
 }
 
-// Creates and adds Leaflet markers to the map based on crime data.
-// Supports clustering and special icons for different crime types.
 function createMarkerView(data) {
   if (markerLayer) map.removeLayer(markerLayer);
+  
+  console.log(`Filtering data: selectedYear=${selectedYear}, selectedCrimeTypes=${Array.from(selectedCrimeTypes).join(', ')}`);
+  
   const grouped = {};
-  data
-    .filter((c) => selectedCrimeTypes.has(c.crime_type))
-    .forEach((c) => {
-      const lat = parseFloat(c.Latitude);
-      const lon = parseFloat(c.Longitude);
-      const type = c.crime_type.toLowerCase();
-      if (isNaN(lat) || isNaN(lon)) return;
-      const key = `${lat.toFixed(5)},${lon.toFixed(5)}`;
-      if (!grouped[key]) grouped[key] = { lat, lon, total: 0, types: {} };
-      grouped[key].total++;
-      grouped[key].types[type] = (grouped[key].types[type] || 0) + 1;
-    });
+  const filteredData = data.filter((c) => {
+    // Check crime type filter
+    if (selectedCrimeTypes.size > 0 && !selectedCrimeTypes.has(c.crime_type)) {
+      return false;
+    }
+    
+    // Check year filter
+    if (selectedYear !== null) {
+      const year = parseInt(c.year_begin);
+      if (isNaN(year) || year !== selectedYear) {
+        return false;
+      }
+    }
+    
+    return true;
+  });
+
+  console.log(`Showing ${filteredData.length} crimes out of ${data.length} total`);
+
+  filteredData.forEach((c) => {
+    const lat = parseFloat(c.Latitude);
+    const lon = parseFloat(c.Longitude);
+    const type = c.crime_type.toLowerCase();
+    
+    if (isNaN(lat) || isNaN(lon)) return;
+    
+    const key = `${lat.toFixed(5)},${lon.toFixed(5)}`;
+    if (!grouped[key]) grouped[key] = { lat, lon, total: 0, types: {} };
+    grouped[key].total++;
+    grouped[key].types[type] = (grouped[key].types[type] || 0) + 1;
+  });
+
   markerLayer = L.layerGroup(
     Object.values(grouped).flatMap((loc) => {
       const markers = [];
@@ -207,6 +223,7 @@ function createMarkerView(data) {
         (type) =>
           !Object.values(specialCrimeIcons).some((cfg) => cfg.match(type))
       );
+      
       if (hasNormal) {
         markers.push(
           L.circleMarker([loc.lat, loc.lon], {
@@ -216,6 +233,7 @@ function createMarkerView(data) {
           })
         );
       }
+      
       Object.entries(loc.types).forEach(([type, count]) => {
         for (const [key, cfg] of Object.entries(specialCrimeIcons)) {
           if (cfg.match(type)) {
@@ -245,11 +263,12 @@ map.on("contextmenu", function () {
     if (markerLayer) map.removeLayer(markerLayer);
 
     document.getElementById("crime-filter-container").style.display = "none";
+    const sliderContainer = document.getElementById("year-slider-container");
+    if (sliderContainer) sliderContainer.style.display = "none";
+    selectedYear = null;
 
-    // show the map-type buttons again
     document.getElementById("map-controls").style.display = "block";
 
-    // re-apply the appropriate choropleth coloring based on current map type
     const mapType = getCurrentMapType();
     if (mapType === 'economic') {
       colorDistrictsByEconomics(districtLayer);
@@ -257,15 +276,12 @@ map.on("contextmenu", function () {
       colorDistrictsByCrime(districtLayer);
     }
 
-    // swap back to the district-view legend
     updateLegend(map, true, mapType);
   }
 });
 
-
 // Initialize map with choropleth map view by default
 window.addEventListener("DOMContentLoaded", () => {
-  // Add Font Awesome
   const fontAwesome = document.createElement("link");
   fontAwesome.rel = "stylesheet";
   fontAwesome.href =

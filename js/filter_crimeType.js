@@ -1,54 +1,102 @@
-
-// Sets up the UI container for the crime type filter dropdown.
-// This filter appears when a district is selected.
 // filter_crimeType.js
-export function setupCrimeFilterUI(onCrimeTypeClick) {
+// This module provides the UI and logic for filtering crimes by type and year.
+
+// Sets up the UI container for the crime type filter dropdown and year slider.
+export function setupCrimeFilterUI() {
+  // Remove any existing container
+  const existing = document.getElementById("crime-filter-container");
+  if (existing) existing.remove();
+
+  // Create the main container
   const filterContainer = document.createElement("div");
   filterContainer.id = "crime-filter-container";
-  filterContainer.style.display = "none";
-  filterContainer.style.position = "absolute";
-  filterContainer.style.top = "10px";
-  filterContainer.style.right = "10px";
-  filterContainer.style.zIndex = "1000";
-  filterContainer.style.backgroundColor = "white";
-  filterContainer.style.padding = "10px";
-  filterContainer.style.borderRadius = "5px";
-  filterContainer.style.boxShadow = "0 0 15px rgba(0,0,0,0.2)";
-  filterContainer.style.maxWidth = "250px";
+  Object.assign(filterContainer.style, {
+    display: "none",           // hidden until a district is selected
+    position: "absolute",
+    // Position under the title panel on middle-left
+    top: "300px",
+    left: "50px",
+    zIndex: "1000",
+    backgroundColor: "white",
+    padding: "10px",
+    borderRadius: "5px",
+    boxShadow: "0 0 15px rgba(0,0,0,0.2)",
+    maxWidth: "250px",
+  });
 
+  // Insert the dropdown and slider markup
   filterContainer.innerHTML = `
+    <!-- ▼ Dropdown for crime types ▼ -->
     <div class="wrapper">
-      <div class="content">
-        <div class="search">
-          <i class="fa-solid fa-search"></i>
-          <input type="text" placeholder="Search">
-        </div>
-        <ul class="list-items" id="crime-type-options"></ul>
+      <div class="select-btn">
+        Select Crime Types
+        <i class="fa-solid fa-caret-down"></i>
       </div>
+      <ul class="list-items" id="crime-type-options"></ul>
+    </div>
+
+    <!-- ▼ Year slider (hidden until data is loaded) ▼ -->
+    <div id="year-slider-container" style="
+        display: none;
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+      ">
+      <div style="margin-bottom: 10px;">
+        <label for="year-slider" style="font-weight: bold;">
+          Year: <span id="year-display">All Years</span>
+        </label>
+      </div>
+      <input type="range" id="year-slider" style="width:100%; margin-bottom:10px;" />
+      <div style="
+          display: flex;
+          justify-content: space-between;
+          font-size: 12px;
+          margin-bottom: 10px;
+        ">
+        <span id="min-year" style="font-weight: bold;"></span>
+        <span id="max-year" style="font-weight: bold;"></span>
+      </div>
+      <button id="reset-year" style="
+          margin-top: 5px;
+          padding: 5px 10px;
+          font-size: 12px;
+          background: #007cba;
+          color: white;
+          border: none;
+          border-radius: 3px;
+          cursor: pointer;
+        ">
+        Show All Years
+      </button>
     </div>
   `;
 
+  // Add to document
   document.body.appendChild(filterContainer);
+  console.log("Crime filter UI container created and added to body");
 
-  const dropdownBtn = document.querySelector(".select-btn");
-  if (dropdownBtn) {
-    dropdownBtn.addEventListener("click", () => {
-      dropdownBtn.classList.toggle("open");
-    });
-  }
-
-  // Bind click listener to be used later
-  return onCrimeTypeClick;
+  // Hook up dropdown toggle behavior
+  const dropdownBtn = filterContainer.querySelector('.select-btn');
+  dropdownBtn.addEventListener('click', () => {
+    dropdownBtn.classList.toggle('open');
+    // CSS shows/hides the .list-items via .select-btn.open + .list-items
+  });
 }
 
+// Populates the crime type checklist based on the current district's data
 export function populateCrimeTypeFilter(data, selectedCrimeTypes, onClickHandler) {
   const crimeTypeList = document.getElementById("crime-type-options");
   crimeTypeList.innerHTML = "";
 
-  const allTypes = new Set(data.map((c) => c.crime_type));
+  // Gather all crime types
+  const allTypes = new Set(data.map(c => c.crime_type));
   selectedCrimeTypes.clear();
-  allTypes.forEach((t) => selectedCrimeTypes.add(t));
+  allTypes.forEach(t => selectedCrimeTypes.add(t));
 
+  // "All" option
   const allLi = document.createElement("li");
   allLi.classList.add("item", "checked");
   allLi.dataset.value = "__all__";
@@ -59,106 +107,110 @@ export function populateCrimeTypeFilter(data, selectedCrimeTypes, onClickHandler
   allLi.addEventListener("click", () => onClickHandler(allLi));
   crimeTypeList.appendChild(allLi);
 
-  Array.from(allTypes)
-    .sort()
-    .forEach((type) => {
-      const li = document.createElement("li");
-      li.classList.add("item", "checked");
-      li.dataset.value = type;
-      li.innerHTML = `
-        <span class="checkbox"><i class="fa-solid fa-check check-icon"></i></span>
-        <span class="item-text">${type}</span>
-      `;
-      li.addEventListener("click", () => onClickHandler(li));
-      crimeTypeList.appendChild(li);
-    });
+  // Individual types
+  Array.from(allTypes).sort().forEach(type => {
+    const li = document.createElement("li");
+    li.classList.add("item", "checked");
+    li.dataset.value = type;
+    li.innerHTML = `
+      <span class="checkbox"><i class="fa-solid fa-check check-icon"></i></span>
+      <span class="item-text">${type}</span>
+    `;
+    li.addEventListener("click", () => onClickHandler(li));
+    crimeTypeList.appendChild(li);
+  });
 }
 
+// Sets up and handles the year slider based on the crime records' dates
+export function populateYearSlider(data, onYearChange) {
+  console.log("populateYearSlider called with data length:", data.length);
 
-// Handles "All" option click in the crime type filter.
-// Ensures all crime types are selected if "All" is checked.
-export function handleSelectAllClick(allLi) {
-  const allItems = document.querySelectorAll(".list-items .item");
-  const isAlreadyAll = allLi.classList.contains("checked");
+  const sliderContainer = document.getElementById("year-slider-container");
+  const slider = document.getElementById("year-slider");
+  const display = document.getElementById("year-display");
+  const minYearDisplay = document.getElementById("min-year");
+  const maxYearDisplay = document.getElementById("max-year");
+  const resetButton = document.getElementById("reset-year");
 
-  if (isAlreadyAll) {
-    // Already selected — do nothing
+  if (!sliderContainer || !slider || !display) {
+    console.error("Year slider elements not found");
     return;
   }
 
-  // Uncheck all first (to reset)
-  allItems.forEach((item) => item.classList.remove("checked"));
+  // Extract years
+  const years = Array.from(
+    new Set(
+      data
+        .map(c => parseInt(c.year_begin))
+        .filter(y => !isNaN(y) && y > 1900 && y < 2030)
+    )
+  ).sort((a,b) => a - b);
 
-  // Check all items, including "All"
-  allItems.forEach((item) => item.classList.add("checked"));
+  if (years.length === 0) {
+    sliderContainer.style.display = "none";
+    return;
+  }
 
-  updateSelectedCrimeTypes(currentDistrictCode, currentDistrictData, displayCrimesForDistrict);
+  const minYear = years[0];
+  const maxYear = years[years.length - 1];
+
+  slider.min = minYear;
+  slider.max = maxYear;
+  slider.value = maxYear;
+
+  display.innerText = maxYear;
+  minYearDisplay.innerText = minYear;
+  maxYearDisplay.innerText = maxYear;
+
+  // Show the slider
+  sliderContainer.style.display = "block";
+
+  // Replace slider to clear old listeners
+  const newSlider = slider.cloneNode(true);
+  slider.parentNode.replaceChild(newSlider, slider);
+
+  // Replace reset button to clear old listeners
+  if (resetButton) {
+    const newReset = resetButton.cloneNode(true);
+    resetButton.parentNode.replaceChild(newReset, resetButton);
+    newReset.addEventListener("click", () => {
+      display.innerText = "All Years";
+      console.log("Reset to all years");
+      onYearChange(null);
+    });
+  }
+
+  // Slider input handler
+  newSlider.addEventListener("input", () => {
+    const year = parseInt(newSlider.value);
+    display.innerText = year;
+    console.log("Year slider changed to:", year);
+    onYearChange(year);
+  });
+
+  // Initialize to show all
+  onYearChange(null);
 }
 
-// Handles individual crime type click events.
-// Toggles selection and updates the filter state accordingly.
-export function handleIndividualClick(clickedLi) {
-  const allLi = document.querySelector(
-    '.list-items .item[data-value="__all__"]'
-  );
-  const isAllSelected = allLi.classList.contains("checked");
+// Handles clicking "All" option
+export function handleSelectAllClick(allLi) {
+  const allItems = document.querySelectorAll(".list-items .item");
+  allItems.forEach(item => item.classList.add("checked"));
+}
 
-  // Case 1: "All" is selected → switch to single selection
-  if (isAllSelected) {
-    // Uncheck all
-    document.querySelectorAll(".list-items .item").forEach((item) => {
+// Handles individual crime type clicks
+export function handleIndividualClick(clickedLi) {
+  const allLi = document.querySelector('.list-items .item[data-value="__all__"]');
+  if (allLi.classList.contains("checked")) {
+    document.querySelectorAll(".list-items .item").forEach(item => {
       item.classList.remove("checked");
     });
-
-    // Check only the clicked one
     clickedLi.classList.add("checked");
-  }
-  // Case 2: "All" is not selected → toggle normally
-  else {
+  } else {
     clickedLi.classList.toggle("checked");
   }
 
-  // Always uncheck "All" if any individual is clicked
   if (allLi.classList.contains("checked")) {
     allLi.classList.remove("checked");
-  }
-
-  updateSelectedCrimeTypes(currentDistrictCode, currentDistrictData, displayCrimesForDistrict);
-}
-
- // Updates the global `selectedCrimeTypes` set based on current UI state.
-// Also refreshes the markers on the map to match selected filters.
-export function updateSelectedCrimeTypes({
-  selectedCrimeTypes,
-  currentDistrictCode,
-  currentDistrictData,
-  displayCrimesForDistrict,
-}) {
-  selectedCrimeTypes.clear();
-
-  const allItems = document.querySelectorAll(".list-items .item");
-  const allLi = document.querySelector(
-    '.list-items .item[data-value="__all__"]'
-  );
-  const checkedItems = document.querySelectorAll(".list-items .item.checked");
-
-  if (allLi.classList.contains("checked")) {
-    allItems.forEach((item) => {
-      const value = item.dataset.value;
-      if (value && value !== "__all__") {
-        selectedCrimeTypes.add(value);
-      }
-    });
-  } else {
-    checkedItems.forEach((item) => {
-      const value = item.dataset.value;
-      if (value && value !== "__all__") {
-        selectedCrimeTypes.add(value);
-      }
-    });
-  }
-
-  if (currentDistrictCode && currentDistrictData) {
-    displayCrimesForDistrict(currentDistrictCode, currentDistrictData);
   }
 }
