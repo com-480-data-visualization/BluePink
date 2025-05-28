@@ -249,27 +249,42 @@
           stable, with a noticeable uptick in 2020, likely a consequence of the
           economic fallout from the COVID-19 pandemic. Despite minor
           fluctuations, poverty remains a pressing issue in the city: in 2023,
-          18.2% of New Yorkers were living below the federal poverty line,
-          compared to the national average of 11.1%. This translates to nearly
-          one in five residents struggling to make ends meet, with the threshold
-          set at $14,580 annually for an individual and $30,000 for a family of
-          four. 
-          </p>
-          <p>
-          Regarding employment, the employment rate in NYC has generally
-          hovered between 55% and 60%, with a dip around 2020 that aligns with
+          <strong
+            >18.88% of New Yorkers were living below the federal poverty
+            line</strong
+          >, compared to the national average of 11.1%. This translates to
+          nearly one in five residents struggling to make ends meet, with the
+          threshold set at $14,580 annually for an individual and $30,000 for a
+          family of four.<sup
+            ><a
+              href="https://dol.ny.gov/poverty-guidelines-2023"
+              target="_blank"
+              >[1]</a
+            ></sup
+          >
+        </p>
+
+        <p>
+          Regarding employment, the employment rate in NYC has generally hovered
+          between 55% and 60%, with a dip around 2020 that aligns with
           widespread job losses and economic instability caused by the pandemic.
           Interestingly, there appears to be a negative correlation between
           poverty and employment: as the employment rate decreases, the share of
           people living under the federal poverty line tends to rise. This is
           confirmed by a statistically significant Spearman correlation
-          coefficient of -0.556 (p = 0.0254), supporting the intuitive link
-          between employment and economic well-being. Unemployment remains a
-          concern as well. In 2023, New York City's unemployment rate was 5.3%,
-          considerably higher than the national average of 3.6%. This means that
-          more than 1 in 20 individuals in the city’s labor force were
-          unemployed, underlining persistent structural challenges in the urban
-          job market.
+          coefficient of <em>ρ = –0.556</em> (p = 0.0254), supporting the
+          intuitive link between employment and economic well-being.
+          Unemployment remains a concern as well. In 2023, New York City's
+          <strong>unemployment rate was 5.3%</strong>, considerably higher than
+          the national average of 3.6%. This means that more than 1 in 20
+          individuals in the city’s labor force were unemployed, underlining
+          persistent structural challenges in the urban job market.<sup
+            ><a
+              href="https://dol.ny.gov/system/files/documents/2024/01/press-release-1-december-2023.pdf"
+              target="_blank"
+              >[2]</a
+            ></sup
+          >
         </p>
         <figure
           style="
@@ -299,6 +314,71 @@
           the last century. The data is based on a model that predicts the
           future population of alligators in the lake.
         </p>
+        <iframe
+          src="crimes_correlation.html"
+          title="Top Crime Districts Dashboard"
+          style="
+            width: 100%;
+            max-width: 1100px;
+            height: 850px; /* reduced from 1000px */
+            border: none;
+            display: block;
+            margin: 2rem auto;
+          "
+          loading="lazy"
+        ></iframe>
+        <figure
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem auto;
+            gap: 1rem;
+            width: 100%;
+          "
+        >
+          <img
+            src="../../images/correlation_plots.png"
+            alt="Crime Types"
+            style="
+              float: left;
+              width: 200%;
+              max-width: 1000px;
+              height: auto;
+              margin-top: 2rem;
+              margin-right: 2rem;
+              margin-bottom: 1rem;
+            "
+          />
+          <figcaption>
+            Figure 4: Evolution of poverty and unemployment in NYC. Both metrics
+            appear correlated over time, indicating socio-economic hardship and
+            crime may be intertwined.
+          </figcaption>
+        </figure>
+
+        <section class="references">
+          <h3>References</h3>
+          <ol>
+            <li>
+              <a
+                href="https://dol.ny.gov/poverty-guidelines-2023"
+                target="_blank"
+              >
+                New York Department of Labor — Poverty Guidelines 2023
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://dol.ny.gov/system/files/documents/2024/01/press-release-1-december-2023.pdf"
+                target="_blank"
+              >
+                New York Department of Labor — Unemployment Rate Press Release
+                (Dec 2023)
+              </a>
+            </li>
+          </ol>
+        </section>
       </div>
     </main>
     <footer>

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crime & Economic Factors Analysis</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        background: #f8fafc;
+        color: #1e293b;
+        line-height: 1.6;
+        padding: 20px;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .header h1 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        color: #0f172a;
+        margin-bottom: 8px;
+      }
+
+      .header p {
+        font-size: 1.1rem;
+        color: #64748b;
+      }
+
+      .table-container {
+        background: white;
+        border-radius: 12px;
+        padding: 32px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        width: 100%;
+      }
+
+      .search-box {
+        width: 100%;
+        max-width: 400px;
+        padding: 12px 16px;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        font-size: 1rem;
+        margin-bottom: 24px;
+        background: #fff;
+      }
+
+      .search-box:focus {
+        outline: none;
+        border-color: #3b82f6;
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+      }
+
+      .table-wrapper {
+        height: 500px;
+        overflow-y: auto;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        position: relative;
+      }
+
+      .table-wrapper::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .table-wrapper::-webkit-scrollbar-track {
+        background: #f1f5f9;
+        border-radius: 4px;
+      }
+
+      .table-wrapper::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+
+      .table-wrapper::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+      }
+
+      th {
+        background: #f8fafc;
+        padding: 16px 12px;
+        text-align: left;
+        font-weight: 600;
+        color: #475569;
+        border-bottom: 2px solid #e2e8f0;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+
+      th.center {
+        text-align: center;
+      }
+
+      td {
+        padding: 12px;
+        border-bottom: 1px solid #f1f5f9;
+      }
+
+      tr:hover {
+        background: #f8fafc;
+      }
+
+      .crime-name {
+        font-weight: 500;
+        color: #0f172a;
+      }
+
+      .correlation-value {
+        font-family: "SF Mono", Monaco, monospace;
+        font-weight: 600;
+        text-align: center;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 0.85rem;
+      }
+
+      .p-value {
+        font-family: "SF Mono", Monaco, monospace;
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 4px 8px;
+        border-radius: 4px;
+      }
+
+      .significant {
+        background: #dcfce7;
+        color: #166534;
+      }
+
+      .not-significant {
+        color: #64748b;
+      }
+
+      .strong-pos {
+        background: #dcfce7;
+        color: #166534;
+      }
+      .moderate-pos {
+        background: #fef3c7;
+        color: #92400e;
+      }
+      .weak-pos {
+        background: #dbeafe;
+        color: #1e40af;
+      }
+      .weak-neg {
+        background: #fee2e2;
+        color: #dc2626;
+      }
+      .moderate-neg {
+        background: #fce7f3;
+        color: #be185d;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .scroll-indicator {
+        text-align: center;
+        color: #64748b;
+        font-size: 0.85rem;
+        margin-top: 12px;
+        display: none;
+      }
+
+      .scroll-indicator.show {
+        display: block;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 10px;
+        }
+        
+        .header h1 {
+          font-size: 2rem;
+        }
+
+        .table-container {
+          padding: 20px;
+        }
+
+        .table-wrapper {
+          height: 400px;
+        }
+
+        table {
+          font-size: 0.8rem;
+        }
+
+        th,
+        td {
+          padding: 8px 6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Crime & Economic Analysis</h1>
+        <p>Correlation between crime types and economic factors</p>
+      </header>
+
+      <div class="table-container">
+        <input
+          type="text"
+          class="search-box"
+          id="searchInput"
+          placeholder="Search crime types..."
+        />
+
+        <div class="table-wrapper" id="tableWrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Crime Type</th>
+                <th class="center">
+                  Below Poverty Line<br /><small>Correlation</small>
+                </th>
+                <th class="center">
+                  Below Poverty Line<br /><small>P-value</small>
+                </th>
+                <th class="center">
+                  Employment Ratio<br /><small>Correlation</small>
+                </th>
+                <th class="center">
+                  Employment Ratio<br /><small>P-value</small>
+                </th>
+              </tr>
+            </thead>
+            <tbody id="correlationTable">
+              <!-- Data populated by JavaScript -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="scroll-indicator" id="scrollIndicator">
+          Scroll to see more rows
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const rawData = [
+        {
+          crime: "Drug Offenses",
+          fpl_corr: 0.724223,
+          fpl_p: 9.00763e-11,
+          fpl_sig: true,
+          emp_corr: -0.493715,
+          emp_p: 7.079866e-5,
+          emp_sig: true,
+        },
+        {
+          crime: "Intentional Property Fire",
+          fpl_corr: 0.654366,
+          fpl_p: 1.898863e-8,
+          fpl_sig: true,
+          emp_corr: -0.657263,
+          emp_p: 1.563877e-8,
+          emp_sig: true,
+        },
+        {
+          crime: "Physical Assault",
+          fpl_corr: 0.61108,
+          fpl_p: 2.74323e-7,
+          fpl_sig: true,
+          emp_corr: -0.440341,
+          emp_p: 4.828289e-4,
+          emp_sig: true,
+        },
+        {
+          crime: "Weapon Possession",
+          fpl_corr: 0.600946,
+          fpl_p: 4.844139e-7,
+          fpl_sig: true,
+          emp_corr: -0.46941,
+          emp_p: 1.764807e-4,
+          emp_sig: true,
+        },
+        {
+          crime: "Murder",
+          fpl_corr: 0.570107,
+          fpl_p: 2.436334e-6,
+          fpl_sig: true,
+          emp_corr: -0.477912,
+          emp_p: 1.292133e-4,
+          emp_sig: true,
+        },
+        {
+          crime: "Prostitution Offenses",
+          fpl_corr: 0.530647,
+          fpl_p: 1.537558e-5,
+          fpl_sig: true,
+          emp_corr: -0.432785,
+          emp_p: 6.182656e-4,
+          emp_sig: true,
+        },
+        {
+          crime: "Illegal Gambling",
+          fpl_corr: 0.509599,
+          fpl_p: 6.036147e-5,
+          fpl_sig: true,
+          emp_corr: -0.294142,
+          emp_p: 2.777569e-2,
+          emp_sig: true,
+        },
+        {
+          crime: "Kidnapping",
+          fpl_corr: 0.4734,
+          fpl_p: 1.526193e-4,
+          fpl_sig: true,
+          emp_corr: -0.378868,
+          emp_p: 3.085968e-3,
+          emp_sig: true,
+        },
+        {
+          crime: "Public Disturbance",
+          fpl_corr: 0.470652,
+          fpl_p: 1.687093e-4,
+          fpl_sig: true,
+          emp_corr: -0.405892,
+          emp_p: 1.425119e-3,
+          emp_sig: true,
+        },
+        {
+          crime: "Rape",
+          fpl_corr: 0.452455,
+          fpl_p: 3.626865e-4,
+          fpl_sig: true,
+          emp_corr: -0.256781,
+          emp_p: 5.168173e-2,
+          emp_sig: false,
+        },
+        {
+          crime: "Verbal or Physical Harassment",
+          fpl_corr: 0.371527,
+          fpl_p: 3.765455e-3,
+          fpl_sig: true,
+          emp_corr: -0.34415,
+          emp_p: 7.608369e-3,
+          emp_sig: true,
+        },
+        {
+          crime: "Vandalism",
+          fpl_corr: 0.353239,
+          fpl_p: 6.063872e-3,
+          fpl_sig: true,
+          emp_corr: -0.346548,
+          emp_p: 7.170868e-3,
+          emp_sig: true,
+        },
+        {
+          crime: "Breaking & Entering",
+          fpl_corr: 0.350571,
+          fpl_p: 6.485931e-3,
+          fpl_sig: true,
+          emp_corr: -0.105155,
+          emp_p: 4.279934e-1,
+          emp_sig: false,
+        },
+        {
+          crime: "Negligent Homicide",
+          fpl_corr: 0.304605,
+          fpl_p: 1.899169e-2,
+          fpl_sig: true,
+          emp_corr: -0.28012,
+          emp_p: 3.164788e-2,
+          emp_sig: true,
+        },
+        {
+          crime: "Stolen Property Possession",
+          fpl_corr: 0.207446,
+          fpl_p: 1.149036e-1,
+          fpl_sig: false,
+          emp_corr: 0.025236,
+          emp_p: 8.495264e-1,
+          emp_sig: false,
+        },
+        {
+          crime: "Child Abuse/Endangerment",
+          fpl_corr: 0.176867,
+          fpl_p: 1.802231e-1,
+          fpl_sig: false,
+          emp_corr: -0.091237,
+          emp_p: 4.919293e-1,
+          emp_sig: false,
+        },
+        {
+          crime: "Traffic Violations",
+          fpl_corr: 0.143258,
+          fpl_p: 2.790577e-1,
+          fpl_sig: false,
+          emp_corr: -0.163326,
+          emp_p: 2.164554e-1,
+          emp_sig: false,
+        },
+        {
+          crime: "Minor Theft",
+          fpl_corr: -0.105973,
+          fpl_p: 4.243876e-1,
+          fpl_sig: false,
+          emp_corr: 0.352679,
+          emp_p: 6.150497e-3,
+          emp_sig: true,
+        },
+        {
+          crime: "Fraud and Forgery",
+          fpl_corr: -0.0234,
+          fpl_p: 8.603594e-1,
+          fpl_sig: false,
+          emp_corr: 0.217028,
+          emp_p: 9.871736e-2,
+          emp_sig: false,
+        },
+        {
+          crime: "Major Theft",
+          fpl_corr: -0.220866,
+          fpl_p: 9.275542e-2,
+          fpl_sig: false,
+          emp_corr: 0.44453,
+          emp_p: 4.199294e-4,
+          emp_sig: true,
+        },
+      ];
+
+      function getCorrelationClass(correlation) {
+        const abs = Math.abs(correlation);
+        if (abs >= 0.7) return correlation > 0 ? "strong-pos" : "strong-neg";
+        if (abs >= 0.5)
+          return correlation > 0 ? "moderate-pos" : "moderate-neg";
+        if (abs >= 0.3) return correlation > 0 ? "moderate-pos" : "weak-neg";
+        return correlation > 0 ? "weak-pos" : "weak-neg";
+      }
+
+      function formatPValue(pValue) {
+        if (pValue < 0.001) return pValue.toExponential(1);
+        if (pValue < 0.01) return pValue.toFixed(3);
+        return pValue.toFixed(2);
+      }
+
+      function checkScrollIndicator() {
+        const wrapper = document.getElementById("tableWrapper");
+        const indicator = document.getElementById("scrollIndicator");
+
+        if (wrapper.scrollHeight > wrapper.clientHeight) {
+          indicator.classList.add("show");
+        } else {
+          indicator.classList.remove("show");
+        }
+      }
+
+      function renderTable(data = rawData) {
+        const tbody = document.getElementById("correlationTable");
+        tbody.innerHTML = "";
+
+        // Sort by FPL correlation (strongest positive first)
+        const sortedData = [...data].sort((a, b) => b.fpl_corr - a.fpl_corr);
+
+        sortedData.forEach((item) => {
+          const row = document.createElement("tr");
+          row.innerHTML = `
+                    <td class="crime-name">${item.crime}</td>
+                    <td><span class="correlation-value ${getCorrelationClass(
+                      item.fpl_corr
+                    )}">${item.fpl_corr > 0 ? "+" : ""}${item.fpl_corr.toFixed(
+            3
+          )}</span></td>
+                    <td><span class="p-value ${
+                      item.fpl_sig ? "significant" : "not-significant"
+                    }">${formatPValue(item.fpl_p)}</span></td>
+                    <td><span class="correlation-value ${getCorrelationClass(
+                      item.emp_corr
+                    )}">${item.emp_corr > 0 ? "+" : ""}${item.emp_corr.toFixed(
+            3
+          )}</span></td>
+                    <td><span class="p-value ${
+                      item.emp_sig ? "significant" : "not-significant"
+                    }">${formatPValue(item.emp_p)}</span></td>
+                `;
+          tbody.appendChild(row);
+        });
+
+        checkScrollIndicator();
+      }
+
+      document
+        .getElementById("searchInput")
+        .addEventListener("input", function (e) {
+          const search = e.target.value.toLowerCase();
+          const filtered = rawData.filter((item) =>
+            item.crime.toLowerCase().includes(search)
+          );
+          renderTable(filtered);
+        });
+
+      // Hide scroll indicator when user starts scrolling
+      document
+        .getElementById("tableWrapper")
+        .addEventListener("scroll", function () {
+          const indicator = document.getElementById("scrollIndicator");
+          if (this.scrollTop > 50) {
+            indicator.classList.remove("show");
+          }
+        });
+
+      renderTable();
+    </script>
+  </body>
+</html>

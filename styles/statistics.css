@@ -120,3 +120,38 @@ footer {
   flex: 1;
 }
 
+
+/* References styling */
+.references {
+  margin-top: 5rem; /* space below */
+  font-size: 1rem;              /* slightly smaller than body text (1.3rem) */
+  color: #3f4653;               /* a softer gray for lower emphasis */
+  margin: 2rem 0;               /* space above/below */
+}
+
+.references h3 {
+  font-size: 1.4rem;            /* smaller than your .content-wrapper h2 (1.5rem) */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #2a2929;               /* dark enough to stand out but not bold */
+}
+
+.references ol {
+  padding-left: 1.5rem;         /* indent the list */
+  margin: 0;
+}
+
+.references li {
+  margin-bottom: 0.25rem;       /* tight spacing between items */
+}
+
+.references a {
+  text-decoration: underline;   /* keep links clear */
+  font-size: 1rem;              /* match the li text size */
+  color: rgb(42, 57, 84);       /* same link color you already use */
+}
+
+.references sup {
+  font-size: 0.8em;             /* make the inline superscript smaller */
+  vertical-align: super;
+}
