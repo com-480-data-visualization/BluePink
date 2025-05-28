@@ -76,6 +76,8 @@ fetch(
         layer.on("click", () => {
           currentDistrictCode = districtCode;
           map.fitBounds(layer.getBounds());
+          const overlay = document.getElementById("map-overlay");
+          if (overlay) overlay.style.display = "none";
 
           districtLayer.setStyle({
             fillOpacity: 0,
@@ -261,6 +263,9 @@ map.on("contextmenu", function () {
     currentDistrictCode = null;
     map.setView([40.7128, -74.006], 11);
     if (markerLayer) map.removeLayer(markerLayer);
+
+    const overlay = document.getElementById("map-overlay");
+    if (overlay) overlay.style.display = "block";
 
     document.getElementById("crime-filter-container").style.display = "none";
     const sliderContainer = document.getElementById("year-slider-container");

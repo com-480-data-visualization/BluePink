@@ -14,7 +14,7 @@ export function setupCrimeFilterUI() {
     display: "none",           // hidden until a district is selected
     position: "absolute",
     // Position under the title panel on middle-left
-    top: "300px",
+    top: "150px",
     left: "50px",
     zIndex: "1000",
     backgroundColor: "white",
