@@ -241,6 +241,29 @@
           district seem to have a direct impact on the types of crimes committed
           in each district. We will further investiguate this relationship.
         </p>
+
+        <figure
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem auto;
+            gap: 1rem;
+            width: 100%;
+          "
+        >
+          <iframe
+            src="../../images/fpl_vs_unemployment.html"
+            style="width: 710px; height: 450px; border: none; max-width: 100%"
+            title="FPL VS Unemployment"
+            loading="lazy"
+          ></iframe>
+          <figcaption>
+            Figure 4: Evolution of poverty and unemployment in NYC. Both metrics
+            appear correlated over time, indicating socio-economic hardship and
+            crime may be intertwined.
+          </figcaption>
+        </figure>
         <p>
           Before diving into the crime data, let’s take a step back and examine
           the socio-economic landscape of New York City. The chart below
@@ -286,34 +309,6 @@
             ></sup
           >
         </p>
-        <figure
-          style="
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 2rem auto;
-            gap: 1rem;
-            width: 100%;
-          "
-        >
-          <iframe
-            src="../../images/fpl_vs_unemployment.html"
-            style="width: 710px; height: 450px; border: none; max-width: 100%"
-            title="FPL VS Unemployment"
-            loading="lazy"
-          ></iframe>
-          <figcaption>
-            Figure 4: Evolution of poverty and unemployment in NYC. Both metrics
-            appear correlated over time, indicating socio-economic hardship and
-            crime may be intertwined.
-          </figcaption>
-        </figure>
-
-        <p>
-          The plot below shows the population of alligators in Lac Léman over
-          the last century. The data is based on a model that predicts the
-          future population of alligators in the lake.
-        </p>
         <iframe
           src="crimes_correlation.html"
           title="Top Crime Districts Dashboard"
@@ -327,6 +322,34 @@
           "
           loading="lazy"
         ></iframe>
+
+        <p>
+          The table above highlights strong correlations between various crime
+          categories and socioeconomic factors. Most crimes show a negative
+          correlation with employment, suggesting that higher employment levels
+          are generally associated with lower crime rates. This trend is
+          particularly pronounced for offenses such as drug-related crimes,
+          physical assault, and weapon possession. Notably, minor and major
+          theft deviate from this pattern by showing positive correlations with
+          employment. It’s important to note that the district associated with a
+          crime refers to where the crime was committed—not necessarily where
+          the perpetrator lives. One possible explanation is that areas with
+          higher employment tend to be busier and more populated, providing more
+          opportunities for theft. These theft-related crimes also show negative
+          correlations with poverty, which may reflect the greater availability
+          of valuable items in wealthier districts. Among all categories, drug
+          offenses display the most striking relationship: a strong positive
+          correlation with poverty rate (+0.724) and a significant negative
+          correlation with employment (-0.494). This suggests that drug-related
+          crimes are far more prevalent in areas experiencing socioeconomic
+          hardship, underscoring the link between precarity and this type of
+          criminal behavior. Other crimes like intentional property fires also
+          appear strongly tied to low employment levels. In contrast, crimes
+          such as child abuse/endangerment, traffic violations, and fraud or
+          forgery show little to no correlation with either socioeconomic
+          factor, suggesting they occur relatively uniformly across the city,
+          regardless of economic conditions.
+        </p>
         <figure
           style="
             display: flex;
@@ -351,8 +374,8 @@
             "
           />
           <figcaption>
-            Figure 5: Pearson correlation between crime types and socio-economic for the top 4
-            most crime districts in NYC. 
+            Figure 5: Pearson correlation between crime types and socio-economic
+            for the top 4 most crime districts in NYC.
           </figcaption>
         </figure>
 
