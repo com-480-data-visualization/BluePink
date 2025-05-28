@@ -63,6 +63,7 @@ figcaption {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2rem;
 }
 
 /* ====================================================================
@@ -207,6 +208,11 @@ a {
 p {
   text-align: justify;
   font-size: 0.9rem;
+}
+
+p.no-indent {
+  text-indent: 0;
+  margin-top: 0;
 }
 
 h1 {

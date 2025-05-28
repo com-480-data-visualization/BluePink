@@ -62,75 +62,41 @@
         </p>
 
         <h2>Crime Situation in New York City</h2>
-        <div
-          style="
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-          "
-        >
-          <!-- Image -->
+        <div style="margin-bottom: 0rem">
+          <!-- Float the image to the left -->
           <img
             src="../../images/crime_type.png"
             alt="Crime Types"
-            style="width: 45%; max-width: 400px; height: auto"
+            style="
+              float: left;
+              width: 45%;
+              max-width: 400px;
+              height: auto;
+              margin-right: 2rem;
+              margin-bottom: 1rem;
+            "
           />
 
-          <!-- Text -->
-          <p style="flex: 1; min-width: 250px">
-            Let’s first take a look at the different types of crimes we
+          <p>
+            Let's first take a look at the different types of crimes we
             considered. The dataset contained a wide variety of offenses,
             ranging from fraud and prostitution to kidnapping and murder. To
             simplify the analysis, we kept only the most common crime types and
             grouped them into categories that are easier for everyone to
             understand.
           </p>
+
+          <p>
+            It is then interesting to examine which crime types are the most
+            frequent in New York City. The plot below illustrates this by
+            showing the percentage that each crime category represents among all
+            reported incidents between 2006 and 2023. We observe that the
+            majority of crimes involve theft or physical assault. Serious crimes
+            like rape and murder, while less common, still represent a
+            significant concern — with an annual average of 1,398 rapes, 411
+            murders, 1,085 arsons, and 186 kidnappings reported.
+          </p>
         </div>
-
-        <figure style="text-align: center">
-          <iframe
-            src="../images/offense_type_repartition.html"
-            style="width: 100%; height: 600px; border: none"
-            title="Offense Type Repartition Chart"
-            loading="lazy"
-          ></iframe>
-
-          <figcaption>
-            Figure 2: Crime Distribution in New York City from 2006 to 2023. The
-            top 3 crimes are minor theft that represent 19.49% of the crimes
-            followed by physical assault (16.32%) and verbal or physical
-            harassement (14.72%).
-          </figcaption>
-        </figure>
-        <p>
-          It is then interessant to look at which crime is the most frequent in
-          New York City. The plot above illustrates this by showing the
-          percentage each crime category represents among all reported incidents
-          between 2006 and 2023. We can see that most of the crimes are theft or
-          physical assault. The most serious crimes, like rape and murder, are
-          fortunately much less frequent. Nevertheless, they still represent a
-          significant concern for the community since in average, 1398 rape, 411
-          muder, 1085 arson fire and 186 kidnapping complaints are reported each
-          year.
-        </p>
-
-        <p>
-          We can see that crime complaints are relatively balanced across the
-          boroughs, except for Staten Island, which accounts for only 4.64% of
-          reported crimes. This is largely explained by the fact that Staten
-          Island makes up just 5.8% of New York City’s population. Overall, the
-          distribution of complaints appears to correlate with population size.
-          Boroughs with more residents tend to report more crimes. However, we
-          cannot draw definitive conclusions from this pattern alone. With only
-          five boroughs, the Pearson correlation (r = 0.829, p = 0.0829) is not
-          statistically significant. Notably, Queens is the second most populous
-          borough but ranks only fourth in reported crimes. To uncover clearer
-          trends and more nuanced insights, a deeper analysis at the district
-          level is necessary. This is why our interactive map focuses on
-          community districts rather than boroughs.
-        </p>
       </div>
 
       <figure
@@ -149,6 +115,7 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
+            margin-top: 1rem;
           "
         >
           <!-- Donut chart -->
@@ -166,12 +133,27 @@
           ></iframe>
         </div>
 
-        <figcaption>
-          Figure 3: Crime and Population distribution across boroughs in New
+        <figcaption style="margin-top: -4rem">
+          Figure 2: Crime and Population distribution across boroughs in New
           York City from 2006 to 2023
         </figcaption>
       </figure>
       <div class="content-wrapper">
+        <p>
+          We can see that crime complaints are relatively balanced across the
+          boroughs, except for Staten Island, which accounts for only 4.64% of
+          reported crimes. This is largely explained by the fact that Staten
+          Island makes up just 5.8% of New York City’s population. Overall, the
+          distribution of complaints appears to correlate with population size.
+          Boroughs with more residents tend to report more crimes. However, we
+          cannot draw definitive conclusions from this pattern alone. With only
+          five boroughs, the Pearson correlation (r = 0.829, p = 0.0829) is not
+          statistically significant. Notably, Queens is the second most populous
+          borough but ranks only fourth in reported crimes. To uncover clearer
+          trends and more nuanced insights, a deeper analysis at the district
+          level is necessary. This is why our interactive map focuses on
+          community districts rather than boroughs.
+        </p>
         <p>
           Regarding who is targeted by these crimes, if you are a woman, you
           might be interested in knowing that 54% of the victims of crime in New
@@ -179,14 +161,23 @@
           the importance of addressing violence against women in our
           communities. On the contrary, about 75% of the suspect are men.
         </p>
-        <figure style="text-align: center">
+        <figure
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin: 2rem auto;
+          "
+        >
           <iframe
             src="../../images/crime_by_hour.html"
             style="width: 700px; height: 500px; border: none"
             title="Population by Borough"
+            loading="lazy"
           ></iframe>
           <figcaption>
-            Figure 4: Most dangerous hours in New York City from 2006 to 2023.
+            Figure 3: Most dangerous hours in New York City from 2006 to 2023.
             We can see that less crimes arrive at night but we have to be
             careful with this information since there are also less people on
             the streets.
@@ -195,34 +186,63 @@
 
         <p>
           Finally, looking at when crimes occur, we can see that most of the
-          crimes are committed during the day, mostly between 12:00 and 18:00 with the 
-          pick around 15:00. This is likely due to the fact that more people are
-          out and about during these hours, making it easier for criminals to
+          crimes are committed during the day, mostly between 12:00 and 18:00
+          with the pick around 15:00. This is likely due to the fact that more
+          people are out during these hours, making it easier for criminals to
           commit crimes. However, it is important to note that this does not
           mean that it is safe to be out at night. In fact, the data shows that
           there are still a significant number of crimes committed at night,
           particularly between 18:00 and 24:00. It is always important to be
-          aware of your surroundings and take precautions to stay safe, no matter
-          what time of day it is.
+          aware of your surroundings and take precautions to stay safe, no
+          matter what time of day it is.
         </p>
 
         <h2>Relation with Socio-Economic Factors</h2>
-        <div style="display: flex; justify-content: space-between">
-          <div>
-            <img
-              src="../../images/time_blow.png"
-              alt="Plot 1"
-              style="width: 100%"
-            />
-          </div>
-          <div>
-            <img
-              src="../../images/time_unemployment.png"
-              alt="Plot 2"
-              style="width: 100%"
-            />
-          </div>
-        </div>
+        <p>
+          But we can now wonder why are crimes commited? We can easlily imagine
+          that most crimes are in fact motivated by poverty or a feeling of
+          injustice. We will now try to uncover some socio-economic factors that
+          may influence the crime rate in New York City. Looking at the
+          interactive map we can see that the number of crimes is not evenly
+          distributed across the districts as well as the types of crimes
+          comited in each district. Th emost dangerous districts
+        </p>
+        <iframe
+          src="rank_district.html"
+          title="Top Crime Districts Dashboard"
+          style="
+            width: 100%;
+            max-width: 1100px;
+            height: 620px;
+            border: none;
+            display: block;
+            margin: 2rem auto;
+          "
+          loading="lazy"
+        ></iframe>
+
+        <figure
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem auto;
+            gap: 1rem;
+            width: 100%;
+          "
+        >
+          <iframe
+            src="../../images/fpl_vs_unemployment.html"
+            style="width: 710px; height: 450px; border: none; max-width: 100%"
+            title="FPL VS Unemployment"
+            loading="lazy"
+          ></iframe>
+          <figcaption>
+            Figure 4: Evolution of poverty and unemployment in NYC. Both metrics
+            appear correlated over time, indicating socio-economic hardship and
+            crime may be intertwined.
+          </figcaption>
+        </figure>
         <p>
           The plot below shows the population of alligators in Lac Léman over
           the last century. The data is based on a model that predicts the
