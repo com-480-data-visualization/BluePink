@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYC Crime Districts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #fafafa;
+            color: #111827;
+            line-height: 1.5;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 5fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid #e5e7eb;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .rank {
+            position: absolute;
+            top: -8px;
+            right: 1rem;
+            background: #111827;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .district-name {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .main-stat {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 0.25rem;
+        }
+
+        .main-label {
+            font-size: 0.875rem;
+            color: #6b7280;
+            margin-bottom: 1.5rem;
+        }
+
+        .stats-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 0.75rem;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        /* Color classes for FPL (lower percentage = better = greener) */
+        .fpl-excellent {
+            background: linear-gradient(135deg, #10b981, #34d399);
+            color: white;
+        }
+
+        .fpl-good {
+            background: linear-gradient(135deg, #34d399, #6ee7b7);
+            color: white;
+        }
+
+        .fpl-poor {
+            background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+            color: #065f46;
+        }
+
+        /* Color classes for Employment (higher percentage = better = greener) */
+        .employ-excellent {
+            background: linear-gradient(135deg, #10b981, #34d399);
+            color: white;
+        }
+
+        .employ-good {
+            background: linear-gradient(135deg, #34d399, #6ee7b7);
+            color: white;
+        }
+
+        .employ-poor {
+            background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+            color: #065f46;
+        }
+
+        .stat-value {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            margin-top: 0.25rem;
+            opacity: 0.9;
+        }
+
+        .stat-rank {
+            font-size: 0.625rem;
+            margin-top: 0.125rem;
+            opacity: 0.8;
+        }
+
+        .crimes-section {
+            border-top: 1px solid #f3f4f6;
+            padding-top: 1rem;
+        }
+
+        .crimes-title {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #374151;
+            margin-bottom: 0.75rem;
+        }
+
+        .crime-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 0;
+            font-size: 0.875rem;
+        }
+
+        .crime-item:not(:last-child) {
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .crime-type {
+            color: #374151;
+        }
+
+        .crime-percent {
+            font-weight: 500;
+            color: #111827;
+        }
+
+        @media (max-width: 768px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .title {
+                font-size: 1.5rem;
+            }
+            
+            .main-stat {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Top Crime Districts in NYC</h1>
+        
+        <div class="cards">
+            <!-- District 1 -->
+            <div class="card">
+                <div class="rank">1</div>
+                <h2 class="district-name">Midtown Business District</h2>
+                <div class="main-stat">309,151</div>
+                <div class="main-label">Total crimes reported</div>
+                
+                <div class="stats-row">
+                    <div class="stat fpl-excellent">
+                        <div class="stat-value">12.7%</div>
+                        <div class="stat-label">Below poverty</div>
+                        <div class="stat-rank">#18</div>
+                    </div>
+                    <div class="stat employ-excellent">
+                        <div class="stat-value">67.7%</div>
+                        <div class="stat-label">Employment</div>
+                        <div class="stat-rank">#7</div>
+                    </div>
+                </div>
+                
+                <div class="crimes-section">
+                    <div class="crimes-title">Top crime types</div>
+                    <div class="crime-item">
+                        <span class="crime-type">Minor Theft</span>
+                        <span class="crime-percent">35.9%</span>
+                    </div>
+                    <div class="crime-item">
+                        <span class="crime-type">Major Theft</span>
+                        <span class="crime-percent">23.9%</span>
+                    </div>
+                    <div class="crime-item">
+                        <span class="crime-type">Harassment</span>
+                        <span class="crime-percent">8.1%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- District 2 -->
+            <div class="card">
+                <div class="rank">2</div>
+                <h2 class="district-name">Jamaica/St. Albans</h2>
+                <div class="main-stat">261,626</div>
+                <div class="main-label">Total crimes reported</div>
+                
+                <div class="stats-row">
+                    <div class="stat fpl-good">
+                        <div class="stat-value">13.8%</div>
+                        <div class="stat-label">Below poverty</div>
+                        <div class="stat-rank">#21</div>
+                    </div>
+                    <div class="stat employ-good">
+                        <div class="stat-value">57.9%</div>
+                        <div class="stat-label">Employment</div>
+                        <div class="stat-rank">#24</div>
+                    </div>
+                </div>
+                
+                <div class="crimes-section">
+                    <div class="crimes-title">Top crime types</div>
+                    <div class="crime-item">
+                        <span class="crime-type">Physical Assault</span>
+                        <span class="crime-percent">18.9%</span>
+                    </div>
+                    <div class="crime-item">
+                        <span class="crime-type">Minor Theft</span>
+                        <span class="crime-percent">15.7%</span>
+                    </div>
+                    <div class="crime-item">
+                        <span class="crime-type">Major Theft</span>
+                        <span class="crime-percent">11.6%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- District 3 -->
+            <div class="card">
+                <div class="rank">3</div>
+                <h2 class="district-name">East New York</h2>
+                <div class="main-stat">251,024</div>
+                <div class="main-label">Total crimes reported</div>
+                
+                <div class="stats-row">
+                    <div class="stat fpl-poor">
+                        <div class="stat-value">27.7%</div>
+                        <div class="stat-label">Below poverty</div>
+                        <div class="stat-rank">#47</div>
+                    </div>
+                    <div class="stat employ-poor">
+                        <div class="stat-value">50.8%</div>
+                        <div class="stat-label">Employment</div>
+                        <div class="stat-rank">#52</div>
+                    </div>
+                </div>
+                
+                <div class="crimes-section">
+                    <div class="crimes-title">Top crime types</div>
+                    <div class="crime-item">
+                        <span class="crime-type">Physical Assault</span>
+                        <span class="crime-percent">20.4%</span>
+                    </div>
+                    <div class="crime-item">
+                        <span class="crime-type">Minor Theft</span>
+                        <span class="crime-percent">14.5%</span>
+                    </div>
+                    <div class="crime-item">
+                        <span class="crime-type">Major Theft</span>
+                        <span class="crime-percent">13.8%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

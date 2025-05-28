@@ -199,16 +199,21 @@
 
         <h2>Relation with Socio-Economic Factors</h2>
         <p>
-          But we can now wonder why are crimes commited? We can easlily imagine
-          that most crimes are in fact motivated by poverty or a feeling of
-          injustice. We will now try to uncover some socio-economic factors that
-          may influence the crime rate in New York City. Looking at the
-          interactive map we can see that the number of crimes is not evenly
-          distributed across the districts as well as the types of crimes
-          comited in each district. Th emost dangerous districts
+          This leads us to a deeper question: why are crimes committed in the
+          first place? It’s reasonable to think that many crimes are motivated
+          by poverty, inequality, or a sense of injustice. When we look at the
+          interactive map, it becomes clear that crime is not distributed evenly
+          across districts—neither in terms of frequency nor in the types of
+          crimes reported. It easy to think that socio-economic context of each
+          district plays a role in shaping these patterns. For instance,
+          wealthier districts might be more susceptible to theft or burglary,
+          while economically disadvantaged areas could experience higher rates
+          of drug- and weapon-related offenses. In the following section, we aim
+          to uncover some of the socio-economic factors that influence crime
+          rates across New York City.
         </p>
         <iframe
-          src="rank_district.html"
+          src="rank_district_top3.html"
           title="Top Crime Districts Dashboard"
           style="
             width: 100%;
@@ -220,7 +225,52 @@
           "
           loading="lazy"
         ></iframe>
-
+        <p>
+          The above table shows the top three districts in terms of crime counts
+          between 2006 and 2023. Despite its relative affluence and high
+          employment, Midtown Business District tops the crime charts, driven
+          largely by opportunistic theft, while Jamaica/St. Albans, with
+          moderate poverty and employment levels, sees slightly fewer incidents
+          but a greater share of assaults. East New York, by contrast, suffers
+          both high poverty and low employment, and although its total crime
+          count ranks third, violent offenses (especially physical assault)
+          account for the largest slice, underscoring how socio-economic stress
+          shifts the balance from property crime toward interpersonal violence.
+          The link between socio-economic factors and crime is complex, and at a
+          first glance is not evident. However the living conditions in the
+          district seem to have a direct impact on the types of crimes committed
+          in each district. We will further investiguate this relationship.
+        </p>
+        <p>
+          Before diving into the crime data, let’s take a step back and examine
+          the socio-economic landscape of New York City. The chart below
+          illustrates the evolution of the poverty rate in NYC from 2006 to
+          2023. Over this period, the poverty rate has remained relatively
+          stable, with a noticeable uptick in 2020, likely a consequence of the
+          economic fallout from the COVID-19 pandemic. Despite minor
+          fluctuations, poverty remains a pressing issue in the city: in 2023,
+          18.2% of New Yorkers were living below the federal poverty line,
+          compared to the national average of 11.1%. This translates to nearly
+          one in five residents struggling to make ends meet, with the threshold
+          set at $14,580 annually for an individual and $30,000 for a family of
+          four. 
+          </p>
+          <p>
+          Regarding employment, the employment rate in NYC has generally
+          hovered between 55% and 60%, with a dip around 2020 that aligns with
+          widespread job losses and economic instability caused by the pandemic.
+          Interestingly, there appears to be a negative correlation between
+          poverty and employment: as the employment rate decreases, the share of
+          people living under the federal poverty line tends to rise. This is
+          confirmed by a statistically significant Spearman correlation
+          coefficient of -0.556 (p = 0.0254), supporting the intuitive link
+          between employment and economic well-being. Unemployment remains a
+          concern as well. In 2023, New York City's unemployment rate was 5.3%,
+          considerably higher than the national average of 3.6%. This means that
+          more than 1 in 20 individuals in the city’s labor force were
+          unemployed, underlining persistent structural challenges in the urban
+          job market.
+        </p>
         <figure
           style="
             display: flex;
@@ -243,6 +293,7 @@
             crime may be intertwined.
           </figcaption>
         </figure>
+
         <p>
           The plot below shows the population of alligators in Lac Léman over
           the last century. The data is based on a model that predicts the
