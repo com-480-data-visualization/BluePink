@@ -8,18 +8,18 @@ import { createLegendControl } from "./legend.js";
 import {
   loadAllCrimeData,
   colorDistrictsByCrime
-} from "./heatmap.js";
+} from "./heatmap.js"; //choropleth crime map 
 
 import {
   setupCrimeFilterUI,
   populateCrimeTypeFilter,
   populateYearSlider
-} from "./filter_crimeType.js";
+} from "./filter_crimeType.js"; //year slider and crime type selection
 
 import { setupDistrictInfoPanel, showDistrictInfoPanel } from "./eco_info.js";
 
-import { setupMapControls, getCurrentMapType, updateLegend } from "./map_control.js";
-import { colorDistrictsByEconomics } from "./economic_choropleth.js";
+import { setupMapControls, getCurrentMapType, updateLegend } from "./map_control.js"; //map changing logic
+import { colorDistrictsByEconomics } from "./economic_choropleth.js"; // choroplet socioeco maps
 
 // Load the map ---------------------------------------------------------------
 var map = L.map("map").setView([40.7128, -74.006], 11);
@@ -35,7 +35,7 @@ const baseGray = L.tileLayer(
 );
 baseGray.addTo(map);
 
-// Global state
+// Global states
 let markerLayer = null;
 let districtLayer = null;
 let selectedCrimeTypes = new Set();
@@ -106,7 +106,7 @@ fetch(
 // Loads individual district crime data based on the selected district code.
 // Also sets up crime type filters, year slider, and displays corresponding markers.
 function loadDistrictCrimeData(code) {
-  console.log(`Loading data for district ${code}`); // Debug log
+
   
   fetch(`data/crimes_by_district/${code}.json`)
     .then((res) => {
@@ -114,15 +114,13 @@ function loadDistrictCrimeData(code) {
       return res.json();
     })
     .then((districtCrimes) => {
-      console.log(`Loaded ${districtCrimes.length} crime records for district ${code}`); // Debug log
       currentDistrictData = districtCrimes;
 
       // Populate crime types filter
       populateCrimeTypeFilter(districtCrimes, selectedCrimeTypes, handleCrimeFilterClick);
 
-      // Populate year slider with proper callback
+      // Populate year slider 
       populateYearSlider(districtCrimes, (year) => {
-        console.log(`Year changed to: ${year}`); // Debug log
         selectedYear = year;
         displayCrimesForDistrict(code, currentDistrictData);
       });
@@ -187,12 +185,12 @@ function createMarkerView(data) {
   
   const grouped = {};
   const filteredData = data.filter((c) => {
-    // Check crime type filter
+    // Checking crime type filter
     if (selectedCrimeTypes.size > 0 && !selectedCrimeTypes.has(c.crime_type)) {
       return false;
     }
     
-    // Check year filter
+    // Checking year filter
     if (selectedYear !== null) {
       const year = parseInt(c.year_begin);
       if (isNaN(year) || year !== selectedYear) {
@@ -203,7 +201,6 @@ function createMarkerView(data) {
     return true;
   });
 
-  console.log(`Showing ${filteredData.length} crimes out of ${data.length} total`);
 
   filteredData.forEach((c) => {
     const lat = parseFloat(c.Latitude);
@@ -256,7 +253,7 @@ function createMarkerView(data) {
   ).addTo(map);
 }
 
-// Resets the map when the user right-clicks (context menu).
+// Resets the map when the user right-clicks (context menu). (not really used)
 // Clears selected district and returns to overview view.
 map.on("contextmenu", function () {
   if (currentDistrictCode) {

@@ -54,7 +54,7 @@ export function setupMapControls(map, districtLayer) {
   // Add to map container
   document.getElementById('map').appendChild(mapControlContainer);
 
-  // Add CSS for buttons
+  // CSS for buttons
   const style = document.createElement('style');
   style.textContent = `
     .map-type-btn {
@@ -117,7 +117,7 @@ function switchMapType(mapType, map, districtLayer) {
     colorDistrictsByCrime(districtLayer);
   }
 
-  // Update the legend (removes old, adds new)
+  // Update the legend 
   updateLegend(map, true, mapType);
 }
 
@@ -138,5 +138,5 @@ export function getCurrentEconomicMetric() {
   return currentEconomicMetric;
 }
 
-// Export updateLegend so other modules (e.g. main.js) can swap in the marker‐view legend
+// Export updateLegend so other modules can swap in the marker‐view legend
 export { updateLegend };
