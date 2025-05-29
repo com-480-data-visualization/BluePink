@@ -60,21 +60,13 @@ BLUEPINK/
 
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 
-## Milestone 1 (21st March, 5pm)
+## Objective of this project
 
-**Answers can be found in Milestone1.pdf**
+This project was conducted by **Mahdi Fourati**, **Elsa Heitz**, and **Benoît Mathey-Doret** as part of the EPFL course _Data Visualization_ during the Spring 2025 semester. Its objective is to explore and visually represent crime patterns in New York City by integrating the NYC Crime Complaint Dataset ([Kaggle link](https://www.kaggle.com/datasets/aniket0712/nypd-complaint-data-historic?resource=download)) with socio-economic information in New York ([NYC Planning link](https://www.nyc.gov/site/planning/data-maps/open-data/districts-download-metadata.page)).
 
-**10% of the final grade**
+Rather than only plotting crime locations, the project seeks to uncover the underlying factors that influence crime by combining spatial, temporal, and socio-economic dimensions. The primary goal is to investigate how crime rates correlate with variables such as poverty, unemployment, and demographic composition across different districts of the city.
 
-## Milestone 2 (18th April, 5pm)
-
-**Answers can be found in Milestone2.pdf**
-
-**10% of the final grade**
-
-## Milestone 3 (30th May, 5pm)
-
-**80% of the final grade**
+The final outcome is an interactive, user-friendly tool designed to serve both the general public—such as residents or individuals considering a move to NYC—and policymakers. It aims to highlight crime disparities, uncover trends, and identify potential root causes. By providing data-driven insights, the project supports better-informed decisions regarding urban safety policies and resource allocation.
 
 ## Late policy
 
