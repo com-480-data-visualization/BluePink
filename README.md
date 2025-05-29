@@ -1,6 +1,6 @@
-## Website link: [here](https://com-480-data-visualization.github.io/BluePink/index.html)
+# Website link: [here](https://com-480-data-visualization.github.io/BluePink/index.html)
 
-# Project of Data Visualization (COM-480)
+## Project of Data Visualization (COM-480)
 
 | Student's name                | SCIPER |
 | ----------------------------- | ------ |
