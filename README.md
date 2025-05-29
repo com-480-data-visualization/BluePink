@@ -15,21 +15,30 @@ BLUEPINK/
 │ └── website_data/ # Additional data used for visualizations/statistics
 │
 ├── html/
-│ ├── about.html # About page \_to be written*
-│ └── statistics.html # Page for global statistics _to be written_
+│ ├── about.html # About page
+│ ├── crimes_correlation.html #tables with correlation (stats part)
+│ ├── rank_district_top3.html #display the most dangerous districts (stats part)
+│ └── statistics.html # Page for global statistics
 │
 ├── images/ # Custom icons used for special crimes on the map
 │
 ├── js/
 │ ├── main.js # Main map rendering and interaction logic
-│ └── menu_icones.js # Configuration for special crime icons and legend
+│ ├── crimes_icones.js #custom icones for special crimes
+│ ├── eco_info.js #economical information menu on the left
+│ ├── economic_choropleth.js #compute color map with economical data
+│ ├── filter_crimeType.js #handles dropdown crime selection
+│ ├── heatmap.js #color map for crimes
+│ ├── legend.js #handles the legend
+│ ├── map_control.js #handles map features
+│ └── provided.js #template
 │
 │
 ├── notebooks/ # Jupyter notebooks for data preprocessing and EDA
 │ ├── create_data_by_district.ipynb
 │ ├── data_exploration.ipynb
 │ ├── dataset_creator.ipynb
-│ └── EDA2.ipynb
+│ └── Create_stats_img.ipynb
 │
 ├── Past_milestones/ # Project milestones and deliverables
 │ └── Milestone1.pdf
