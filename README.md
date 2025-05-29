@@ -1,3 +1,5 @@
+## Website link: [here](https://com-480-data-visualization.github.io/BluePink/index.html)
+
 # Project of Data Visualization (COM-480)
 
 | Student's name                | SCIPER |
@@ -49,7 +51,8 @@ BLUEPINK/
 │ └── Create_stats_img.ipynb
 │
 ├── Past_milestones/ # Project milestones and deliverables
-│ └── Milestone1.pdf
+│ ├── Milestone1.pdf
+│ └── Milestone2.pdf
 │
 ├── styles/
 │ ├── about.css #about page styling
@@ -60,13 +63,10 @@ BLUEPINK/
 │ └── style.css # Global styling for the website
 │
 ├── index.html # Main
+├── Milestone3.pdf
 ├── README.md
 └── requirements.txt
 ```
-
-## Website link: [here](https://com-480-data-visualization.github.io/BluePink/index.html)
-
-[Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 
 ```
 
