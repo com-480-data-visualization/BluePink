@@ -22,8 +22,8 @@ export function loadAllCrimeData(districtLayer) {
   });
 }
 
-// Fetches grouped crime data from a JSON file and applies coloring to districts.
-// If the data is invalid or missing, falls back to demo data.
+// Fetches grouped crime and applies coloring to districts.
+// If the data is invalid or missing, falls back to demo data (used for debugging).
 export function colorDistrictsByCrime(districtLayer) {
   fetch("data/website_data/GPS_grouped.json")
     .then(res => {
@@ -66,7 +66,7 @@ export function colorDistrictsByCrime(districtLayer) {
 // Used as a fallback if real data is unavailable.
 export function useDemoData(districtLayer) {
   if (!districtLayer || typeof districtLayer.eachLayer !== "function") {
-    console.error("❌ useDemoData: districtLayer is not ready or invalid:", districtLayer);
+    console.error("useDemoData: districtLayer is not working:", districtLayer);
     return;
   }
 
@@ -159,10 +159,10 @@ export function calculateCrimeRanges() {
       return null;
     });
 }
-// using percentile thresholds (20%, 40%, etc.) for classification.
+// using percentile thresholds (20%, 40%...) for classification.
 export function applyColorsToDistricts(districtLayer, crimeCounts) {
   if (!districtLayer || typeof districtLayer.eachLayer !== "function") {
-    console.error("❌ applyColorsToDistricts: districtLayer is not ready or invalid:", districtLayer);
+    console.error("applyColorsToDistricts: districtLayer is not working:", districtLayer);
     return;
   }
 
@@ -237,7 +237,7 @@ export function applyColorsToDistricts(districtLayer, crimeCounts) {
       opacity: 0.7
     });
 
-    // Create popup with district information
+    // Create popup with district information(not really used)
     const name = properties.BoroCD_name || `District ${code}`;
     layer.bindPopup(`<b>${name}</b><br>District Code: ${code}<br>Crime Count: ${count.toLocaleString()}`);
     

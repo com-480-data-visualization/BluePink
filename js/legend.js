@@ -30,7 +30,7 @@ export function createLegendControl(isDistrictView = true, mapType = 'crime') {
               districtLegendHTML += `<div class="legend-item"><div class="color-box" style="background:${range.color}"></div> <span>${range.label}</span></div>`;
             });
           } else {
-            // Fallback to original percentile labels if data not available
+            // Fallback to original percentile labels if data not available (used for debugging)
             districtLegendHTML += `
               <div class="legend-item"><div class="color-box" style="background:#cce5ff"></div> <span>Lowest 20%</span></div>
               <div class="legend-item"><div class="color-box" style="background:#99ccff"></div> <span>20-40%</span></div>
@@ -58,7 +58,7 @@ export function createLegendControl(isDistrictView = true, mapType = 'crime') {
         });
 
       } else if (mapType === 'economic') {
-        // Economic legend
+        // Eco legend
         const currentEconomicData = getCurrentEconomicPercentiles();
         
         if (currentEconomicData && currentEconomicData.ranges) {

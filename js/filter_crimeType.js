@@ -1,20 +1,17 @@
-// filter_crimeType.js
-// This module provides the UI and logic for filtering crimes by type and year.
-
 // Sets up the UI container for the crime type filter dropdown and year slider.
 export function setupCrimeFilterUI() {
   // Remove any existing container
   const existing = document.getElementById("crime-filter-container");
   if (existing) existing.remove();
 
-  // Create the main container
+  // Creating the main container
   const filterContainer = document.createElement("div");
   filterContainer.id = "crime-filter-container";
   Object.assign(filterContainer.style, {
     display: "none",           // hidden until a district is selected
     position: "absolute",
-    // Position under the title panel on middle-left
-    top: "150px",
+    // Position just on top left of the screen
+    top: "35px",
     left: "50px",
     zIndex: "1000",
     backgroundColor: "white",
@@ -123,7 +120,7 @@ export function populateCrimeTypeFilter(data, selectedCrimeTypes, onClickHandler
 
 // Sets up and handles the year slider based on the crime records' dates
 export function populateYearSlider(data, onYearChange) {
-  console.log("populateYearSlider called with data length:", data.length);
+ 
 
   const sliderContainer = document.getElementById("year-slider-container");
   const slider = document.getElementById("year-slider");
@@ -142,7 +139,7 @@ export function populateYearSlider(data, onYearChange) {
     new Set(
       data
         .map(c => parseInt(c.year_begin))
-        .filter(y => !isNaN(y) && y > 1900 && y < 2030)
+        .filter(y => !isNaN(y) && y > 2000 && y < 2025)
     )
   ).sort((a,b) => a - b);
 
@@ -192,13 +189,13 @@ export function populateYearSlider(data, onYearChange) {
   onYearChange(null);
 }
 
-// Handles clicking "All" option
+// Clicking "All" option
 export function handleSelectAllClick(allLi) {
   const allItems = document.querySelectorAll(".list-items .item");
   allItems.forEach(item => item.classList.add("checked"));
 }
 
-// Handles individual crime type clicks
+// Individual crime type clicks
 export function handleIndividualClick(clickedLi) {
   const allLi = document.querySelector('.list-items .item[data-value="__all__"]');
   if (allLi.classList.contains("checked")) {

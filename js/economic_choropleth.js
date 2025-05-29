@@ -1,14 +1,14 @@
 let economicData = [];
-let currentEconomicMetric = 'individuals_below_FPL'; // Default metric
+let currentEconomicMetric = 'individuals_below_FPL'; 
 let currentEconomicPercentiles = null;
 
-// Available economic metrics
+// economic metrics
 export const economicMetrics = {
   'individuals_below_FPL': 'Individuals Below Federal Poverty Line',
   'Employement_pop_ratio': 'Employment Population Ratio'
 };
 
-// Load economic data from eco_data.json
+// Load economic data from our json
 export function loadEconomicData(districtLayer) {
   fetch("data/website_data/eco_data.json")
     .then(res => {
@@ -31,7 +31,7 @@ export function loadEconomicData(districtLayer) {
 // Apply economic coloring to districts
 export function colorDistrictsByEconomics(districtLayer, metric = 'individuals_below_FPL') {
   if (!districtLayer || typeof districtLayer.eachLayer !== "function") {
-    console.error("❌ colorDistrictsByEconomics: districtLayer is not ready");
+    console.error("colorDistrictsByEconomics: districtLayer is not working");
     return;
   }
 
@@ -51,7 +51,7 @@ export function colorDistrictsByEconomics(districtLayer, metric = 'individuals_b
   console.log(`Economic values for ${metric}:`, economicValues);
 
   if (Object.keys(economicValues).length === 0) {
-    console.warn("No valid economic data found, using demo data");
+    console.warn("No valid economic data found, using demo data"); //used for debugging
     useEconomicDemoData(districtLayer);
     return;
   }
@@ -105,14 +105,14 @@ function applyEconomicColorsToDistricts(districtLayer, economicValues, metric) {
       // For poverty rate, higher values = worse (red), lower values = better (green)
       // For employment ratio, higher values = better (green), lower values = worse (red)
       if (metric === 'individuals_below_FPL') {
-        // Poverty: lower is better
+       
         if (value <= p20) fillColor = "#d4f1d4"; // Light green
         else if (value <= p40) fillColor = "#a8e6a8"; // Medium green  
         else if (value <= p60) fillColor = "#ffff99"; // Yellow
         else if (value <= p80) fillColor = "#ff9933"; // Orange
         else fillColor = "#ff4d4d"; // Red
       } else {
-        // Employment: higher is better
+        
         if (value <= p20) fillColor = "#ff4d4d"; // Red
         else if (value <= p40) fillColor = "#ff9933"; // Orange
         else if (value <= p60) fillColor = "#ffff99"; // Yellow
@@ -156,7 +156,7 @@ function createEconomicRanges(min, max, p20, p40, p60, p80, metric) {
   };
 
   if (metric === 'individuals_below_FPL') {
-    // For poverty: lower is better (green), higher is worse (red)
+    // lower is better (green), higher is worse (red) for poverty
     return [
       { min: min, max: p20, color: "#d4f1d4", label: `${formatValue(min)} - ${formatValue(p20)}` },
       { min: p20, max: p40, color: "#a8e6a8", label: `${formatValue(p20)} - ${formatValue(p40)}` },
@@ -165,7 +165,7 @@ function createEconomicRanges(min, max, p20, p40, p60, p80, metric) {
       { min: p80, max: max, color: "#ff4d4d", label: `${formatValue(p80)} - ${formatValue(max)}` }
     ];
   } else {
-    // For employment: higher is better (green), lower is worse (red)
+    // higher is better (green), lower is worse (red) for employment ratio
     return [
       { min: min, max: p20, color: "#ff4d4d", label: `${formatValue(min)} - ${formatValue(p20)}` },
       { min: p20, max: p40, color: "#ff9933", label: `${formatValue(p20)} - ${formatValue(p40)}` },
@@ -224,10 +224,10 @@ export function getCurrentEconomicPercentiles() {
   return currentEconomicPercentiles;
 }
 
-// Demo data fallback
+// Demo data fallback (for debugging)
 function useEconomicDemoData(districtLayer) {
   if (!districtLayer || typeof districtLayer.eachLayer !== "function") {
-    console.error("❌ useEconomicDemoData: districtLayer is not ready");
+    console.error("useEconomicDemoData: districtLayer is not working");
     return;
   }
 
