@@ -51,7 +51,7 @@ export function showDistrictInfoPanel(districtCode) {
           : "<span style='font-size: 80%;'>Information not available</span>"
       }</p>
 
-
+        <p class="footnote">Note: Nearby crimes are aggregated. If location is not specified, crimes are assigned to the responsible police station.</p>
         <p class="footnote">*FPL: Federal Poverty Level</p>
         <p class="footnote">**Median over 2006–2022</p>
       `;
