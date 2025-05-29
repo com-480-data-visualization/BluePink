@@ -67,7 +67,3 @@ BLUEPINK/
 ├── README.md
 └── requirements.txt
 ```
-
-```
-
-```
