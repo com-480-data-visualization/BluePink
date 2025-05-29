@@ -44,6 +44,11 @@ BLUEPINK/
 │ └── Milestone1.pdf
 │
 ├── styles/
+│ ├── about.css #about page styling
+│ ├── crime_filter.css
+│ ├── legend.css
+│ ├── statistics.css #statistics page styling
+│ ├── menu_eco.css
 │ └── style.css # Global styling for the website
 │
 ├── index.html # Main
