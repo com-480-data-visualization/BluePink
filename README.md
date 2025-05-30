@@ -64,6 +64,7 @@ BLUEPINK/
 │
 ├── index.html # Main
 ├── Milestone3.pdf
+|── screenCastBluePink.mp4
 ├── README.md
 └── requirements.txt
 ```
