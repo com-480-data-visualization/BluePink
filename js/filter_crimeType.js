@@ -155,7 +155,7 @@ export function populateYearSlider(data, onYearChange) {
   slider.max = maxYear;
   slider.value = maxYear;
 
-  display.innerText = maxYear;
+  display.innerText = "All Years";
   minYearDisplay.innerText = minYear;
   maxYearDisplay.innerText = maxYear;
 
